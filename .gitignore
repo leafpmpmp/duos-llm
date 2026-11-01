@@ -1,0 +1,27 @@
+# Downloads and clones: tools/fetch-*.sh recreate them
+/llama.cpp/
+/data/
+/hf/*
+!/hf/SHA256SUMS
+/models/*
+!/models/SHA256SUMS
+# Python
+/.venv/
+__pycache__/
+# Build outputs
+/build/
+/deploy/
+/tpu/*-arm64
+/tpu/runtime/llm-arm64
+/tpu/smollm/build*/
+/tpu/smollm/layer15_*/
+/tpu/gemv/calib_*/
+/tpu/gemv/*.build/
+/tpu/gemv/*_int8/
+/tpu/gemv/*.cvimodel
+/tpu/gemv/*.onnx
+/tpu/gemv/*_tensor_info.txt
+*.dtbo
+*.log
+# Local copies of old board files
+/board-archive-*/

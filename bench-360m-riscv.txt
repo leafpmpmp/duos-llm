@@ -1,0 +1,27 @@
+Mem:             459         117         117           0         241         342
+== scalar SmolLM2-360M-Instruct-Q4_0.gguf
+| model                          |       size |     params | backend    | threads |            test |                  t/s |
+| llama 3B Q4_0                  | 217.39 MiB |   361.82 M | CPU        |       1 |            pp64 |          0.46 ± 0.00 |
+| llama 3B Q4_0                  | 217.39 MiB |   361.82 M | CPU        |       1 |            tg32 |          0.34 ± 0.00 |
+== xtv SmolLM2-360M-Instruct-Q4_0.gguf
+| model                          |       size |     params | backend    | threads |            test |                  t/s |
+| llama 3B Q4_0                  | 217.39 MiB |   361.82 M | CPU        |       1 |            pp64 |          0.47 ± 0.00 |
+| llama 3B Q4_0                  | 217.39 MiB |   361.82 M | CPU        |       1 |            tg32 |          0.34 ± 0.00 |
+| llama 3B Q4_0                  | 217.39 MiB |   361.82 M | CPU        |       1 |            pp64 |          1.57 ± 0.00 |
+| llama 3B Q4_0                  | 217.39 MiB |   361.82 M | CPU        |       1 |            tg32 |          1.16 ± 0.01 |
+== chat demo (135M Q8_0, xtv4)
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read <file>        add a text file
+  /glob <pattern>     add text files using globbing pattern
+
+
+
+> What is a RISC-V CPU? Answer in two sentences.
+A RISC-V CPU is a type of CPU that uses a single-core processor architecture, with a single core processing instructions per clock cycle.
+
+[ Prompt: 4.5 t/s | Generation: 2.5 t/s ]
+
+
+Exiting...

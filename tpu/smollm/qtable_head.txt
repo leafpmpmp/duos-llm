@@ -1,0 +1,6 @@
+/norm/Mul_output_0_Mul BF16
+/norm/Add_output_0_Add BF16
+/norm/Sqrt_output_0_Sqrt BF16
+/norm/Reciprocal_output_0_Reciprocal BF16
+/norm/Mul_1_output_0_Mul BF16
+/norm/Mul_2_output_0_Mul BF16

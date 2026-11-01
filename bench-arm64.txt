@@ -1,0 +1,32 @@
+read 1826 MB/s, memcpy 1260 MB/s (read+write 2521 MB/s), 64 MiB
+test-quantize-fns exit=0
+== arm64 SmolLM2-135M-Instruct-Q8_0.gguf
+| model                          |       size |     params | backend    | threads |            test |                  t/s |
+| llama 256M Q8_0                | 136.40 MiB |   134.52 M | CPU        |       1 |            pp64 |          7.75 ± 0.02 |
+| llama 256M Q8_0                | 136.40 MiB |   134.52 M | CPU        |       1 |            tg32 |          5.65 ± 0.00 |
+== arm64 SmolLM2-135M-Instruct-Q4_0.gguf
+| model                          |       size |     params | backend    | threads |            test |                  t/s |
+| llama 256M Q4_0                |  85.93 MiB |   134.52 M | CPU        |       1 |            pp64 |          8.26 ± 0.01 |
+| llama 256M Q4_0                |  85.93 MiB |   134.52 M | CPU        |       1 |            tg32 |          6.01 ± 0.00 |
+== arm64 SmolLM2-135M-Instruct-Q4_K_M.gguf
+| model                          |       size |     params | backend    | threads |            test |                  t/s |
+| llama 256M Q4_K - Medium       |  98.87 MiB |   134.52 M | CPU        |       1 |            pp64 |          6.91 ± 0.00 |
+| llama 256M Q4_K - Medium       |  98.87 MiB |   134.52 M | CPU        |       1 |            tg32 |          5.15 ± 0.01 |
+== arm64 SmolLM2-360M-Instruct-Q4_0.gguf
+| model                          |       size |     params | backend    | threads |            test |                  t/s |
+| llama 3B Q4_0                  | 217.39 MiB |   361.82 M | CPU        |       1 |            pp64 |          2.89 ± 0.00 |
+| llama 3B Q4_0                  | 217.39 MiB |   361.82 M | CPU        |       1 |            tg32 |          2.36 ± 0.00 |
+== arm64 SmolLM2-360M-Instruct-Q4_K_M.gguf
+| model                          |       size |     params | backend    | threads |            test |                  t/s |
+| llama 3B Q4_K - Medium         | 256.35 MiB |   361.82 M | CPU        |       1 |            pp64 |          2.39 ± 0.00 |
+| llama 3B Q4_K - Medium         | 256.35 MiB |   361.82 M | CPU        |       1 |            tg32 |          1.99 ± 0.00 |
+== perplexity 135M Q8_0
+[1]8.9376,[2]17.7483,[3]24.9684,
+1.03.062.495 I Final estimate: PPL = 24.9684 +/- 6.08782
+== chat demo (135M Q8_0)
+A RISC-V CPU is a type of CPU that uses a single-core processor architecture, with a single core processing instructions per clock cycle.
+
+[ Prompt: 7.7 t/s | Generation: 5.3 t/s ]
+
+
+Exiting...

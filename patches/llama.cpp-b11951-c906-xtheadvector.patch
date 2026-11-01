@@ -1,0 +1,135 @@
+diff --git a/ggml/src/ggml-cpu/CMakeLists.txt b/ggml/src/ggml-cpu/CMakeLists.txt
+index 8327c52..0381104 100644
+--- a/ggml/src/ggml-cpu/CMakeLists.txt
++++ b/ggml/src/ggml-cpu/CMakeLists.txt
+@@ -543,6 +543,13 @@ function(ggml_add_cpu_backend_variant_impl tag_name)
+                 endif()
+             endif()
+ 
++            if (GGML_XTHEADVECTOR)
++                # GCC 14 miscompiles the generic RVV intrinsics for XTheadVector
++                # (ICE in vec.cpp, th.vmv8r.v in ops.cpp). Use the extension only
++                # for the inline-asm T-Head kernels.
++                set_source_files_properties(ggml-cpu/arch/riscv/quants.c PROPERTIES COMPILE_OPTIONS "-march=${MARCH_STR}")
++                string(REPLACE "_xtheadvector" "" MARCH_STR "${MARCH_STR}")
++            endif()
+             list(APPEND ARCH_FLAGS "-march=${MARCH_STR}" -mabi=lp64d)
+         else()
+             # Begin with the lowest baseline
+diff --git a/ggml/src/ggml-cpu/arch/riscv/quants.c b/ggml/src/ggml-cpu/arch/riscv/quants.c
+index 47e9180..9acb74f 100644
+--- a/ggml/src/ggml-cpu/arch/riscv/quants.c
++++ b/ggml/src/ggml-cpu/arch/riscv/quants.c
+@@ -29,6 +29,23 @@
+ 
+ #define UNUSED GGML_UNUSED
+ 
++#if defined(__riscv_xtheadvector)
++// The C906 hardware prefetcher does not train on vector loads: weights
++// streamed from DRAM by th.vlb.v alone reach ~1/3 of the cached rate.
++// A scalar load ahead of the vector loads fixes that. Stay inside the row.
++#define XTV_TOUCH_AHEAD 256
++
++static inline void xtv_touch(const void * p, const void * last) {
++    const uint8_t * q = (const uint8_t *) p + XTV_TOUCH_AHEAD;
++    if (q > (const uint8_t *) last) {
++        q = last;
++    }
++    uint8_t t;
++    __asm__ __volatile__("lbu %0, 0(%1)" : "=r" (t) : "r" (q));
++    (void) t;
++}
++#endif
++
+ void quantize_row_q8_0(const float * GGML_RESTRICT x, void * GGML_RESTRICT vy, int64_t k) {
+     assert(QK8_0 == 32);
+     assert(k % QK8_0 == 0);
+@@ -268,6 +285,53 @@ void ggml_vec_dot_q4_0_q8_0(int n, float * GGML_RESTRICT s, size_t bs, const voi
+         sumf += sumi*GGML_CPU_FP16_TO_FP32(x[ib].d)*GGML_CPU_FP16_TO_FP32(y[ib].d);
+     }
+ 
++    *s = sumf;
++#elif defined(__riscv_xtheadvector)
++    const int nb = n / QK8_0;
++
++    assert(n % QK8_0 == 0);
++    assert(nrc == 1);
++    UNUSED(nrc);
++    UNUSED(bx);
++    UNUSED(by);
++    UNUSED(bs);
++
++    const block_q4_0 * GGML_RESTRICT x = vx;
++    const block_q8_0 * GGML_RESTRICT y = vy;
++
++    float sumf = 0;
++    const void * last = (const uint8_t *) (x + nb) - 1;
++
++    for (int ib = 0; ib < nb; ++ib) {
++        xtv_touch(&x[ib], last);
++        int sumi, vl16 = 16, vl4 = 4;
++        __asm__ __volatile__(
++            "th.vsetvli zero, %[vl16], e8, m1\n\t"
++            "th.vlbu.v v0, (%[qx])\n\t"
++            "th.vlb.v v3, (%[qy0])\n\t"
++            "th.vlb.v v4, (%[qy1])\n\t"
++            "th.vand.vi v1, v0, 0xF\n\t"
++            "th.vsrl.vi v2, v0, 4\n\t"
++            "th.vadd.vi v1, v1, -8\n\t"
++            "th.vadd.vi v2, v2, -8\n\t"
++            "th.vwmul.vv v6, v1, v3\n\t"
++            "th.vwmacc.vv v6, v2, v4\n\t"
++            "th.vsetvli zero, %[vl4], e32, m1\n\t"
++            "th.vmv.v.x v8, zero\n\t"
++            "th.vsetvli zero, %[vl16], e16, m2\n\t"
++            "th.vwredsum.vs v8, v6, v8\n\t"
++            "th.vsetvli zero, %[vl4], e32, m1\n\t"
++            "th.vmv.x.s %[sumi], v8"
++            : [sumi] "=&r" (sumi)
++            : [vl16] "r" (vl16), [vl4] "r" (vl4)
++            , [qx] "r" (x[ib].qs), [qy0] "r" (y[ib].qs), [qy1] "r" (y[ib].qs + 16)
++            : "memory"
++            , "v0", "v1", "v2", "v3", "v4", "v6", "v7", "v8"
++        );
++
++        sumf += sumi*GGML_CPU_FP16_TO_FP32(x[ib].d)*GGML_CPU_FP16_TO_FP32(y[ib].d);
++    }
++
+     *s = sumf;
+ #else
+     ggml_vec_dot_q4_0_q8_0_generic(n, s, bs, vx, bx, vy, by, nrc);
+@@ -467,6 +531,34 @@ void ggml_vec_dot_q8_0_q8_0(int n, float * GGML_RESTRICT s, size_t bs, const voi
+         sumf += sumi*(GGML_CPU_FP16_TO_FP32(x[ib].d)*GGML_CPU_FP16_TO_FP32(y[ib].d));
+     }
+ 
++    *s = sumf;
++#elif defined(__riscv_xtheadvector)
++    const void * last = (const uint8_t *) (x + nb) - 1;
++
++    for (; ib < nb; ++ib) {
++        xtv_touch(&x[ib], last);
++        int sumi, vl32 = qk, vl4 = 4;
++        __asm__ __volatile__(
++            "th.vsetvli zero, %[vl32], e8, m2\n\t"
++            "th.vlb.v v0, (%[qx])\n\t"
++            "th.vlb.v v2, (%[qy])\n\t"
++            "th.vwmul.vv v4, v0, v2\n\t"
++            "th.vsetvli zero, %[vl4], e32, m1\n\t"
++            "th.vmv.v.x v8, zero\n\t"
++            "th.vsetvli zero, %[vl32], e16, m4\n\t"
++            "th.vwredsum.vs v8, v4, v8\n\t"
++            "th.vsetvli zero, %[vl4], e32, m1\n\t"
++            "th.vmv.x.s %[sumi], v8"
++            : [sumi] "=&r" (sumi)
++            : [vl32] "r" (vl32), [vl4] "r" (vl4)
++            , [qx] "r" (x[ib].qs), [qy] "r" (y[ib].qs)
++            : "memory"
++            , "v0", "v1", "v2", "v3", "v4", "v5", "v6", "v7", "v8"
++        );
++
++        sumf += sumi*(GGML_CPU_FP16_TO_FP32(x[ib].d)*GGML_CPU_FP16_TO_FP32(y[ib].d));
++    }
++
+     *s = sumf;
+ #else
+ 

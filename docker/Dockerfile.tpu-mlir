@@ -1,0 +1,5 @@
+# SPDX-License-Identifier: MIT
+# TPU-MLIR compiler image. tpu/smollm/compile_all.sh makes it on first use:
+#   docker build -t tpu-mlir:1.30.2 -f docker/Dockerfile.tpu-mlir docker
+FROM sophgo/tpuc_dev@sha256:d46a29a349f10c893fddc089b2433da5b8ef2a0bce52b81419064bf3e26a31a0
+RUN pip install --no-cache-dir "tpu_mlir[onnx]==1.30.2"

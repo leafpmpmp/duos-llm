@@ -1,0 +1,26 @@
+[project]
+name = "duos-llm"
+version = "0.1.0"
+description = "Host tools that compile SmolLM2 for the SG2000 TPU"
+readme = "README.md"
+license = "MIT"
+requires-python = "==3.12.*"
+dependencies = [
+    "numpy==2.5.4",
+    "onnx==1.23.2",
+    "safetensors==0.8.0",
+    "tokenizers==0.23.3",
+    "torch==2.14.1",
+    "transformers==5.21.0",
+]
+
+[tool.uv]
+package = false
+
+[tool.uv.sources]
+torch = { index = "pytorch-cpu" }
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
