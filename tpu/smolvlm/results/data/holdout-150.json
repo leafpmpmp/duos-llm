@@ -1,0 +1,7803 @@
+[
+ {
+  "question_id": 60010002,
+  "image": "COCO_val2014_000000060010.jpg",
+  "question": "What color is this man's hair?",
+  "answer_type": "other",
+  "answers": [
+   "brown",
+   "brown",
+   "black",
+   "brown",
+   "light brown",
+   "brown",
+   "brown",
+   "brown",
+   "brown",
+   "brown"
+  ],
+  "width": 640,
+  "height": 547,
+  "boxes": [
+   [
+    53.958740234375,
+    9.795502662658691,
+    605.0872802734375,
+    544.9354248046875
+   ]
+  ],
+  "scores": [
+   0.9577049016952515
+  ],
+  "out": {
+   "json_llm": "This man's hair is blue.",
+   "up256_bilinear": "Purple.",
+   "up256_nearest": "Purple.",
+   "up320_bilinear": "Purple.",
+   "up384_bilinear": "Brown.",
+   "native512": "Black.",
+   "tpu512": "Brown.",
+   "tpu_decoder": "Brown.",
+   "e2e_t16p": "Brown.",
+   "e2e_split": "Black"
+  }
+ },
+ {
+  "question_id": 162088002,
+  "image": "COCO_val2014_000000162088.jpg",
+  "question": "What color is the person's face?",
+  "answer_type": "other",
+  "answers": [
+   "white",
+   "gray",
+   "white",
+   "gray",
+   "white",
+   "white",
+   "white",
+   "white",
+   "gray",
+   "white"
+  ],
+  "width": 500,
+  "height": 500,
+  "boxes": [
+   [
+    28.191822052001953,
+    334.1539306640625,
+    228.24586486816406,
+    499.7224426269531
+   ]
+  ],
+  "scores": [
+   0.7645553946495056
+  ],
+  "out": {
+   "json_llm": "The person's face is blue.",
+   "up256_bilinear": "White.",
+   "up256_nearest": "White.",
+   "up320_bilinear": "White.",
+   "up384_bilinear": "Gray.",
+   "native512": "White.",
+   "tpu512": "White.",
+   "tpu_decoder": "White.",
+   "e2e_t16p": "White.",
+   "e2e_split": "White."
+  }
+ },
+ {
+  "question_id": 416309003,
+  "image": "COCO_val2014_000000416309.jpg",
+  "question": "What color shorts is the man wearing?",
+  "answer_type": "other",
+  "answers": [
+   "white",
+   "white",
+   "white",
+   "white",
+   "white",
+   "white",
+   "white with blue stripe",
+   "white",
+   "white",
+   "white"
+  ],
+  "width": 640,
+  "height": 466,
+  "boxes": [
+   [
+    215.15655517578125,
+    0.22226065397262573,
+    437.60260009765625,
+    463.07568359375
+   ]
+  ],
+  "scores": [
+   0.8896723985671997
+  ],
+  "out": {
+   "json_llm": "The man is wearing a blue shortsuit.",
+   "up256_bilinear": "Blue",
+   "up256_nearest": "Blue.",
+   "up320_bilinear": "White.",
+   "up384_bilinear": "White.",
+   "native512": "White.",
+   "tpu512": "White.",
+   "tpu_decoder": "White.",
+   "e2e_t16p": "White.",
+   "e2e_split": "White."
+  }
+ },
+ {
+  "question_id": 441840013,
+  "image": "COCO_val2014_000000441840.jpg",
+  "question": "What is the child holding?",
+  "answer_type": "other",
+  "answers": [
+   "bat",
+   "bat",
+   "bat",
+   "bat",
+   "bat",
+   "bat",
+   "bat",
+   "bat",
+   "bat",
+   "baseball bat"
+  ],
+  "width": 512,
+  "height": 640,
+  "boxes": [
+   [
+    221.7698516845703,
+    258.07696533203125,
+    361.45013427734375,
+    502.9582214355469
+   ],
+   [
+    277.696533203125,
+    201.22567749023438,
+    349.0885314941406,
+    292.1288146972656
+   ]
+  ],
+  "scores": [
+   0.9048774838447571,
+   0.5809129476547241
+  ],
+  "out": {
+   "json_llm": "The child is holding a \"pencil\" in their hand.",
+   "up256_bilinear": "Toy.",
+   "up256_nearest": "Toy.",
+   "up320_bilinear": "Ball.",
+   "up384_bilinear": "Piece.",
+   "native512": "Bunt.",
+   "tpu512": "Bat.",
+   "tpu_decoder": "Bat.",
+   "e2e_t16p": "Bat.",
+   "e2e_split": "Bat."
+  }
+ },
+ {
+  "question_id": 115791006,
+  "image": "COCO_val2014_000000115791.jpg",
+  "question": "Where did the people go that sat in the empty seats?",
+  "answer_type": "other",
+  "answers": [
+   "went home",
+   "home",
+   "concessions",
+   "bathroom",
+   "concessions",
+   "home",
+   "bathroom",
+   "bathroom",
+   "home",
+   "home"
+  ],
+  "width": 512,
+  "height": 640,
+  "boxes": [
+   [
+    54.70303726196289,
+    79.60196685791016,
+    386.326416015625,
+    611.7393188476562
+   ],
+   [
+    43.83052444458008,
+    213.5333251953125,
+    183.1368865966797,
+    490.6327209472656
+   ],
+   [
+    106.47924041748047,
+    0.11904580891132355,
+    204.67955017089844,
+    86.30074310302734
+   ],
+   [
+    0.000818348431494087,
+    0.13086046278476715,
+    106.22852325439453,
+    85.32014465332031
+   ],
+   [
+    190.73995971679688,
+    0.0,
+    262.5791320800781,
+    89.10743713378906
+   ],
+   [
+    392.7802734375,
+    0.16283035278320312,
+    488.9512023925781,
+    42.654361724853516
+   ]
+  ],
+  "scores": [
+   0.9341319799423218,
+   0.7215753197669983,
+   0.7005864977836609,
+   0.6881274580955505,
+   0.6280661821365356,
+   0.5735852122306824
+  ],
+  "out": {
+   "json_llm": "The people sat in the empty seats.",
+   "up256_bilinear": "Dressed up.",
+   "up256_nearest": "Dressed up.",
+   "up320_bilinear": "Dining.",
+   "up384_bilinear": "Baseball.",
+   "native512": "Baseball stadium.",
+   "tpu512": "Baseball stadium.",
+   "tpu_decoder": "Baseball stadium.",
+   "e2e_t16p": "Reception.",
+   "e2e_split": "Spectators."
+  }
+ },
+ {
+  "question_id": 109537001,
+  "image": "COCO_val2014_000000109537.jpg",
+  "question": "What is the guy doing?",
+  "answer_type": "other",
+  "answers": [
+   "surfing",
+   "surfing",
+   "surfing",
+   "surfing",
+   "surfing",
+   "surfing",
+   "surf",
+   "surfing",
+   "surfing",
+   "surfing"
+  ],
+  "width": 640,
+  "height": 425,
+  "boxes": [
+   [
+    346.1029052734375,
+    104.197021484375,
+    438.6636962890625,
+    187.5696258544922
+   ]
+  ],
+  "scores": [
+   0.659254789352417
+  ],
+  "out": {
+   "json_llm": "The guy is looking at a camera image.",
+   "up256_bilinear": "crashing.",
+   "up256_nearest": "crashing.",
+   "up320_bilinear": "Sailing.",
+   "up384_bilinear": "Surfing",
+   "native512": "Surfing.",
+   "tpu512": "Surfing.",
+   "tpu_decoder": "Surfing.",
+   "e2e_t16p": "Surfing.",
+   "e2e_split": "Surfing."
+  }
+ },
+ {
+  "question_id": 228472001,
+  "image": "COCO_val2014_000000228472.jpg",
+  "question": "What is under the man?",
+  "answer_type": "other",
+  "answers": [
+   "skateboard",
+   "skateboard",
+   "skateboard",
+   "slide",
+   "graffiti",
+   "skateboard",
+   "skateboard",
+   "skateboard",
+   "skateboard",
+   "skateboard"
+  ],
+  "width": 333,
+  "height": 500,
+  "boxes": [
+   [
+    117.95869445800781,
+    99.92636108398438,
+    285.1908874511719,
+    262.38458251953125
+   ],
+   [
+    21.265636444091797,
+    230.36346435546875,
+    56.83666229248047,
+    281.6162109375
+   ],
+   [
+    0.0,
+    215.002197265625,
+    25.467113494873047,
+    277.66064453125
+   ],
+   [
+    50.3737678527832,
+    228.0035400390625,
+    86.51276397705078,
+    285.39447021484375
+   ]
+  ],
+  "scores": [
+   0.8961628675460815,
+   0.5691001415252686,
+   0.5431811213493347,
+   0.45396164059638977
+  ],
+  "out": {
+   "json_llm": "Under the man is under the man.",
+   "up256_bilinear": "Sky.",
+   "up256_nearest": "Wall.",
+   "up320_bilinear": "skateboard.",
+   "up384_bilinear": "Ski.",
+   "native512": "Skateboard.",
+   "tpu512": "Skateboard.",
+   "tpu_decoder": "Skateboard.",
+   "e2e_t16p": "Skateboard.",
+   "e2e_split": "Skate park."
+  }
+ },
+ {
+  "question_id": 187187007,
+  "image": "COCO_val2014_000000187187.jpg",
+  "question": "What is the man looking at on the computer?",
+  "answer_type": "other",
+  "answers": [
+   "work",
+   "screen",
+   "webpage",
+   "yes",
+   "words",
+   "website",
+   "can't tell",
+   "unknown",
+   "words",
+   "not visible"
+  ],
+  "width": 640,
+  "height": 427,
+  "boxes": [
+   [
+    83.36373901367188,
+    29.001745223999023,
+    280.8125305175781,
+    421.5135192871094
+   ],
+   [
+    31.309553146362305,
+    68.20001220703125,
+    122.79242706298828,
+    422.6044921875
+   ]
+  ],
+  "scores": [
+   0.9198423624038696,
+   0.7793498039245605
+  ],
+  "out": {
+   "json_llm": "The man is looking at a photograph of a woman.",
+   "up256_bilinear": "Computer.",
+   "up256_nearest": "Computer.",
+   "up320_bilinear": "Computer.",
+   "up384_bilinear": "Computer.",
+   "native512": "Computer.",
+   "tpu512": "Computer.",
+   "tpu_decoder": "Computer.",
+   "e2e_t16p": "Computer.",
+   "e2e_split": "Computer."
+  }
+ },
+ {
+  "question_id": 486175000,
+  "image": "COCO_val2014_000000486175.jpg",
+  "question": "What is the women cooking?",
+  "answer_type": "other",
+  "answers": [
+   "desert",
+   "pastries",
+   "pastries",
+   "desserts",
+   "dessert",
+   "dessert",
+   "pastry",
+   "desert",
+   "cupcakes",
+   "appetizers"
+  ],
+  "width": 427,
+  "height": 640,
+  "boxes": [
+   [
+    0.0,
+    29.364450454711914,
+    385.6174621582031,
+    636.9622192382812
+   ],
+   [
+    146.12828063964844,
+    7.000144004821777,
+    331.4259338378906,
+    339.8717346191406
+   ]
+  ],
+  "scores": [
+   0.9098526239395142,
+   0.7263882756233215
+  ],
+  "out": {
+   "json_llm": "The women cooking is a mystery.",
+   "up256_bilinear": "Dinner.",
+   "up256_nearest": "Dinner.",
+   "up320_bilinear": "Food.",
+   "up384_bilinear": "Dinner.",
+   "native512": "Desserts.",
+   "tpu512": "Desserts.",
+   "tpu_decoder": "Dinner.",
+   "e2e_t16p": "Dinner.",
+   "e2e_split": "Cooking."
+  }
+ },
+ {
+  "question_id": 368049001,
+  "image": "COCO_val2014_000000368049.jpg",
+  "question": "What is the person doing?",
+  "answer_type": "other",
+  "answers": [
+   "snowboarding",
+   "snow skiing",
+   "skiing",
+   "snowboarding",
+   "skiing",
+   "snowboarding",
+   "in snow",
+   "snowboarding",
+   "snowboarding",
+   "climbing"
+  ],
+  "width": 640,
+  "height": 480,
+  "boxes": [
+   [
+    427.5069885253906,
+    231.08544921875,
+    518.5457763671875,
+    320.27099609375
+   ]
+  ],
+  "scores": [
+   0.731654942035675
+  ],
+  "out": {
+   "json_llm": "The person is trying to find a way to get to the other box.",
+   "up256_bilinear": "Snowboarding.",
+   "up256_nearest": "Snowboarding.",
+   "up320_bilinear": "Snowboarding.",
+   "up384_bilinear": "Snowboarding.",
+   "native512": "Snowboarding.",
+   "tpu512": "Snowboarding.",
+   "tpu_decoder": "Snowboarding.",
+   "e2e_t16p": "Snowboarding.",
+   "e2e_split": "Snowboarding."
+  }
+ },
+ {
+  "question_id": 50309001,
+  "image": "COCO_val2014_000000050309.jpg",
+  "question": "Is it a man or woman riding surfboard?",
+  "answer_type": "other",
+  "answers": [
+   "man",
+   "woman",
+   "man",
+   "woman",
+   "man",
+   "yes",
+   "man",
+   "yes",
+   "man",
+   "man"
+  ],
+  "width": 640,
+  "height": 427,
+  "boxes": [
+   [
+    283.0296936035156,
+    140.7527618408203,
+    357.1495361328125,
+    223.482666015625
+   ]
+  ],
+  "scores": [
+   0.8761305809020996
+  ],
+  "out": {
+   "json_llm": "The person riding the surfboard is a man.",
+   "up256_bilinear": "Woman.",
+   "up256_nearest": "Woman.",
+   "up320_bilinear": "Man.",
+   "up384_bilinear": "Woman.",
+   "native512": "Man.",
+   "tpu512": "Man.",
+   "tpu_decoder": "Man.",
+   "e2e_t16p": "Man.",
+   "e2e_split": "Man."
+  }
+ },
+ {
+  "question_id": 60596015,
+  "image": "COCO_val2014_000000060596.jpg",
+  "question": "Is this a girl's or boy's room?",
+  "answer_type": "other",
+  "answers": [
+   "boy's",
+   "boys",
+   "boy's room",
+   "boy's",
+   "boy",
+   "boy's",
+   "boy",
+   "both",
+   "boys",
+   "boy's room"
+  ],
+  "width": 640,
+  "height": 426,
+  "boxes": [
+   [
+    180.85208129882812,
+    158.57769775390625,
+    357.07073974609375,
+    322.66082763671875
+   ]
+  ],
+  "scores": [
+   0.701635479927063
+  ],
+  "out": {
+   "json_llm": "This is a girl's room.",
+   "up256_bilinear": "Girl's.",
+   "up256_nearest": "Girl.",
+   "up320_bilinear": "Girl's.",
+   "up384_bilinear": "Girl.",
+   "native512": "Girl.",
+   "tpu512": "Girl.",
+   "tpu_decoder": "Girl's.",
+   "e2e_t16p": "Girl's.",
+   "e2e_split": "Girl's."
+  }
+ },
+ {
+  "question_id": 19157003,
+  "image": "COCO_val2014_000000019157.jpg",
+  "question": "What are the men wearing on their heads?",
+  "answer_type": "other",
+  "answers": [
+   "hats",
+   "hats",
+   "hats",
+   "hat",
+   "caps",
+   "hat",
+   "hats",
+   "hats",
+   "caps",
+   "ball caps"
+  ],
+  "width": 640,
+  "height": 456,
+  "boxes": [
+   [
+    1.7611804008483887,
+    111.73078155517578,
+    159.44061279296875,
+    432.7685546875
+   ],
+   [
+    537.2818603515625,
+    54.36605453491211,
+    639.138916015625,
+    327.2565002441406
+   ],
+   [
+    436.2004089355469,
+    27.993701934814453,
+    616.9579467773438,
+    435.1622619628906
+   ]
+  ],
+  "scores": [
+   0.9195718169212341,
+   0.8452379703521729,
+   0.7619274854660034
+  ],
+  "out": {
+   "json_llm": "The men are wearing a headscarf, a hat, and a scarf.",
+   "up256_bilinear": "Helmets.",
+   "up256_nearest": "Helmets.",
+   "up320_bilinear": "Horns",
+   "up384_bilinear": "Goggles",
+   "native512": "Helmet",
+   "tpu512": "Helmet.",
+   "tpu_decoder": "Helmet.",
+   "e2e_t16p": "Hats.",
+   "e2e_split": "Helmets."
+  }
+ },
+ {
+  "question_id": 303814000,
+  "image": "COCO_val2014_000000303814.jpg",
+  "question": "What logo is on the man's headband?",
+  "answer_type": "other",
+  "answers": [
+   "nike",
+   "nike",
+   "nike",
+   "nike",
+   "nike",
+   "nike",
+   "nike",
+   "nike",
+   "nike",
+   "nike"
+  ],
+  "width": 500,
+  "height": 333,
+  "boxes": [
+   [
+    42.77827072143555,
+    10.346366882324219,
+    237.708740234375,
+    330.9168395996094
+   ]
+  ],
+  "scores": [
+   0.9075064063072205
+  ],
+  "out": {
+   "json_llm": "The man's headband is a logo that is a stylized representation of a person with a headband.",
+   "up256_bilinear": "Jesus.",
+   "up256_nearest": "Jesus.",
+   "up320_bilinear": "Nike",
+   "up384_bilinear": "Headband.",
+   "native512": "Headband.",
+   "tpu512": "Headband.",
+   "tpu_decoder": "Headband.",
+   "e2e_t16p": "Nike.",
+   "e2e_split": "Headband."
+  }
+ },
+ {
+  "question_id": 233187006,
+  "image": "COCO_val2014_000000233187.jpg",
+  "question": "What is the little girl reaching for?",
+  "answer_type": "other",
+  "answers": [
+   "phone",
+   "toy",
+   "toy",
+   "toy",
+   "brother",
+   "toy",
+   "toy",
+   "toy",
+   "toy",
+   "boy"
+  ],
+  "width": 640,
+  "height": 428,
+  "boxes": [
+   [
+    498.8189697265625,
+    71.40365600585938,
+    639.8654174804688,
+    327.1446228027344
+   ],
+   [
+    148.123046875,
+    50.893733978271484,
+    362.9558410644531,
+    314.72607421875
+   ],
+   [
+    279.842041015625,
+    147.62319946289062,
+    506.89697265625,
+    371.2345275878906
+   ]
+  ],
+  "scores": [
+   0.8330738544464111,
+   0.8179378509521484,
+   0.5087769627571106
+  ],
+  "out": {
+   "json_llm": "The little girl is reaching for a small, delicate, and delicate object.",
+   "up256_bilinear": "Ball.",
+   "up256_nearest": "Ball.",
+   "up320_bilinear": "Shirt.",
+   "up384_bilinear": "Ball.",
+   "native512": "Play.",
+   "tpu512": "Hair.",
+   "tpu_decoder": "Hair.",
+   "e2e_t16p": "Shirt.",
+   "e2e_split": "Play."
+  }
+ },
+ {
+  "question_id": 101656000,
+  "image": "COCO_val2014_000000101656.jpg",
+  "question": "What is on the man's neck?",
+  "answer_type": "other",
+  "answers": [
+   "lanyard",
+   "red cord",
+   "keychain",
+   "lanyard",
+   "lanyard",
+   "lanyard",
+   "string",
+   "lanyard",
+   "key holder",
+   "lanyard"
+  ],
+  "width": 640,
+  "height": 427,
+  "boxes": [
+   [
+    314.64324951171875,
+    1.1810275316238403,
+    469.0541076660156,
+    203.1781005859375
+   ]
+  ],
+  "scores": [
+   0.776091456413269
+  ],
+  "out": {
+   "json_llm": "The man's neck is a large, thick, and heavy piece of material that is covered in a thick layer of fur",
+   "up256_bilinear": "Neck.",
+   "up256_nearest": "Neck.",
+   "up320_bilinear": "Helmet.",
+   "up384_bilinear": "Neck.",
+   "native512": "Earphones.",
+   "tpu512": "Earphones.",
+   "tpu_decoder": "Earphones.",
+   "e2e_t16p": "Cord.",
+   "e2e_split": "Cord."
+  }
+ },
+ {
+  "question_id": 288890012,
+  "image": "COCO_val2014_000000288890.jpg",
+  "question": "What color bag is the woman in the right foreground holding?",
+  "answer_type": "other",
+  "answers": [
+   "black & white",
+   "green",
+   "black",
+   "green",
+   "backpack",
+   "backpack",
+   "black",
+   "green",
+   "black, white",
+   "black"
+  ],
+  "width": 640,
+  "height": 480,
+  "boxes": [
+   [
+    363.4782409667969,
+    48.08641815185547,
+    636.36572265625,
+    476.1480407714844
+   ],
+   [
+    203.03614807128906,
+    49.681156158447266,
+    379.550537109375,
+    213.7921142578125
+   ],
+   [
+    183.15325927734375,
+    318.4620666503906,
+    415.4901123046875,
+    476.4656066894531
+   ],
+   [
+    170.9739990234375,
+    165.00282287597656,
+    393.8145751953125,
+    343.5518493652344
+   ]
+  ],
+  "scores": [
+   0.8911650776863098,
+   0.4689501225948334,
+   0.4660033881664276,
+   0.4000740647315979
+  ],
+  "out": {
+   "json_llm": "The woman in the right foreground is holding a \"bag of gold.\"",
+   "up256_bilinear": "Black.",
+   "up256_nearest": "Black.",
+   "up320_bilinear": "Black.",
+   "up384_bilinear": "Black.",
+   "native512": "White.",
+   "tpu512": "Red.",
+   "tpu_decoder": "Red.",
+   "e2e_t16p": "Red.",
+   "e2e_split": "Red."
+  }
+ },
+ {
+  "question_id": 334321003,
+  "image": "COCO_val2014_000000334321.jpg",
+  "question": "What kind of dog are these people walking?",
+  "answer_type": "other",
+  "answers": [
+   "labrador",
+   "labrador retriever",
+   "white lab",
+   "labrador retriever",
+   "mastiff",
+   "big dog",
+   "pitbull",
+   "lab",
+   "retriever",
+   "big one"
+  ],
+  "width": 640,
+  "height": 360,
+  "boxes": [
+   [
+    67.54447174072266,
+    10.718024253845215,
+    254.66583251953125,
+    162.87428283691406
+   ],
+   [
+    161.65866088867188,
+    18.64180564880371,
+    298.59429931640625,
+    147.6885528564453
+   ]
+  ],
+  "scores": [
+   0.7466411590576172,
+   0.6481456160545349
+  ],
+  "out": {
+   "json_llm": "These people are walking a dog.",
+   "up256_bilinear": "Lions.",
+   "up256_nearest": "Lions.",
+   "up320_bilinear": "Dog.",
+   "up384_bilinear": "Dog.",
+   "native512": "Pitbull.",
+   "tpu512": "Large.",
+   "tpu_decoder": "Dog.",
+   "e2e_t16p": "Golden retriever.",
+   "e2e_split": "Mutt."
+  }
+ },
+ {
+  "question_id": 62363004,
+  "image": "COCO_val2014_000000062363.jpg",
+  "question": "How are the men dressed?",
+  "answer_type": "other",
+  "answers": [
+   "in wetsuits",
+   "in wetsuits",
+   "wetsuits",
+   "wetsuits",
+   "shorts and shirt",
+   "swimsuits",
+   "wetsuits",
+   "wetsuits",
+   "wetsuit",
+   "swimsuit"
+  ],
+  "width": 640,
+  "height": 480,
+  "boxes": [
+   [
+    366.8730163574219,
+    189.52720642089844,
+    426.1475524902344,
+    273.9682922363281
+   ]
+  ],
+  "scores": [
+   0.7821351289749146
+  ],
+  "out": {
+   "json_llm": "The men are dressed in a black and white suit, with a black tie, and a black shirt.",
+   "up256_bilinear": "Dressed.",
+   "up256_nearest": "Dressed.",
+   "up320_bilinear": "Casual.",
+   "up384_bilinear": "Casual.",
+   "native512": "Casual.",
+   "tpu512": "Casual.",
+   "tpu_decoder": "Casual.",
+   "e2e_t16p": "Casual.",
+   "e2e_split": "Casual."
+  }
+ },
+ {
+  "question_id": 563015003,
+  "image": "COCO_val2014_000000563015.jpg",
+  "question": "Is the man pulling or pushing the cart?",
+  "answer_type": "other",
+  "answers": [
+   "pulling",
+   "pulling",
+   "pulling",
+   "pulling",
+   "pulling",
+   "pulling",
+   "pulling",
+   "pulling",
+   "pulling",
+   "pulling"
+  ],
+  "width": 480,
+  "height": 640,
+  "boxes": [
+   [
+    295.059326171875,
+    163.89739990234375,
+    425.51165771484375,
+    590.5528564453125
+   ]
+  ],
+  "scores": [
+   0.9026277661323547
+  ],
+  "out": {
+   "json_llm": "The man is pulling the cart.",
+   "up256_bilinear": "Pulling.",
+   "up256_nearest": "Pulling.",
+   "up320_bilinear": "Pulling.",
+   "up384_bilinear": "Pulling.",
+   "native512": "Pulling.",
+   "tpu512": "Pulling.",
+   "tpu_decoder": "Pulling.",
+   "e2e_t16p": "Pulling.",
+   "e2e_split": "Pulling."
+  }
+ },
+ {
+  "question_id": 470773002,
+  "image": "COCO_val2014_000000470773.jpg",
+  "question": "What color is the person's clothes?",
+  "answer_type": "other",
+  "answers": [
+   "white",
+   "white",
+   "white",
+   "white",
+   "white",
+   "white",
+   "white",
+   "white",
+   "white and black",
+   "white"
+  ],
+  "width": 640,
+  "height": 480,
+  "boxes": [
+   [
+    125.8752670288086,
+    0.3144182562828064,
+    282.9548645019531,
+    213.7737274169922
+   ]
+  ],
+  "scores": [
+   0.8955041170120239
+  ],
+  "out": {
+   "json_llm": "The person's clothes are blue.",
+   "up256_bilinear": "Red.",
+   "up256_nearest": "White",
+   "up320_bilinear": "White.",
+   "up384_bilinear": "White.",
+   "native512": "White.",
+   "tpu512": "White.",
+   "tpu_decoder": "White.",
+   "e2e_t16p": "White.",
+   "e2e_split": "White."
+  }
+ },
+ {
+  "question_id": 134386003,
+  "image": "COCO_val2014_000000134386.jpg",
+  "question": "What is the woman holding?",
+  "answer_type": "other",
+  "answers": [
+   "cake with candles",
+   "birthday cake",
+   "cake",
+   "cake",
+   "cake",
+   "cake",
+   "cake",
+   "cake",
+   "plate",
+   "cake"
+  ],
+  "width": 480,
+  "height": 640,
+  "boxes": [
+   [
+    33.06597137451172,
+    118.10041809082031,
+    435.3517761230469,
+    639.5512084960938
+   ],
+   [
+    370.56219482421875,
+    207.8099365234375,
+    440.5187683105469,
+    325.81451416015625
+   ]
+  ],
+  "scores": [
+   0.8700569272041321,
+   0.6092693209648132
+  ],
+  "out": {
+   "json_llm": "The woman holding is a woman holding a camera.",
+   "up256_bilinear": "book.",
+   "up256_nearest": "Phone.",
+   "up320_bilinear": "Candles.",
+   "up384_bilinear": "candles.",
+   "native512": "Breakfast.",
+   "tpu512": "Breakfast.",
+   "tpu_decoder": "Candles.",
+   "e2e_t16p": "Cake.",
+   "e2e_split": "Cake."
+  }
+ },
+ {
+  "question_id": 472472006,
+  "image": "COCO_val2014_000000472472.jpg",
+  "question": "What do the men carry?",
+  "answer_type": "other",
+  "answers": [
+   "frisbee",
+   "frisbees",
+   "frisbee",
+   "frisbee",
+   "frisbee",
+   "frisbee",
+   "frisbee",
+   "frisbee",
+   "frisbee",
+   "frisbee"
+  ],
+  "width": 640,
+  "height": 428,
+  "boxes": [
+   [
+    293.2134704589844,
+    82.56454467773438,
+    456.1124572753906,
+    425.5013122558594
+   ],
+   [
+    160.58792114257812,
+    207.73654174804688,
+    208.5748748779297,
+    312.476806640625
+   ],
+   [
+    525.488525390625,
+    240.1381072998047,
+    541.8504638671875,
+    286.16839599609375
+   ],
+   [
+    45.99592208862305,
+    249.64527893066406,
+    58.41779708862305,
+    282.241455078125
+   ],
+   [
+    477.8990478515625,
+    258.5003662109375,
+    490.13519287109375,
+    283.83648681640625
+   ],
+   [
+    220.8094024658203,
+    245.12118530273438,
+    234.16659545898438,
+    281.0356750488281
+   ],
+   [
+    123.63716125488281,
+    255.04335021972656,
+    137.344482421875,
+    276.66107177734375
+   ]
+  ],
+  "scores": [
+   0.9160543084144592,
+   0.7914539575576782,
+   0.7033562660217285,
+   0.5994935035705566,
+   0.5783745646476746,
+   0.503268301486969,
+   0.4015030860900879
+  ],
+  "out": {
+   "json_llm": "The men carry a small, black, leather-bound book.",
+   "up256_bilinear": "Gear.",
+   "up256_nearest": "Gear.",
+   "up320_bilinear": "SURVEYING.",
+   "up384_bilinear": "Towel.",
+   "native512": "Frisbee.",
+   "tpu512": "Frisbee.",
+   "tpu_decoder": "Frisbee.",
+   "e2e_t16p": "Frisbee.",
+   "e2e_split": "Frisbee."
+  }
+ },
+ {
+  "question_id": 452113013,
+  "image": "COCO_val2014_000000452113.jpg",
+  "question": "What are the men making?",
+  "answer_type": "other",
+  "answers": [
+   "cupcakes",
+   "giant cupcakes",
+   "cupcakes",
+   "large cupcakes",
+   "cupcakes",
+   "cupcakes",
+   "cake",
+   "cupcakes",
+   "cakes",
+   "cupcake"
+  ],
+  "width": 640,
+  "height": 427,
+  "boxes": [
+   [
+    267.45306396484375,
+    112.4260482788086,
+    336.88592529296875,
+    255.0082244873047
+   ],
+   [
+    185.91165161132812,
+    110.06305694580078,
+    301.5303039550781,
+    247.73263549804688
+   ],
+   [
+    35.743038177490234,
+    85.75933074951172,
+    126.39387512207031,
+    259.141357421875
+   ],
+   [
+    329.1465759277344,
+    114.52629089355469,
+    386.2472229003906,
+    225.3155517578125
+   ],
+   [
+    150.03013610839844,
+    102.7565689086914,
+    212.51792907714844,
+    230.245849609375
+   ],
+   [
+    429.0357971191406,
+    121.31626892089844,
+    593.9185180664062,
+    416.4360046386719
+   ],
+   [
+    378.6423645019531,
+    114.21421813964844,
+    456.35931396484375,
+    235.61795043945312
+   ],
+   [
+    310.29022216796875,
+    98.5655746459961,
+    339.3782653808594,
+    165.10516357421875
+   ],
+   [
+    100.46635437011719,
+    120.8056640625,
+    181.04708862304688,
+    238.7304229736328
+   ]
+  ],
+  "scores": [
+   0.7558271288871765,
+   0.751251220703125,
+   0.650704026222229,
+   0.6484759449958801,
+   0.5661342144012451,
+   0.5645067095756531,
+   0.47009894251823425,
+   0.43567195534706116,
+   0.41922566294670105
+  ],
+  "out": {
+   "json_llm": "The men are making a \"tent.\"",
+   "up256_bilinear": "Pants.",
+   "up256_nearest": "Pledges",
+   "up320_bilinear": "Glow-in-the-Dark Candles",
+   "up384_bilinear": "Cupcakes.",
+   "native512": "Cupcakes.",
+   "tpu512": "Cupcakes.",
+   "tpu_decoder": "Cupcakes.",
+   "e2e_t16p": "Cupcakes.",
+   "e2e_split": "Cupcakes."
+  }
+ },
+ {
+  "question_id": 513072002,
+  "image": "COCO_val2014_000000513072.jpg",
+  "question": "What is the little girl riding?",
+  "answer_type": "other",
+  "answers": [
+   "skateboard",
+   "skateboard",
+   "skateboard",
+   "skateboard",
+   "skateboard",
+   "skateboard",
+   "skateboard",
+   "skateboard",
+   "skateboard",
+   "skateboard"
+  ],
+  "width": 426,
+  "height": 640,
+  "boxes": [
+   [
+    52.20100402832031,
+    257.541748046875,
+    346.40179443359375,
+    534.5782470703125
+   ]
+  ],
+  "scores": [
+   0.9053660035133362
+  ],
+  "out": {
+   "json_llm": "The little girl riding is a bicycle.",
+   "up256_bilinear": "Skateboard.",
+   "up256_nearest": "Skateboard.",
+   "up320_bilinear": "Skateboard.",
+   "up384_bilinear": "Skateboard.",
+   "native512": "Skateboard.",
+   "tpu512": "Skateboard.",
+   "tpu_decoder": "Skateboard.",
+   "e2e_t16p": "Skateboard.",
+   "e2e_split": "Skateboard."
+  }
+ },
+ {
+  "question_id": 495376001,
+  "image": "COCO_val2014_000000495376.jpg",
+  "question": "What  are the people doing?",
+  "answer_type": "other",
+  "answers": [
+   "sitting",
+   "sitting",
+   "skiing",
+   "sitting",
+   "sitting",
+   "sitting",
+   "skiing",
+   "sitting",
+   "sitting",
+   "standing"
+  ],
+  "width": 640,
+  "height": 430,
+  "boxes": [
+   [
+    250.2581024169922,
+    109.75643920898438,
+    440.583251953125,
+    391.93975830078125
+   ],
+   [
+    231.6624298095703,
+    100.41038513183594,
+    365.82525634765625,
+    311.8904724121094
+   ],
+   [
+    140.4459686279297,
+    125.4958724975586,
+    163.34921264648438,
+    178.99810791015625
+   ]
+  ],
+  "scores": [
+   0.8403260707855225,
+   0.754345715045929,
+   0.5096852779388428
+  ],
+  "out": {
+   "json_llm": "The people are trying to find a way to get to the other side of the fence.",
+   "up256_bilinear": "Walking",
+   "up256_nearest": "Walking",
+   "up320_bilinear": "Skiing",
+   "up384_bilinear": "Skiing",
+   "native512": "Skiing",
+   "tpu512": "Skiing",
+   "tpu_decoder": "Skiing.",
+   "e2e_t16p": "Skiing.",
+   "e2e_split": "Skiing."
+  }
+ },
+ {
+  "question_id": 181786001,
+  "image": "COCO_val2014_000000181786.jpg",
+  "question": "What is the man doing?",
+  "answer_type": "other",
+  "answers": [
+   "skiing",
+   "skiing",
+   "skiing",
+   "skiing",
+   "skiing",
+   "skiing",
+   "skiing",
+   "skiing",
+   "skiing",
+   "skiing"
+  ],
+  "width": 427,
+  "height": 640,
+  "boxes": [
+   [
+    58.06529235839844,
+    188.95477294921875,
+    243.1193084716797,
+    472.2121887207031
+   ]
+  ],
+  "scores": [
+   0.8764488697052002
+  ],
+  "out": {
+   "json_llm": "The man is walking through the city, his eyes scanning the crowded streets for any signs of trouble.",
+   "up256_bilinear": "Working.",
+   "up256_nearest": "Working.",
+   "up320_bilinear": "Skiing.",
+   "up384_bilinear": "Skiing.",
+   "native512": "Skiing.",
+   "tpu512": "Skiing.",
+   "tpu_decoder": "Skiing.",
+   "e2e_t16p": "Skiing.",
+   "e2e_split": "Skiing."
+  }
+ },
+ {
+  "question_id": 370413003,
+  "image": "COCO_val2014_000000370413.jpg",
+  "question": "What is the boy riding?",
+  "answer_type": "other",
+  "answers": [
+   "horse",
+   "horse",
+   "horse",
+   "horse",
+   "horse",
+   "horse",
+   "horse",
+   "horse",
+   "horse",
+   "horse"
+  ],
+  "width": 640,
+  "height": 427,
+  "boxes": [
+   [
+    475.81170654296875,
+    126.99890899658203,
+    545.0520629882812,
+    319.6511535644531
+   ],
+   [
+    599.3671875,
+    220.84783935546875,
+    619.92919921875,
+    280.607421875
+   ]
+  ],
+  "scores": [
+   0.7951885461807251,
+   0.5704195499420166
+  ],
+  "out": {
+   "json_llm": "The boy is riding a bicycle.",
+   "up256_bilinear": "Balloon.",
+   "up256_nearest": "Balloon.",
+   "up320_bilinear": "motorcycle.",
+   "up384_bilinear": "Horse.",
+   "native512": "Orange.",
+   "tpu512": "Horse.",
+   "tpu_decoder": "Horse.",
+   "e2e_t16p": "Horse.",
+   "e2e_split": "Horse."
+  }
+ },
+ {
+  "question_id": 16593032,
+  "image": "COCO_val2014_000000016593.jpg",
+  "question": "What color is the man's shirt?",
+  "answer_type": "other",
+  "answers": [
+   "checked",
+   "black",
+   "blue",
+   "white",
+   "white",
+   "white",
+   "blue and red",
+   "white blue and yellow",
+   "white",
+   "black"
+  ],
+  "width": 640,
+  "height": 480,
+  "boxes": [
+   [
+    0.6372942328453064,
+    69.79653930664062,
+    382.701416015625,
+    475.16131591796875
+   ],
+   [
+    242.87789916992188,
+    54.97018051147461,
+    635.9133911132812,
+    474.04150390625
+   ]
+  ],
+  "scores": [
+   0.8455640077590942,
+   0.8193901181221008
+  ],
+  "out": {
+   "json_llm": "The man's shirt is blue.",
+   "up256_bilinear": "Black.",
+   "up256_nearest": "Black.",
+   "up320_bilinear": "Black.",
+   "up384_bilinear": "Black.",
+   "native512": "White.",
+   "tpu512": "White.",
+   "tpu_decoder": "White.",
+   "e2e_t16p": "White.",
+   "e2e_split": "White."
+  }
+ },
+ {
+  "question_id": 78060000,
+  "image": "COCO_val2014_000000078060.jpg",
+  "question": "What is the main color of the man's outfit?",
+  "answer_type": "other",
+  "answers": [
+   "ltgreen/white",
+   "green",
+   "green",
+   "green",
+   "green",
+   "white",
+   "white",
+   "green",
+   "white",
+   "green"
+  ],
+  "width": 640,
+  "height": 480,
+  "boxes": [
+   [
+    251.44061279296875,
+    170.6055145263672,
+    400.3685607910156,
+    466.16656494140625
+   ],
+   [
+    118.94950103759766,
+    26.931371688842773,
+    289.5797424316406,
+    467.0093688964844
+   ],
+   [
+    35.04690170288086,
+    244.2206268310547,
+    74.7376480102539,
+    309.26910400390625
+   ]
+  ],
+  "scores": [
+   0.8910559415817261,
+   0.8775987029075623,
+   0.45310360193252563
+  ],
+  "out": {
+   "json_llm": "The main color of the man's outfit is blue.",
+   "up256_bilinear": "White.",
+   "up256_nearest": "White.",
+   "up320_bilinear": "Green.",
+   "up384_bilinear": "Blue.",
+   "native512": "Green.",
+   "tpu512": "Green.",
+   "tpu_decoder": "Green.",
+   "e2e_t16p": "Green.",
+   "e2e_split": "Green."
+  }
+ },
+ {
+  "question_id": 395463005,
+  "image": "COCO_val2014_000000395463.jpg",
+  "question": "What is the man making?",
+  "answer_type": "other",
+  "answers": [
+   "food",
+   "beef",
+   "food",
+   "meal with ground beef",
+   "hamburger",
+   "food",
+   "food",
+   "meatballs",
+   "meal",
+   "burgers"
+  ],
+  "width": 600,
+  "height": 450,
+  "boxes": [
+   [
+    355.3569641113281,
+    27.228273391723633,
+    599.8944702148438,
+    442.1829833984375
+   ],
+   [
+    26.77878761291504,
+    111.14293670654297,
+    136.60647583007812,
+    205.7091827392578
+   ],
+   [
+    202.01234436035156,
+    117.94088745117188,
+    279.131103515625,
+    185.1474609375
+   ],
+   [
+    332.933349609375,
+    107.99722290039062,
+    405.8429260253906,
+    212.1910858154297
+   ],
+   [
+    117.09453582763672,
+    118.91954803466797,
+    205.9536590576172,
+    192.4232940673828
+   ]
+  ],
+  "scores": [
+   0.9196202158927917,
+   0.8465000987052917,
+   0.7994009256362915,
+   0.7782447338104248,
+   0.6806291937828064
+  ],
+  "out": {
+   "json_llm": "The man making is a person detector.",
+   "up256_bilinear": "Vase.",
+   "up256_nearest": "Vase.",
+   "up320_bilinear": "Smoothie.",
+   "up384_bilinear": "Meal",
+   "native512": "Cook.",
+   "tpu512": "Meal.",
+   "tpu_decoder": "Meal.",
+   "e2e_t16p": "Cooking.",
+   "e2e_split": "Cooking."
+  }
+ },
+ {
+  "question_id": 279895022,
+  "image": "COCO_val2014_000000279895.jpg",
+  "question": "What kind of shirts do the men in the picture have on?",
+  "answer_type": "other",
+  "answers": [
+   "t shirts",
+   "army uniform",
+   "t shirts",
+   "t shirt",
+   "t-shirts and polo shirts",
+   "polos and t shirts",
+   "t-shirts",
+   "t shirts",
+   "t shirts",
+   "t-shirts"
+  ],
+  "width": 640,
+  "height": 427,
+  "boxes": [
+   [
+    57.52692413330078,
+    53.89602279663086,
+    169.46343994140625,
+    383.6048278808594
+   ],
+   [
+    547.2262573242188,
+    21.080856323242188,
+    639.9266357421875,
+    423.0841369628906
+   ],
+   [
+    437.8515319824219,
+    49.83379364013672,
+    535.8065795898438,
+    423.7122802734375
+   ],
+   [
+    362.5439147949219,
+    34.94169616699219,
+    456.92938232421875,
+    393.32025146484375
+   ],
+   [
+    324.2804870605469,
+    63.61859130859375,
+    385.6608581542969,
+    350.4968566894531
+   ],
+   [
+    311.1559753417969,
+    68.84109497070312,
+    375.1770935058594,
+    336.8841857910156
+   ],
+   [
+    305.1911315917969,
+    75.10302734375,
+    348.7919616699219,
+    335.5953369140625
+   ]
+  ],
+  "scores": [
+   0.9297414422035217,
+   0.8567675948143005,
+   0.8518827557563782,
+   0.834735631942749,
+   0.7188616991043091,
+   0.44563403725624084,
+   0.4115210771560669
+  ],
+  "out": {
+   "json_llm": "The men in the picture have shirts with a number of different colors, but the most common color is blue.",
+   "up256_bilinear": "Military.",
+   "up256_nearest": "Military.",
+   "up320_bilinear": "Military.",
+   "up384_bilinear": "SHOPBEE.",
+   "native512": "Military.",
+   "tpu512": "Military.",
+   "tpu_decoder": "Military.",
+   "e2e_t16p": "Military.",
+   "e2e_split": "Military."
+  }
+ },
+ {
+  "question_id": 248752001,
+  "image": "COCO_val2014_000000248752.jpg",
+  "question": "What is on the man's head?",
+  "answer_type": "other",
+  "answers": [
+   "helmet",
+   "helmet",
+   "helmet",
+   "helmet",
+   "batting helmet",
+   "helmet",
+   "helmet",
+   "helmet",
+   "helmet",
+   "helmet"
+  ],
+  "width": 500,
+  "height": 375,
+  "boxes": [
+   [
+    136.68649291992188,
+    79.70326232910156,
+    412.9946594238281,
+    370.8482971191406
+   ]
+  ],
+  "scores": [
+   0.9165089130401611
+  ],
+  "out": {
+   "json_llm": "The man's head is a small, round object with a small, round head.",
+   "up256_bilinear": "Helmet.",
+   "up256_nearest": "Helmet.",
+   "up320_bilinear": "Helmet.",
+   "up384_bilinear": "Helmet.",
+   "native512": "Bat.",
+   "tpu512": "Helmet.",
+   "tpu_decoder": "Helmet.",
+   "e2e_t16p": "Bat.",
+   "e2e_split": "Bat."
+  }
+ },
+ {
+  "question_id": 451714003,
+  "image": "COCO_val2014_000000451714.jpg",
+  "question": "What is the man wearing on his head?",
+  "answer_type": "other",
+  "answers": [
+   "hat",
+   "hat",
+   "hat",
+   "stocking cap",
+   "hat",
+   "knitted hat",
+   "hat",
+   "ski hat",
+   "hat",
+   "beanie"
+  ],
+  "width": 480,
+  "height": 640,
+  "boxes": [
+   [
+    179.2845458984375,
+    106.1181640625,
+    321.8210754394531,
+    575.7118530273438
+   ],
+   [
+    156.9912567138672,
+    203.80126953125,
+    190.7998046875,
+    327.1435241699219
+   ]
+  ],
+  "scores": [
+   0.8818404674530029,
+   0.6641603112220764
+  ],
+  "out": {
+   "json_llm": "The man is wearing a hat.",
+   "up256_bilinear": "Hat.",
+   "up256_nearest": "Hat.",
+   "up320_bilinear": "Hats.",
+   "up384_bilinear": "Helmet.",
+   "native512": "Hat.",
+   "tpu512": "Hat.",
+   "tpu_decoder": "Hat.",
+   "e2e_t16p": "Ski.",
+   "e2e_split": "Glasses."
+  }
+ },
+ {
+  "question_id": 575088001,
+  "image": "COCO_val2014_000000575088.jpg",
+  "question": "What is this person holding?",
+  "answer_type": "other",
+  "answers": [
+   "candy box",
+   "candy box",
+   "box",
+   "not sure",
+   "suitcase",
+   "suitcase",
+   "book",
+   "laptop",
+   "candy",
+   "box candy"
+  ],
+  "width": 446,
+  "height": 640,
+  "boxes": [
+   [
+    59.05307388305664,
+    87.080078125,
+    376.5374755859375,
+    549.1973876953125
+   ],
+   [
+    300.1600341796875,
+    1.1019679307937622,
+    391.7558898925781,
+    200.87608337402344
+   ],
+   [
+    235.8114776611328,
+    11.775054931640625,
+    290.3341369628906,
+    166.0400390625
+   ],
+   [
+    391.60833740234375,
+    1.981353759765625,
+    444.96502685546875,
+    194.84756469726562
+   ],
+   [
+    0.0,
+    26.541181564331055,
+    88.98555755615234,
+    252.06748962402344
+   ],
+   [
+    100.12615966796875,
+    1.7560687065124512,
+    187.93418884277344,
+    205.43836975097656
+   ]
+  ],
+  "scores": [
+   0.9007777571678162,
+   0.8053592443466187,
+   0.745897650718689,
+   0.7311252355575562,
+   0.7242303490638733,
+   0.6628032922744751
+  ],
+  "out": {
+   "json_llm": "This person is holding a camera.",
+   "up256_bilinear": "Chair.",
+   "up256_nearest": "Chair.",
+   "up320_bilinear": "Bag.",
+   "up384_bilinear": "Luggage.",
+   "native512": "Box.",
+   "tpu512": "Box.",
+   "tpu_decoder": "Box.",
+   "e2e_t16p": "Box.",
+   "e2e_split": "Box."
+  }
+ },
+ {
+  "question_id": 203201012,
+  "image": "COCO_val2014_000000203201.jpg",
+  "question": "What is the boy holding in hands?",
+  "answer_type": "other",
+  "answers": [
+   "bat",
+   "baseball bat",
+   "bat",
+   "bat",
+   "bat",
+   "bat",
+   "baseball bat",
+   "bat",
+   "baseball bat",
+   "bat"
+  ],
+  "width": 316,
+  "height": 425,
+  "boxes": [
+   [
+    43.59312438964844,
+    118.41999053955078,
+    179.0331573486328,
+    401.367431640625
+   ]
+  ],
+  "scores": [
+   0.9077026844024658
+  ],
+  "out": {
+   "json_llm": "The boy is holding a \"pocket.\"",
+   "up256_bilinear": "Pipe.",
+   "up256_nearest": "Handle.",
+   "up320_bilinear": "Pipe.",
+   "up384_bilinear": "Baseball.",
+   "native512": "Bat.",
+   "tpu512": "Bat.",
+   "tpu_decoder": "Bat.",
+   "e2e_t16p": "Bat.",
+   "e2e_split": "Bat."
+  }
+ },
+ {
+  "question_id": 428985001,
+  "image": "COCO_val2014_000000428985.jpg",
+  "question": "What is the child holding?",
+  "answer_type": "other",
+  "answers": [
+   "umbrella",
+   "umbrella",
+   "umbrella",
+   "umbrella",
+   "umbrella",
+   "umbrella",
+   "umbrella",
+   "no child",
+   "umbrella",
+   "umbrella"
+  ],
+  "width": 640,
+  "height": 480,
+  "boxes": [
+   [
+    58.01992416381836,
+    55.76559829711914,
+    309.0796813964844,
+    476.6376647949219
+   ],
+   [
+    288.6889343261719,
+    128.63665771484375,
+    501.44439697265625,
+    475.1896667480469
+   ]
+  ],
+  "scores": [
+   0.9195767641067505,
+   0.869816780090332
+  ],
+  "out": {
+   "json_llm": "The child is holding a \"box\" of a \"person detector.\"",
+   "up256_bilinear": "umbrella",
+   "up256_nearest": "Umbrella.",
+   "up320_bilinear": "Umbrella.",
+   "up384_bilinear": "Umbrella.",
+   "native512": "umbrella.",
+   "tpu512": "umbrella.",
+   "tpu_decoder": "Umbrella.",
+   "e2e_t16p": "Umbrella.",
+   "e2e_split": "umbrella"
+  }
+ },
+ {
+  "question_id": 253969006,
+  "image": "COCO_val2014_000000253969.jpg",
+  "question": "What is the man wearing around his neck?",
+  "answer_type": "other",
+  "answers": [
+   "camera",
+   "camera",
+   "camera",
+   "camera",
+   "camera",
+   "camera",
+   "camera",
+   "camera",
+   "camera",
+   "camera"
+  ],
+  "width": 640,
+  "height": 426,
+  "boxes": [
+   [
+    83.82546997070312,
+    85.62352752685547,
+    267.04998779296875,
+    423.5457763671875
+   ],
+   [
+    249.11813354492188,
+    95.78768157958984,
+    396.6180419921875,
+    421.3108215332031
+   ],
+   [
+    577.0488891601562,
+    181.0714874267578,
+    636.6758422851562,
+    295.2934265136719
+   ],
+   [
+    1.4209965467453003,
+    127.50699615478516,
+    87.68245697021484,
+    292.989990234375
+   ]
+  ],
+  "scores": [
+   0.9322066903114319,
+   0.8374181985855103,
+   0.6648276448249817,
+   0.48652762174606323
+  ],
+  "out": {
+   "json_llm": "The man is wearing a necklace with a small, silver pendant.",
+   "up256_bilinear": "Necklace.",
+   "up256_nearest": "Necklace.",
+   "up320_bilinear": "Necklace.",
+   "up384_bilinear": "Necklace.",
+   "native512": "Camera.",
+   "tpu512": "Camera.",
+   "tpu_decoder": "Camera.",
+   "e2e_t16p": "Camera.",
+   "e2e_split": "Camera."
+  }
+ },
+ {
+  "question_id": 42507002,
+  "image": "COCO_val2014_000000042507.jpg",
+  "question": "What beach are the boy and girl at?",
+  "answer_type": "other",
+  "answers": [
+   "seal beach",
+   "venice",
+   "impossible to tell",
+   "laguna",
+   "huntington beach",
+   "sandy beach",
+   "virginia",
+   "dockweiler",
+   "florida",
+   "virginia beach"
+  ],
+  "width": 480,
+  "height": 640,
+  "boxes": [
+   [
+    199.6326141357422,
+    318.8069152832031,
+    401.2947082519531,
+    639.45703125
+   ],
+   [
+    54.645259857177734,
+    364.4577941894531,
+    134.40892028808594,
+    638.8163452148438
+   ]
+  ],
+  "scores": [
+   0.9328789710998535,
+   0.8290446400642395
+  ],
+  "out": {
+   "json_llm": "The beach is called \"The Beach\"",
+   "up256_bilinear": "Beach.",
+   "up256_nearest": "Beach.",
+   "up320_bilinear": "Beach.",
+   "up384_bilinear": "Beach.",
+   "native512": "Ocean.",
+   "tpu512": "Beach.",
+   "tpu_decoder": "Ocean.",
+   "e2e_t16p": "Ocean.",
+   "e2e_split": "Kite."
+  }
+ },
+ {
+  "question_id": 248701001,
+  "image": "COCO_val2014_000000248701.jpg",
+  "question": "What is the man standing on?",
+  "answer_type": "other",
+  "answers": [
+   "snow",
+   "snow",
+   "snow",
+   "snow",
+   "skis",
+   "ground",
+   "snow",
+   "snow",
+   "skis",
+   "snow"
+  ],
+  "width": 640,
+  "height": 427,
+  "boxes": [
+   [
+    461.5800476074219,
+    177.5005645751953,
+    542.480712890625,
+    371.8592834472656
+   ]
+  ],
+  "scores": [
+   0.870674729347229
+  ],
+  "out": {
+   "json_llm": "The man standing on is \"the man.\"",
+   "up256_bilinear": "Snow.",
+   "up256_nearest": "Snow.",
+   "up320_bilinear": "Snow.",
+   "up384_bilinear": "Ski.",
+   "native512": "Ski.",
+   "tpu512": "Skis.",
+   "tpu_decoder": "Skis.",
+   "e2e_t16p": "Ski.",
+   "e2e_split": "Skis."
+  }
+ },
+ {
+  "question_id": 276552026,
+  "image": "COCO_val2014_000000276552.jpg",
+  "question": "What is the man about to cut into?",
+  "answer_type": "other",
+  "answers": [
+   "pizza",
+   "pizza",
+   "pizza",
+   "pizza",
+   "pizza",
+   "pizza",
+   "pizza",
+   "pizza",
+   "pizza",
+   "pizza"
+  ],
+  "width": 480,
+  "height": 640,
+  "boxes": [
+   [
+    1.5582275390625,
+    92.5762939453125,
+    393.1264953613281,
+    523.3076171875
+   ],
+   [
+    312.4212646484375,
+    81.64659881591797,
+    478.460693359375,
+    418.63800048828125
+   ],
+   [
+    444.3431091308594,
+    549.509033203125,
+    479.47930908203125,
+    639.5381469726562
+   ]
+  ],
+  "scores": [
+   0.9448962807655334,
+   0.8852226734161377,
+   0.44058656692504883
+  ],
+  "out": {
+   "json_llm": "The man is a person.",
+   "up256_bilinear": "Slice.",
+   "up256_nearest": "Slice.",
+   "up320_bilinear": "Pie.",
+   "up384_bilinear": "Pizza.",
+   "native512": "Pizza.",
+   "tpu512": "Pizza.",
+   "tpu_decoder": "Pizza.",
+   "e2e_t16p": "Pizza.",
+   "e2e_split": "Pizza."
+  }
+ },
+ {
+  "question_id": 61967001,
+  "image": "COCO_val2014_000000061967.jpg",
+  "question": "What is the gender of the man behind the window?",
+  "answer_type": "other",
+  "answers": [
+   "male",
+   "male",
+   "male",
+   "male",
+   "male",
+   "male",
+   "male",
+   "asian",
+   "male",
+   "male"
+  ],
+  "width": 500,
+  "height": 375,
+  "boxes": [
+   [
+    39.0604248046875,
+    2.6346616744995117,
+    450.7318420410156,
+    371.65655517578125
+   ],
+   [
+    23.042747497558594,
+    170.51734924316406,
+    101.65235137939453,
+    366.04052734375
+   ]
+  ],
+  "scores": [
+   0.9246073961257935,
+   0.4245860278606415
+  ],
+  "out": {
+   "json_llm": "The man behind the window is a woman.",
+   "up256_bilinear": "Male",
+   "up256_nearest": "Male",
+   "up320_bilinear": "Male.",
+   "up384_bilinear": "Female.",
+   "native512": "Male.",
+   "tpu512": "Male.",
+   "tpu_decoder": "Female.",
+   "e2e_t16p": "Male.",
+   "e2e_split": "Male."
+  }
+ },
+ {
+  "question_id": 362563001,
+  "image": "COCO_val2014_000000362563.jpg",
+  "question": "What is the man holding?",
+  "answer_type": "other",
+  "answers": [
+   "glove",
+   "mitt",
+   "glove",
+   "glove",
+   "glove",
+   "glove",
+   "baseball glove",
+   "baseball glove",
+   "baseball mitt",
+   "baseball glove"
+  ],
+  "width": 640,
+  "height": 427,
+  "boxes": [
+   [
+    227.50440979003906,
+    55.96133041381836,
+    408.209228515625,
+    378.5043640136719
+   ],
+   [
+    408.3103942871094,
+    128.27809143066406,
+    448.7357177734375,
+    198.39613342285156
+   ],
+   [
+    523.0177001953125,
+    96.56201934814453,
+    556.1331787109375,
+    186.48260498046875
+   ],
+   [
+    493.9909362792969,
+    103.62981414794922,
+    524.265869140625,
+    188.1024169921875
+   ],
+   [
+    194.64517211914062,
+    113.22933197021484,
+    231.85865783691406,
+    194.57470703125
+   ],
+   [
+    163.9379425048828,
+    110.22605895996094,
+    202.04847717285156,
+    191.24807739257812
+   ],
+   [
+    172.2131805419922,
+    113.2649154663086,
+    231.65127563476562,
+    195.0885467529297
+   ]
+  ],
+  "scores": [
+   0.9411830306053162,
+   0.8246199488639832,
+   0.6951044201850891,
+   0.5878826975822449,
+   0.5598258376121521,
+   0.5331896543502808,
+   0.42657116055488586
+  ],
+  "out": {
+   "json_llm": "The man holding is \"the man.\"",
+   "up256_bilinear": "Ball.",
+   "up256_nearest": "Poles.",
+   "up320_bilinear": "Ball.",
+   "up384_bilinear": "Glove.",
+   "native512": "ball.",
+   "tpu512": "Ball.",
+   "tpu_decoder": "Ball.",
+   "e2e_t16p": "Ball.",
+   "e2e_split": "Ball."
+  }
+ },
+ {
+  "question_id": 303744001,
+  "image": "COCO_val2014_000000303744.jpg",
+  "question": "What does the man's kite resemble?",
+  "answer_type": "other",
+  "answers": [
+   "bird",
+   "bird",
+   "shark",
+   "shark",
+   "shark",
+   "shark",
+   "shark",
+   "bird",
+   "shark",
+   "shark"
+  ],
+  "width": 640,
+  "height": 427,
+  "boxes": [
+   [
+    68.19098663330078,
+    241.27017211914062,
+    134.93345642089844,
+    411.5835876464844
+   ]
+  ],
+  "scores": [
+   0.8667494058609009
+  ],
+  "out": {
+   "json_llm": "The man's kite resembles a kite.",
+   "up256_bilinear": "Kite.",
+   "up256_nearest": "Kite.",
+   "up320_bilinear": "Kite.",
+   "up384_bilinear": "Kite.",
+   "native512": "Kite.",
+   "tpu512": "Kite.",
+   "tpu_decoder": "Kite.",
+   "e2e_t16p": "Kite.",
+   "e2e_split": "Kite."
+  }
+ },
+ {
+  "question_id": 187743002,
+  "image": "COCO_val2014_000000187743.jpg",
+  "question": "Why would a crayon toothbrush appeal to a child?",
+  "answer_type": "other",
+  "answers": [
+   "because they like to eat crayons",
+   "it looks like toy",
+   "it's cute",
+   "kids like crayons",
+   "it's fun",
+   "it's fun",
+   "it is fun",
+   "children like crayons",
+   "familiarity",
+   "it is whimsical"
+  ],
+  "width": 457,
+  "height": 640,
+  "boxes": [
+   [
+    2.3812835216522217,
+    103.18570709228516,
+    456.2723083496094,
+    638.1625366210938
+   ]
+  ],
+  "scores": [
+   0.9000262022018433
+  ],
+  "out": {
+   "json_llm": "A crayon toothbrush appeals to a child because it is a simple, easy-to-use, and visually appealing tool",
+   "up256_bilinear": "Toothbrush",
+   "up256_nearest": "Toothbrush",
+   "up320_bilinear": "Brushing.",
+   "up384_bilinear": "Toothbrush",
+   "native512": "Curious",
+   "tpu512": "Curious.",
+   "tpu_decoder": "CONVENSATION.",
+   "e2e_t16p": "CONVICIANT.",
+   "e2e_split": "CRITICAL."
+  }
+ },
+ {
+  "question_id": 538721002,
+  "image": "COCO_val2014_000000538721.jpg",
+  "question": "What is the man in the background doing?",
+  "answer_type": "other",
+  "answers": [
+   "napping",
+   "sleeping",
+   "sleeping",
+   "napping",
+   "sleeping",
+   "sleeping",
+   "sleeping",
+   "sleeping",
+   "sleeping",
+   "sleeping"
+  ],
+  "width": 500,
+  "height": 310,
+  "boxes": [
+   [
+    198.02247619628906,
+    3.0247914791107178,
+    498.92437744140625,
+    308.4388732910156
+   ],
+   [
+    101.71199035644531,
+    97.33177947998047,
+    262.3741760253906,
+    211.16943359375
+   ]
+  ],
+  "scores": [
+   0.6027107834815979,
+   0.5485290884971619
+  ],
+  "out": {
+   "json_llm": "The man in the background is a person detector.",
+   "up256_bilinear": "Interviewing.",
+   "up256_nearest": "Interviewing.",
+   "up320_bilinear": "playing.",
+   "up384_bilinear": "Reading.",
+   "native512": "Reading.",
+   "tpu512": "Reading.",
+   "tpu_decoder": "Reading.",
+   "e2e_t16p": "Reading.",
+   "e2e_split": "Reading."
+  }
+ },
+ {
+  "question_id": 184611003,
+  "image": "COCO_val2014_000000184611.jpg",
+  "question": "Where is the person holding the red bag?",
+  "answer_type": "other",
+  "answers": [
+   "yes",
+   "left",
+   "in front",
+   "to left",
+   "to side of rickshaw",
+   "sidewalk",
+   "left",
+   "by curb on left",
+   "left",
+   "on left of picture"
+  ],
+  "width": 640,
+  "height": 480,
+  "boxes": [
+   [
+    426.0125732421875,
+    127.48831939697266,
+    471.81878662109375,
+    246.54293823242188
+   ],
+   [
+    0.0,
+    133.555908203125,
+    75.24822998046875,
+    329.7053527832031
+   ],
+   [
+    101.58220672607422,
+    107.66410064697266,
+    275.826171875,
+    458.87200927734375
+   ],
+   [
+    602.5693359375,
+    119.69024658203125,
+    639.7774047851562,
+    242.60960388183594
+   ],
+   [
+    257.5244140625,
+    127.47273254394531,
+    293.02984619140625,
+    159.0197296142578
+   ],
+   [
+    228.38035583496094,
+    113.55939483642578,
+    249.29147338867188,
+    159.7838897705078
+   ],
+   [
+    168.5648651123047,
+    129.92465209960938,
+    211.8825225830078,
+    184.9069061279297
+   ]
+  ],
+  "scores": [
+   0.7964215874671936,
+   0.7261709570884705,
+   0.7178720831871033,
+   0.5957991480827332,
+   0.46350663900375366,
+   0.4528968632221222,
+   0.4179147779941559
+  ],
+  "out": {
+   "json_llm": "The person holding the red bag is in the person detector's box.",
+   "up256_bilinear": "SIDEWAYS.",
+   "up256_nearest": "SHOULD.",
+   "up320_bilinear": "Bag.",
+   "up384_bilinear": "Bag.",
+   "native512": "Bag.",
+   "tpu512": "Bag.",
+   "tpu_decoder": "Bag.",
+   "e2e_t16p": "BAG.",
+   "e2e_split": "Bag."
+  }
+ },
+ {
+  "question_id": 249785003,
+  "image": "COCO_val2014_000000249785.jpg",
+  "question": "What color pants is the person wearing?",
+  "answer_type": "other",
+  "answers": [
+   "black",
+   "black",
+   "black",
+   "black",
+   "black",
+   "black",
+   "black",
+   "black",
+   "black",
+   "black"
+  ],
+  "width": 500,
+  "height": 334,
+  "boxes": [
+   [
+    382.1729431152344,
+    164.4240264892578,
+    424.66839599609375,
+    289.25335693359375
+   ]
+  ],
+  "scores": [
+   0.8306223750114441
+  ],
+  "out": {
+   "json_llm": "The person wearing the pants is wearing a blue shirt.",
+   "up256_bilinear": "Green.",
+   "up256_nearest": "Green.",
+   "up320_bilinear": "Green.",
+   "up384_bilinear": "Green.",
+   "native512": "Green.",
+   "tpu512": "Green.",
+   "tpu_decoder": "Green.",
+   "e2e_t16p": "Green.",
+   "e2e_split": "VINCINO."
+  }
+ },
+ {
+  "question_id": 275749005,
+  "image": "COCO_val2014_000000275749.jpg",
+  "question": "What are these men playing?",
+  "answer_type": "other",
+  "answers": [
+   "computer games",
+   "video games",
+   "music",
+   "nothing",
+   "computer game",
+   "laptop",
+   "computer games",
+   "nothing",
+   "game",
+   "computer"
+  ],
+  "width": 500,
+  "height": 375,
+  "boxes": [
+   [
+    62.6706428527832,
+    97.70036315917969,
+    152.83297729492188,
+    240.8677215576172
+   ],
+   [
+    315.8311462402344,
+    127.05809020996094,
+    399.2301025390625,
+    351.9604797363281
+   ],
+   [
+    137.50039672851562,
+    99.22940826416016,
+    219.52346801757812,
+    294.2096862792969
+   ],
+   [
+    265.4007568359375,
+    191.71177673339844,
+    325.1784362792969,
+    337.0115051269531
+   ]
+  ],
+  "scores": [
+   0.8567689657211304,
+   0.8426647782325745,
+   0.8086459636688232,
+   0.7042031288146973
+  ],
+  "out": {
+   "json_llm": "These men are playing a game of \"The Three Switches.\"",
+   "up256_bilinear": "Computer.",
+   "up256_nearest": "Computer.",
+   "up320_bilinear": "Computer.",
+   "up384_bilinear": "Computer.",
+   "native512": "Computer.",
+   "tpu512": "Computer.",
+   "tpu_decoder": "Computers.",
+   "e2e_t16p": "Computer.",
+   "e2e_split": "Computer."
+  }
+ },
+ {
+  "question_id": 480470030,
+  "image": "COCO_val2014_000000480470.jpg",
+  "question": "What is the woman holding?",
+  "answer_type": "other",
+  "answers": [
+   "coat",
+   "kite",
+   "kite",
+   "kite",
+   "kite",
+   "dog",
+   "kite strings",
+   "bale of hay and kite string",
+   "kite",
+   "kite"
+  ],
+  "width": 480,
+  "height": 640,
+  "boxes": [
+   [
+    239.83621215820312,
+    390.5370178222656,
+    341.58355712890625,
+    635.0341796875
+   ]
+  ],
+  "scores": [
+   0.858435332775116
+  ],
+  "out": {
+   "json_llm": "The woman holding is a woman holding a camera.",
+   "up256_bilinear": "Camera.",
+   "up256_nearest": "Camera.",
+   "up320_bilinear": "skateboard.",
+   "up384_bilinear": "Skateboard.",
+   "native512": "Kite.",
+   "tpu512": "Kite.",
+   "tpu_decoder": "Kite.",
+   "e2e_t16p": "Kite.",
+   "e2e_split": "Kite."
+  }
+ },
+ {
+  "question_id": 167610001,
+  "image": "COCO_val2014_000000167610.jpg",
+  "question": "Which man is taller?",
+  "answer_type": "other",
+  "answers": [
+   "left side",
+   "left",
+   "left",
+   "man sitting down",
+   "far left",
+   "left one",
+   "one on left",
+   "one wearing white shirt",
+   "man on left",
+   "one standing"
+  ],
+  "width": 500,
+  "height": 375,
+  "boxes": [
+   [
+    383.525390625,
+    113.19541931152344,
+    466.7684020996094,
+    273.7171936035156
+   ],
+   [
+    14.895490646362305,
+    39.360286712646484,
+    141.77720642089844,
+    371.8066711425781
+   ],
+   [
+    209.93890380859375,
+    112.2359619140625,
+    349.74371337890625,
+    370.1943054199219
+   ],
+   [
+    95.55361938476562,
+    45.442718505859375,
+    194.01113891601562,
+    344.8148498535156
+   ],
+   [
+    12.976987838745117,
+    41.153839111328125,
+    195.981689453125,
+    369.4060974121094
+   ],
+   [
+    194.7157745361328,
+    123.74061584472656,
+    257.1754150390625,
+    318.79547119140625
+   ]
+  ],
+  "scores": [
+   0.8762572407722473,
+   0.8282400369644165,
+   0.6648932099342346,
+   0.5360568761825562,
+   0.47054630517959595,
+   0.4291739761829376
+  ],
+  "out": {
+   "json_llm": "The man is taller.",
+   "up256_bilinear": "Taller.",
+   "up256_nearest": "Taller.",
+   "up320_bilinear": "Taller.",
+   "up384_bilinear": "Taller.",
+   "native512": "Man.",
+   "tpu512": "Man.",
+   "tpu_decoder": "Man.",
+   "e2e_t16p": "Man 1.",
+   "e2e_split": "Man."
+  }
+ },
+ {
+  "question_id": 21498001,
+  "image": "COCO_val2014_000000021498.jpg",
+  "question": "What color is the child's hair?",
+  "answer_type": "other",
+  "answers": [
+   "blonde",
+   "blonde",
+   "blonde",
+   "blonde",
+   "blonde",
+   "blonde",
+   "blonde",
+   "blonde",
+   "blonde",
+   "blonde"
+  ],
+  "width": 612,
+  "height": 612,
+  "boxes": [
+   [
+    168.8338165283203,
+    20.15730857849121,
+    450.68377685546875,
+    387.7419738769531
+   ]
+  ],
+  "scores": [
+   0.9211815595626831
+  ],
+  "out": {
+   "json_llm": "The child's hair is blue.",
+   "up256_bilinear": "Brown.",
+   "up256_nearest": "Brown.",
+   "up320_bilinear": "Blonde.",
+   "up384_bilinear": "White.",
+   "native512": "White.",
+   "tpu512": "Blonde.",
+   "tpu_decoder": "Blonde.",
+   "e2e_t16p": "Blonde.",
+   "e2e_split": "Blonde."
+  }
+ },
+ {
+  "question_id": 239202006,
+  "image": "COCO_val2014_000000239202.jpg",
+  "question": "What color is the man pants?",
+  "answer_type": "other",
+  "answers": [
+   "black",
+   "black",
+   "black",
+   "black",
+   "black",
+   "black",
+   "black",
+   "black",
+   "black",
+   "black"
+  ],
+  "width": 333,
+  "height": 500,
+  "boxes": [
+   [
+    75.6050033569336,
+    133.3813018798828,
+    307.3699645996094,
+    393.0854797363281
+   ]
+  ],
+  "scores": [
+   0.9278590679168701
+  ],
+  "out": {
+   "json_llm": "The man pants are blue.",
+   "up256_bilinear": "White.",
+   "up256_nearest": "White.",
+   "up320_bilinear": "White",
+   "up384_bilinear": "White.",
+   "native512": "Black.",
+   "tpu512": "Black.",
+   "tpu_decoder": "Black.",
+   "e2e_t16p": "Black.",
+   "e2e_split": "Black."
+  }
+ },
+ {
+  "question_id": 207458002,
+  "image": "COCO_val2014_000000207458.jpg",
+  "question": "What is behind the boy?",
+  "answer_type": "other",
+  "answers": [
+   "grass",
+   "grass",
+   "grass",
+   "tree",
+   "tree",
+   "tree",
+   "grass",
+   "park",
+   "grass",
+   "grass"
+  ],
+  "width": 421,
+  "height": 640,
+  "boxes": [
+   [
+    173.46507263183594,
+    154.0474090576172,
+    379.2940979003906,
+    509.72650146484375
+   ]
+  ],
+  "scores": [
+   0.8850380182266235
+  ],
+  "out": {
+   "json_llm": "The boy is behind a person detector.",
+   "up256_bilinear": "Grass.",
+   "up256_nearest": "Grass.",
+   "up320_bilinear": "trees",
+   "up384_bilinear": "Skull.",
+   "native512": "Trees.",
+   "tpu512": "Trees.",
+   "tpu_decoder": "Trees.",
+   "e2e_t16p": "Trees.",
+   "e2e_split": "Trees."
+  }
+ },
+ {
+  "question_id": 79261001,
+  "image": "COCO_val2014_000000079261.jpg",
+  "question": "What structure is the man in the foreground standing in?",
+  "answer_type": "other",
+  "answers": [
+   "pond",
+   "fountain",
+   "fountain",
+   "fountain",
+   "water",
+   "water",
+   "fountain",
+   "pool",
+   "fountain",
+   "pool"
+  ],
+  "width": 640,
+  "height": 640,
+  "boxes": [
+   [
+    267.835205078125,
+    250.28741455078125,
+    411.4405212402344,
+    547.1353759765625
+   ],
+   [
+    583.7223510742188,
+    363.1878356933594,
+    617.4407958984375,
+    436.7020568847656
+   ],
+   [
+    54.28034210205078,
+    365.91064453125,
+    97.61922454833984,
+    425.7877197265625
+   ],
+   [
+    546.7500610351562,
+    356.2080383300781,
+    575.5673828125,
+    438.28448486328125
+   ]
+  ],
+  "scores": [
+   0.8310168385505676,
+   0.5940631031990051,
+   0.46177777647972107,
+   0.449957013130188
+  ],
+  "out": {
+   "json_llm": "The man in the foreground is standing in a man-made structure.",
+   "up256_bilinear": "Building.",
+   "up256_nearest": "Building.",
+   "up320_bilinear": "Ocean.",
+   "up384_bilinear": "Paddle.",
+   "native512": "Paddle.",
+   "tpu512": "Paddle.",
+   "tpu_decoder": "Bank.",
+   "e2e_t16p": "Bank.",
+   "e2e_split": "Pylon."
+  }
+ },
+ {
+  "question_id": 69366000,
+  "image": "COCO_val2014_000000069366.jpg",
+  "question": "Where is the man in the red shirt?",
+  "answer_type": "other",
+  "answers": [
+   "across street",
+   "road",
+   "to left of stop sign",
+   "outside",
+   "background",
+   "he is in middle, to left of stop sign",
+   "crosswalk",
+   "crosswalk",
+   "crosswalk",
+   "ruining on crosswalk"
+  ],
+  "width": 640,
+  "height": 480,
+  "boxes": [
+   [
+    431.92828369140625,
+    124.97356414794922,
+    472.6827697753906,
+    227.26434326171875
+   ],
+   [
+    332.32257080078125,
+    133.25636291503906,
+    357.3481750488281,
+    199.4237518310547
+   ],
+   [
+    611.80126953125,
+    129.1483612060547,
+    639.68115234375,
+    202.0574188232422
+   ]
+  ],
+  "scores": [
+   0.7945802807807922,
+   0.7196236252784729,
+   0.6314069628715515
+  ],
+  "out": {
+   "json_llm": "The man in the red shirt is in the park.",
+   "up256_bilinear": "Stop.",
+   "up256_nearest": "Stop.",
+   "up320_bilinear": "Stop.",
+   "up384_bilinear": "Stop.",
+   "native512": "Stop.",
+   "tpu512": "Stop.",
+   "tpu_decoder": "Stop.",
+   "e2e_t16p": "Stop.",
+   "e2e_split": "stop."
+  }
+ },
+ {
+  "question_id": 200807002,
+  "image": "COCO_val2014_000000200807.jpg",
+  "question": "What color is the girl's socks?",
+  "answer_type": "other",
+  "answers": [
+   "black and white",
+   "black,white",
+   "black & white",
+   "yellow/gold/black",
+   "black and white",
+   "striped",
+   "black striped",
+   "black and white",
+   "black & white",
+   "striped black and white"
+  ],
+  "width": 640,
+  "height": 480,
+  "boxes": [
+   [
+    79.08296203613281,
+    285.9717712402344,
+    319.75164794921875,
+    475.5782775878906
+   ]
+  ],
+  "scores": [
+   0.5094019770622253
+  ],
+  "out": {
+   "json_llm": "The girl's socks are blue.",
+   "up256_bilinear": "Red.",
+   "up256_nearest": "Red.",
+   "up320_bilinear": "Black.",
+   "up384_bilinear": "Black.",
+   "native512": "Black.",
+   "tpu512": "Black.",
+   "tpu_decoder": "Black.",
+   "e2e_t16p": "Black.",
+   "e2e_split": "Black."
+  }
+ },
+ {
+  "question_id": 209007013,
+  "image": "COCO_val2014_000000209007.jpg",
+  "question": "What are these people doing with their hands?",
+  "answer_type": "other",
+  "answers": [
+   "gaming, holding",
+   "looking at tv",
+   "nothing",
+   "video games",
+   "playing game",
+   "video game",
+   "playing and resting",
+   "wii",
+   "playing video game",
+   "one playing game; other holding hands together"
+  ],
+  "width": 500,
+  "height": 375,
+  "boxes": [
+   [
+    115.40386199951172,
+    97.35597229003906,
+    335.7366638183594,
+    370.5476379394531
+   ],
+   [
+    210.14724731445312,
+    33.222267150878906,
+    406.8100891113281,
+    369.2892761230469
+   ]
+  ],
+  "scores": [
+   0.8829341530799866,
+   0.8373218774795532
+  ],
+  "out": {
+   "json_llm": "These people are using their hands to pick up the camera.",
+   "up256_bilinear": "Holding hands.",
+   "up256_nearest": "Holding hands.",
+   "up320_bilinear": "Playing.",
+   "up384_bilinear": "Playing Wii.",
+   "native512": "Playing Wii.",
+   "tpu512": "Playing Wii.",
+   "tpu_decoder": "Playing Wii.",
+   "e2e_t16p": "Playing Wii.",
+   "e2e_split": "Playing."
+  }
+ },
+ {
+  "question_id": 578427001,
+  "image": "COCO_val2014_000000578427.jpg",
+  "question": "What color is the man's shirt?",
+  "answer_type": "other",
+  "answers": [
+   "blue",
+   "blue",
+   "blue",
+   "blue",
+   "blue",
+   "blue",
+   "blue",
+   "blue",
+   "blue",
+   "blue"
+  ],
+  "width": 480,
+  "height": 640,
+  "boxes": [
+   [
+    102.99081420898438,
+    101.1419677734375,
+    366.89239501953125,
+    625.4234008789062
+   ]
+  ],
+  "scores": [
+   0.9027796983718872
+  ],
+  "out": {
+   "json_llm": "The man's shirt is blue.",
+   "up256_bilinear": "Black.",
+   "up256_nearest": "Blue.",
+   "up320_bilinear": "Blue.",
+   "up384_bilinear": "Blue.",
+   "native512": "Blue.",
+   "tpu512": "Blue.",
+   "tpu_decoder": "Blue.",
+   "e2e_t16p": "Blue.",
+   "e2e_split": "Blue."
+  }
+ },
+ {
+  "question_id": 493641000,
+  "image": "COCO_val2014_000000493641.jpg",
+  "question": "What is the boy holding?",
+  "answer_type": "other",
+  "answers": [
+   "gun",
+   "gun",
+   "shotgun",
+   "rifle",
+   "marbles",
+   "rifle",
+   "rifle",
+   "gun",
+   "gun",
+   "gun"
+  ],
+  "width": 640,
+  "height": 449,
+  "boxes": [
+   [
+    115.28233337402344,
+    46.577083587646484,
+    267.9306945800781,
+    377.63458251953125
+   ],
+   [
+    377.3326721191406,
+    29.23558235168457,
+    542.0810546875,
+    326.1170654296875
+   ]
+  ],
+  "scores": [
+   0.7737191915512085,
+   0.5932638049125671
+  ],
+  "out": {
+   "json_llm": "The boy is holding a \"tent.\"",
+   "up256_bilinear": "gun.",
+   "up256_nearest": "gun.",
+   "up320_bilinear": "Gun.",
+   "up384_bilinear": "gun.",
+   "native512": "Gun.",
+   "tpu512": "Gun.",
+   "tpu_decoder": "Gun.",
+   "e2e_t16p": "Gun.",
+   "e2e_split": "Gun."
+  }
+ },
+ {
+  "question_id": 178535003,
+  "image": "COCO_val2014_000000178535.jpg",
+  "question": "What is the man behind the woman wearing on his eyes?",
+  "answer_type": "other",
+  "answers": [
+   "sunglasses",
+   "sunglasses",
+   "sunglasses",
+   "rope",
+   "sunglasses",
+   "sunglasses",
+   "glasses",
+   "sunglasses",
+   "sunglasses",
+   "glasses"
+  ],
+  "width": 640,
+  "height": 427,
+  "boxes": [
+   [
+    534.8075561523438,
+    41.380043029785156,
+    612.5533447265625,
+    187.19482421875
+   ],
+   [
+    378.0827331542969,
+    0.28986361622810364,
+    424.96478271484375,
+    101.92709350585938
+   ],
+   [
+    290.98486328125,
+    67.39469909667969,
+    366.635498046875,
+    271.55352783203125
+   ]
+  ],
+  "scores": [
+   0.8607203364372253,
+   0.8526923060417175,
+   0.8519440293312073
+  ],
+  "out": {
+   "json_llm": "The man behind the woman wearing on her eyes is a woman named \"Lena.\"",
+   "up256_bilinear": "Blinders.",
+   "up256_nearest": "Blinders.",
+   "up320_bilinear": "Eyes.",
+   "up384_bilinear": "Glasses.",
+   "native512": "Lid.",
+   "tpu512": "Hint.",
+   "tpu_decoder": "Hint.",
+   "e2e_t16p": "Hats.",
+   "e2e_split": "HOTELES."
+  }
+ },
+ {
+  "question_id": 570781010,
+  "image": "COCO_val2014_000000570781.jpg",
+  "question": "What is the woman holding?",
+  "answer_type": "other",
+  "answers": [
+   "frisbee",
+   "frisbee",
+   "frisbee",
+   "frisbee",
+   "frisbee",
+   "frisbee",
+   "nothing",
+   "frisbee",
+   "frisbee",
+   "nothing"
+  ],
+  "width": 493,
+  "height": 500,
+  "boxes": [
+   [
+    94.20806121826172,
+    26.58026695251465,
+    447.8495178222656,
+    474.49945068359375
+   ]
+  ],
+  "scores": [
+   0.9526618719100952
+  ],
+  "out": {
+   "json_llm": "The woman holding is a woman holding a camera.",
+   "up256_bilinear": "Hair.",
+   "up256_nearest": "Hats.",
+   "up320_bilinear": "Frisbee.",
+   "up384_bilinear": "Frisbee.",
+   "native512": "Frisbee.",
+   "tpu512": "Frisbee.",
+   "tpu_decoder": "Frisbee.",
+   "e2e_t16p": "Frisbee.",
+   "e2e_split": "Frisbee."
+  }
+ },
+ {
+  "question_id": 441873000,
+  "image": "COCO_val2014_000000441873.jpg",
+  "question": "What is the child looking at?",
+  "answer_type": "other",
+  "answers": [
+   "kite",
+   "kite",
+   "kite",
+   "kite",
+   "kite",
+   "kite",
+   "kite",
+   "kite",
+   "kite",
+   "kite"
+  ],
+  "width": 375,
+  "height": 500,
+  "boxes": [
+   [
+    93.27030181884766,
+    205.6566925048828,
+    347.3272705078125,
+    499.5731201171875
+   ],
+   [
+    48.24119186401367,
+    438.64324951171875,
+    76.38687133789062,
+    499.72979736328125
+   ]
+  ],
+  "scores": [
+   0.9203908443450928,
+   0.7785482406616211
+  ],
+  "out": {
+   "json_llm": "The child is looking at a photograph of a person.",
+   "up256_bilinear": "Christmas.",
+   "up256_nearest": "Christmas.",
+   "up320_bilinear": "Sky.",
+   "up384_bilinear": "Kite.",
+   "native512": "Kite.",
+   "tpu512": "Kite.",
+   "tpu_decoder": "Kite.",
+   "e2e_t16p": "Kite.",
+   "e2e_split": "Kite."
+  }
+ },
+ {
+  "question_id": 290093001,
+  "image": "COCO_val2014_000000290093.jpg",
+  "question": "What is the man doing?",
+  "answer_type": "other",
+  "answers": [
+   "opening window",
+   "looking for something",
+   "standing",
+   "standing",
+   "opening window",
+   "working",
+   "working",
+   "not sure",
+   "standing",
+   "looking out window"
+  ],
+  "width": 640,
+  "height": 480,
+  "boxes": [
+   [
+    391.9582214355469,
+    83.0782699584961,
+    534.5620727539062,
+    455.2373046875
+   ]
+  ],
+  "scores": [
+   0.9072606563568115
+  ],
+  "out": {
+   "json_llm": "The man is walking through the park, taking in the sights and sounds of nature.",
+   "up256_bilinear": "Cooking.",
+   "up256_nearest": "Playing.",
+   "up320_bilinear": "Looking.",
+   "up384_bilinear": "Reading.",
+   "native512": "Walking.",
+   "tpu512": "Walking.",
+   "tpu_decoder": "Walking.",
+   "e2e_t16p": "Standing.",
+   "e2e_split": "Standing."
+  }
+ },
+ {
+  "question_id": 35705007,
+  "image": "COCO_val2014_000000035705.jpg",
+  "question": "What is the girl wearing on her head?",
+  "answer_type": "other",
+  "answers": [
+   "hat",
+   "hat",
+   "hat",
+   "hat",
+   "hat",
+   "hat",
+   "hat",
+   "cap",
+   "hat",
+   "hat"
+  ],
+  "width": 500,
+  "height": 375,
+  "boxes": [
+   [
+    108.51468658447266,
+    1.8665109872817993,
+    324.6953125,
+    266.7316589355469
+   ]
+  ],
+  "scores": [
+   0.7523446083068848
+  ],
+  "out": {
+   "json_llm": "The girl is wearing a headband with a blue and white stripe, which is a common motif in headbands.",
+   "up256_bilinear": "Hat.",
+   "up256_nearest": "Hat.",
+   "up320_bilinear": "Hijack.",
+   "up384_bilinear": "Hat.",
+   "native512": "Hat.",
+   "tpu512": "Hat.",
+   "tpu_decoder": "Hat.",
+   "e2e_t16p": "Hat.",
+   "e2e_split": "Hat."
+  }
+ },
+ {
+  "question_id": 394449004,
+  "image": "COCO_val2014_000000394449.jpg",
+  "question": "What is behind the people on the bench?",
+  "answer_type": "other",
+  "answers": [
+   "train",
+   "doorway",
+   "train",
+   "train",
+   "train",
+   "train",
+   "train",
+   "train",
+   "train",
+   "window"
+  ],
+  "width": 640,
+  "height": 426,
+  "boxes": [
+   [
+    431.341552734375,
+    269.6015319824219,
+    490.1070861816406,
+    339.36041259765625
+   ]
+  ],
+  "scores": [
+   0.523885190486908
+  ],
+  "out": {
+   "json_llm": "The people on the bench are behind a person detector.",
+   "up256_bilinear": "Bench.",
+   "up256_nearest": "Bench.",
+   "up320_bilinear": "Location.",
+   "up384_bilinear": "Train.",
+   "native512": "Road.",
+   "tpu512": "Courtyard.",
+   "tpu_decoder": "Courtyards.",
+   "e2e_t16p": "Cafe.",
+   "e2e_split": "CALL."
+  }
+ },
+ {
+  "question_id": 245414005,
+  "image": "COCO_val2014_000000245414.jpg",
+  "question": "How is the girl's hair styled?",
+  "answer_type": "other",
+  "answers": [
+   "ponytail",
+   "braid in back",
+   "ponytail with braids",
+   "ponytail",
+   "braided",
+   "braided ponytail",
+   "braid",
+   "braid",
+   "ponytail",
+   "braided"
+  ],
+  "width": 480,
+  "height": 640,
+  "boxes": [
+   [
+    184.4952850341797,
+    94.83590698242188,
+    310.779296875,
+    440.32550048828125
+   ]
+  ],
+  "scores": [
+   0.8854195475578308
+  ],
+  "out": {
+   "json_llm": "The girl's hair is styled in a way that is reminiscent of a traditional Japanese kimono.",
+   "up256_bilinear": "Straight.",
+   "up256_nearest": "Boo.",
+   "up320_bilinear": "Down.",
+   "up384_bilinear": "Dreaded.",
+   "native512": "Ponytail.",
+   "tpu512": "Dirty.",
+   "tpu_decoder": "Dirty.",
+   "e2e_t16p": "Dirty.",
+   "e2e_split": "Braided."
+  }
+ },
+ {
+  "question_id": 273889001,
+  "image": "COCO_val2014_000000273889.jpg",
+  "question": "What is the girl looking at?",
+  "answer_type": "other",
+  "answers": [
+   "ball",
+   "ball",
+   "tennis ball",
+   "ball",
+   "ball",
+   "ball",
+   "tennis ball",
+   "ball",
+   "ball",
+   "ball"
+  ],
+  "width": 463,
+  "height": 640,
+  "boxes": [
+   [
+    111.78863525390625,
+    186.54071044921875,
+    304.0029296875,
+    609.3452758789062
+   ]
+  ],
+  "scores": [
+   0.9087745547294617
+  ],
+  "out": {
+   "json_llm": "The girl is looking at a photograph of a woman.",
+   "up256_bilinear": "Tennis.",
+   "up256_nearest": "Ball.",
+   "up320_bilinear": "Ball.",
+   "up384_bilinear": "Ball.",
+   "native512": "Ball.",
+   "tpu512": "Ball.",
+   "tpu_decoder": "Ball.",
+   "e2e_t16p": "Ball.",
+   "e2e_split": "Ball."
+  }
+ },
+ {
+  "question_id": 232610013,
+  "image": "COCO_val2014_000000232610.jpg",
+  "question": "What is this girl doing?",
+  "answer_type": "other",
+  "answers": [
+   "talking",
+   "smiling",
+   "talking on phone",
+   "talking",
+   "talking on phone",
+   "talking on phone",
+   "talking",
+   "talking on cell phone",
+   "talking",
+   "talking on phone"
+  ],
+  "width": 333,
+  "height": 500,
+  "boxes": [
+   [
+    0.10421527177095413,
+    78.07568359375,
+    331.6130676269531,
+    498.9031677246094
+   ]
+  ],
+  "scores": [
+   0.9483588933944702
+  ],
+  "out": {
+   "json_llm": "This girl is playing a game.",
+   "up256_bilinear": "Taking selfie.",
+   "up256_nearest": "Posing.",
+   "up320_bilinear": "Smiling.",
+   "up384_bilinear": "Talking.",
+   "native512": "Talking on phone.",
+   "tpu512": "Talking on phone.",
+   "tpu_decoder": "Smiling.",
+   "e2e_t16p": "Talking on phone.",
+   "e2e_split": "Smiling."
+  }
+ },
+ {
+  "question_id": 482784001,
+  "image": "COCO_val2014_000000482784.jpg",
+  "question": "What have the children made?",
+  "answer_type": "other",
+  "answers": [
+   "peace",
+   "book",
+   "statuette",
+   "nothing",
+   "celebration",
+   "communion",
+   "several",
+   "costumes",
+   "flowers",
+   "card"
+  ],
+  "width": 500,
+  "height": 375,
+  "boxes": [
+   [
+    0.3701704144477844,
+    149.72738647460938,
+    136.6719970703125,
+    370.9247131347656
+   ],
+   [
+    393.5923767089844,
+    127.80809783935547,
+    499.5626220703125,
+    348.1675720214844
+   ],
+   [
+    214.49887084960938,
+    125.27438354492188,
+    343.41278076171875,
+    351.5892028808594
+   ]
+  ],
+  "scores": [
+   0.8185820579528809,
+   0.5320619940757751,
+   0.4767957925796509
+  ],
+  "out": {
+   "json_llm": "The children have made a variety of things, including a small, colorful ball, a small, colorful ball, and a",
+   "up256_bilinear": "Colors.",
+   "up256_nearest": "Colors.",
+   "up320_bilinear": "Beautiful.",
+   "up384_bilinear": "Gifts.",
+   "native512": "Veggie.",
+   "tpu512": "Clothes.",
+   "tpu_decoder": "Clothes.",
+   "e2e_t16p": "Dresses.",
+   "e2e_split": "Picture."
+  }
+ },
+ {
+  "question_id": 289423005,
+  "image": "COCO_val2014_000000289423.jpg",
+  "question": "What is the person wearing?",
+  "answer_type": "other",
+  "answers": [
+   "guy is wearing pink and white",
+   "shorts",
+   "shorts",
+   "clothes",
+   "shorts",
+   "shorts",
+   "athletic wear",
+   "clothes",
+   "shorts",
+   "shorts"
+  ],
+  "width": 640,
+  "height": 426,
+  "boxes": [
+   [
+    36.152061462402344,
+    181.30816650390625,
+    239.14825439453125,
+    424.23260498046875
+   ],
+   [
+    212.52882385253906,
+    188.728515625,
+    407.41729736328125,
+    425.51025390625
+   ]
+  ],
+  "scores": [
+   0.91546231508255,
+   0.9146866798400879
+  ],
+  "out": {
+   "json_llm": "The person wearing a black hoodie and a black jacket is wearing a black hoodie and a black jacket.",
+   "up256_bilinear": "Sunglasses.",
+   "up256_nearest": "Sunglasses.",
+   "up320_bilinear": "Running.",
+   "up384_bilinear": "Hat.",
+   "native512": "Frisbee",
+   "tpu512": "Frisbee",
+   "tpu_decoder": "Man.",
+   "e2e_t16p": "Casual.",
+   "e2e_split": "Man, shirt, shorts, green, green, cap, green, green, green, green, green, green,"
+  }
+ },
+ {
+  "question_id": 372265002,
+  "image": "COCO_val2014_000000372265.jpg",
+  "question": "What is the man's shirt color?",
+  "answer_type": "other",
+  "answers": [
+   "gray",
+   "white",
+   "white",
+   "white",
+   "white",
+   "white",
+   "pale gray",
+   "white",
+   "pink",
+   "gray"
+  ],
+  "width": 508,
+  "height": 640,
+  "boxes": [
+   [
+    125.35212707519531,
+    185.8006134033203,
+    250.89083862304688,
+    413.1747131347656
+   ]
+  ],
+  "scores": [
+   0.8818478584289551
+  ],
+  "out": {
+   "json_llm": "The man's shirt is blue.",
+   "up256_bilinear": "White.",
+   "up256_nearest": "White.",
+   "up320_bilinear": "White.",
+   "up384_bilinear": "Blue.",
+   "native512": "White.",
+   "tpu512": "White.",
+   "tpu_decoder": "White.",
+   "e2e_t16p": "White.",
+   "e2e_split": "White."
+  }
+ },
+ {
+  "question_id": 239717000,
+  "image": "COCO_val2014_000000239717.jpg",
+  "question": "What is the man eating?",
+  "answer_type": "other",
+  "answers": [
+   "burger",
+   "burger",
+   "seafood",
+   "fries",
+   "fries",
+   "taco",
+   "food",
+   "food",
+   "dessert",
+   "dessert"
+  ],
+  "width": 554,
+  "height": 640,
+  "boxes": [
+   [
+    3.496731996536255,
+    90.09639739990234,
+    552.7384643554688,
+    640.0
+   ],
+   [
+    371.4276428222656,
+    130.04086303710938,
+    502.36248779296875,
+    286.3563537597656
+   ],
+   [
+    496.1639099121094,
+    56.21769714355469,
+    553.7276611328125,
+    338.636962890625
+   ],
+   [
+    456.5894470214844,
+    58.72959899902344,
+    524.321044921875,
+    179.54547119140625
+   ]
+  ],
+  "scores": [
+   0.9527581930160522,
+   0.7283132076263428,
+   0.6924566030502319,
+   0.42098477482795715
+  ],
+  "out": {
+   "json_llm": "The man eating is \"the man.\"",
+   "up256_bilinear": "Salad",
+   "up256_nearest": "Salad",
+   "up320_bilinear": "food",
+   "up384_bilinear": "Salad.",
+   "native512": "Salad.",
+   "tpu512": "Salad.",
+   "tpu_decoder": "Salad.",
+   "e2e_t16p": "Food.",
+   "e2e_split": "Salad."
+  }
+ },
+ {
+  "question_id": 231616006,
+  "image": "COCO_val2014_000000231616.jpg",
+  "question": "What is on the man's left wrist?",
+  "answer_type": "other",
+  "answers": [
+   "nothing",
+   "nothing",
+   "giraffe nose",
+   "giraffe's nose",
+   "nothing",
+   "nothing",
+   "giraffe",
+   "nothing",
+   "nothing",
+   "giraffe nose"
+  ],
+  "width": 640,
+  "height": 480,
+  "boxes": [
+   [
+    398.4158935546875,
+    136.08433532714844,
+    639.8434448242188,
+    270.8714904785156
+   ],
+   [
+    543.4710083007812,
+    255.06375122070312,
+    639.8649291992188,
+    476.6065368652344
+   ],
+   [
+    265.50970458984375,
+    268.0633239746094,
+    559.73095703125,
+    472.6397705078125
+   ]
+  ],
+  "scores": [
+   0.8441144227981567,
+   0.6599069237709045,
+   0.5965628027915955
+  ],
+  "out": {
+   "json_llm": "The man's left wrist is a small, delicate, and delicate piece of jewelry.",
+   "up256_bilinear": "Hand.",
+   "up256_nearest": "Hand.",
+   "up320_bilinear": "Arm.",
+   "up384_bilinear": "Hand.",
+   "native512": "Hand.",
+   "tpu512": "Hand.",
+   "tpu_decoder": "Hand.",
+   "e2e_t16p": "Hand.",
+   "e2e_split": "Hand."
+  }
+ },
+ {
+  "question_id": 136285003,
+  "image": "COCO_val2014_000000136285.jpg",
+  "question": "What are the people riding on?",
+  "answer_type": "other",
+  "answers": [
+   "horse",
+   "horse",
+   "horse",
+   "horse",
+   "horse",
+   "horse",
+   "horse",
+   "horse",
+   "horse",
+   "horse"
+  ],
+  "width": 640,
+  "height": 526,
+  "boxes": [
+   [
+    34.12209701538086,
+    72.6684341430664,
+    240.84129333496094,
+    521.1513671875
+   ],
+   [
+    373.4924011230469,
+    20.642337799072266,
+    466.5142517089844,
+    289.1968994140625
+   ]
+  ],
+  "scores": [
+   0.8955322504043579,
+   0.8150145411491394
+  ],
+  "out": {
+   "json_llm": "The people riding on are the people who are riding on the cars.",
+   "up256_bilinear": "Horse",
+   "up256_nearest": "Horse",
+   "up320_bilinear": "Horse.",
+   "up384_bilinear": "Horse.",
+   "native512": "Horse",
+   "tpu512": "Horse",
+   "tpu_decoder": "Horse.",
+   "e2e_t16p": "Horse.",
+   "e2e_split": "Horse."
+  }
+ },
+ {
+  "question_id": 440189003,
+  "image": "COCO_val2014_000000440189.jpg",
+  "question": "What are the men holding?",
+  "answer_type": "other",
+  "answers": [
+   "racquets",
+   "racquets",
+   "paddle",
+   "paddle",
+   "paddles",
+   "racquet",
+   "paddle board",
+   "paddles",
+   "racket",
+   "rackets"
+  ],
+  "width": 640,
+  "height": 480,
+  "boxes": [
+   [
+    51.9752197265625,
+    169.0301971435547,
+    171.3685760498047,
+    476.9053955078125
+   ],
+   [
+    545.553955078125,
+    137.4453887939453,
+    639.8511962890625,
+    475.439697265625
+   ],
+   [
+    0.1348550021648407,
+    222.71046447753906,
+    25.77165985107422,
+    302.7613525390625
+   ],
+   [
+    0.0989859476685524,
+    223.9964599609375,
+    16.016122817993164,
+    303.1213073730469
+   ]
+  ],
+  "scores": [
+   0.912406325340271,
+   0.8713057041168213,
+   0.613906741142273,
+   0.5294175744056702
+  ],
+  "out": {
+   "json_llm": "The men holding the boxes are: {\"people\": [{\"box\": [0.08, 0.3",
+   "up256_bilinear": "Sand.",
+   "up256_nearest": "Glasses.",
+   "up320_bilinear": "Frisbee.",
+   "up384_bilinear": "Lights.",
+   "native512": "Frisbee.",
+   "tpu512": "Tattoo.",
+   "tpu_decoder": "Trunks.",
+   "e2e_t16p": "SUMmmer, Sleep, Party.",
+   "e2e_split": "HELLO."
+  }
+ },
+ {
+  "question_id": 195098005,
+  "image": "COCO_val2014_000000195098.jpg",
+  "question": "How is the man feeling?",
+  "answer_type": "other",
+  "answers": [
+   "happy",
+   "happy",
+   "happy",
+   "happy",
+   "happy",
+   "happy",
+   "happy",
+   "happy",
+   "happy",
+   "happy"
+  ],
+  "width": 480,
+  "height": 640,
+  "boxes": [
+   [
+    58.51091766357422,
+    9.746617317199707,
+    478.58306884765625,
+    639.0919799804688
+   ],
+   [
+    0.28906142711639404,
+    219.22923278808594,
+    175.67237854003906,
+    636.5060424804688
+   ]
+  ],
+  "scores": [
+   0.9085437655448914,
+   0.839667558670044
+  ],
+  "out": {
+   "json_llm": "The man is feeling a mix of emotions, but the most common and most understandable is a mix of sadness and frustration.",
+   "up256_bilinear": "Happy.",
+   "up256_nearest": "Happy.",
+   "up320_bilinear": "Happy.",
+   "up384_bilinear": "Happy.",
+   "native512": "Happy.",
+   "tpu512": "Happy.",
+   "tpu_decoder": "Happy.",
+   "e2e_t16p": "Happy.",
+   "e2e_split": "Happy."
+  }
+ },
+ {
+  "question_id": 370401000,
+  "image": "COCO_val2014_000000370401.jpg",
+  "question": "What is the color of the man's clothes?",
+  "answer_type": "other",
+  "answers": [
+   "orange",
+   "red",
+   "orange",
+   "red",
+   "red",
+   "orange",
+   "orange",
+   "orange",
+   "green",
+   "orange"
+  ],
+  "width": 640,
+  "height": 459,
+  "boxes": [
+   [
+    312.86138916015625,
+    23.9635009765625,
+    536.8815307617188,
+    432.4263610839844
+   ]
+  ],
+  "scores": [
+   0.86748868227005
+  ],
+  "out": {
+   "json_llm": "The man's clothes are blue.",
+   "up256_bilinear": "Orange.",
+   "up256_nearest": "Blue.",
+   "up320_bilinear": "Orange.",
+   "up384_bilinear": "Orange.",
+   "native512": "Orange.",
+   "tpu512": "Orange.",
+   "tpu_decoder": "Orange.",
+   "e2e_t16p": "Orange.",
+   "e2e_split": "Orange."
+  }
+ },
+ {
+  "question_id": 407274001,
+  "image": "COCO_val2014_000000407274.jpg",
+  "question": "What is the boy doing?",
+  "answer_type": "other",
+  "answers": [
+   "jumping",
+   "frisbee",
+   "frisbee",
+   "jumping",
+   "playing frisbee",
+   "jumping",
+   "girl",
+   "catching",
+   "catching",
+   "catching frisbee"
+  ],
+  "width": 427,
+  "height": 640,
+  "boxes": [
+   [
+    78.10733032226562,
+    223.856689453125,
+    385.3292541503906,
+    624.983154296875
+   ]
+  ],
+  "scores": [
+   0.9453780651092529
+  ],
+  "out": {
+   "json_llm": "The boy is playing with a ball.",
+   "up256_bilinear": "Standing.",
+   "up256_nearest": "Standing.",
+   "up320_bilinear": "Dancing",
+   "up384_bilinear": "Catching Frisbees",
+   "native512": "Catching frisbee.",
+   "tpu512": "Catching frisbee.",
+   "tpu_decoder": "Kicking frisbee.",
+   "e2e_t16p": "Catching frisbee.",
+   "e2e_split": "Throwing frisbee."
+  }
+ },
+ {
+  "question_id": 31984004,
+  "image": "COCO_val2014_000000031984.jpg",
+  "question": "What is this person dressed up as?",
+  "answer_type": "other",
+  "answers": [
+   "girl",
+   "biker",
+   "lady in white",
+   "bride",
+   "motorcycle model",
+   "biker",
+   "showgirl",
+   "groupie",
+   "waiter",
+   "person"
+  ],
+  "width": 426,
+  "height": 640,
+  "boxes": [
+   [
+    1.3724894523620605,
+    147.54586791992188,
+    122.27942657470703,
+    630.1840209960938
+   ],
+   [
+    143.80967712402344,
+    110.440673828125,
+    348.44915771484375,
+    638.9776611328125
+   ],
+   [
+    112.94930267333984,
+    173.3184814453125,
+    170.04269409179688,
+    364.0383605957031
+   ],
+   [
+    157.53587341308594,
+    171.298828125,
+    205.2939910888672,
+    319.3436584472656
+   ],
+   [
+    197.3213348388672,
+    170.73829650878906,
+    233.3712158203125,
+    291.23931884765625
+   ]
+  ],
+  "scores": [
+   0.895476222038269,
+   0.8375283479690552,
+   0.7894385457038879,
+   0.6518093347549438,
+   0.4264639914035797
+  ],
+  "out": {
+   "json_llm": "This person is dressed up as a \"Ghost\" or \"Ghostface\" in a movie or TV show.",
+   "up256_bilinear": "Superhero.",
+   "up256_nearest": "Superhero.",
+   "up320_bilinear": "Superhero.",
+   "up384_bilinear": "Motorcycle.",
+   "native512": "Model.",
+   "tpu512": "Model.",
+   "tpu_decoder": "Model.",
+   "e2e_t16p": "Model.",
+   "e2e_split": "Model."
+  }
+ },
+ {
+  "question_id": 505014002,
+  "image": "COCO_val2014_000000505014.jpg",
+  "question": "What kind of earring is the woman wearing?",
+  "answer_type": "other",
+  "answers": [
+   "pearl",
+   "pearl",
+   "pearl",
+   "pearl",
+   "pearl",
+   "pearl",
+   "pearl",
+   "pearl",
+   "pearl",
+   "pearl"
+  ],
+  "width": 500,
+  "height": 371,
+  "boxes": [
+   [
+    28.60089874267578,
+    2.36299467086792,
+    498.35479736328125,
+    368.82177734375
+   ]
+  ],
+  "scores": [
+   0.9470013380050659
+  ],
+  "out": {
+   "json_llm": "The woman is wearing a \"forked\" earring, which is a type of earring with a curved or",
+   "up256_bilinear": "Earring",
+   "up256_nearest": "Earring",
+   "up320_bilinear": "Earring",
+   "up384_bilinear": "Earring",
+   "native512": "Earring",
+   "tpu512": "Earring",
+   "tpu_decoder": "Earring.",
+   "e2e_t16p": "Earring.",
+   "e2e_split": "Earrings."
+  }
+ },
+ {
+  "question_id": 493610005,
+  "image": "COCO_val2014_000000493610.jpg",
+  "question": "What is the person using to grind off the broken down car?",
+  "answer_type": "other",
+  "answers": [
+   "nothing",
+   "no",
+   "knife",
+   "ledge",
+   "wood",
+   "unsure",
+   "people",
+   "ledge",
+   "no",
+   "file"
+  ],
+  "width": 500,
+  "height": 375,
+  "boxes": [
+   [
+    451.7684020996094,
+    178.66921997070312,
+    481.612548828125,
+    302.1502685546875
+   ],
+   [
+    15.790779113769531,
+    218.48011779785156,
+    32.4168815612793,
+    264.8670349121094
+   ],
+   [
+    108.18978118896484,
+    222.13125610351562,
+    125.30537414550781,
+    252.08583068847656
+   ],
+   [
+    426.60345458984375,
+    178.0554656982422,
+    466.59063720703125,
+    298.43865966796875
+   ],
+   [
+    36.59877014160156,
+    223.1892547607422,
+    50.302330017089844,
+    264.98895263671875
+   ]
+  ],
+  "scores": [
+   0.6226897835731506,
+   0.6138618588447571,
+   0.551444947719574,
+   0.5001589059829712,
+   0.4754272699356079
+  ],
+  "out": {
+   "json_llm": "The person using to grind off the broken down car is a person who uses a tool to grind off the broken down car",
+   "up256_bilinear": "Wheel.",
+   "up256_nearest": "Wheel.",
+   "up320_bilinear": "Grit.",
+   "up384_bilinear": "Grind.",
+   "native512": "Grind.",
+   "tpu512": "Grind.",
+   "tpu_decoder": "Grind.",
+   "e2e_t16p": "grind off.",
+   "e2e_split": "Grind."
+  }
+ },
+ {
+  "question_id": 262048001,
+  "image": "COCO_val2014_000000262048.jpg",
+  "question": "Where are these people at?",
+  "answer_type": "other",
+  "answers": [
+   "beach",
+   "beach",
+   "beach",
+   "beach",
+   "beach",
+   "beach",
+   "beach",
+   "beach",
+   "beach",
+   "beach"
+  ],
+  "width": 612,
+  "height": 612,
+  "boxes": [
+   [
+    543.385498046875,
+    304.02630615234375,
+    582.937744140625,
+    372.45269775390625
+   ],
+   [
+    538.1978759765625,
+    260.357666015625,
+    550.4391479492188,
+    301.2212219238281
+   ]
+  ],
+  "scores": [
+   0.5224266052246094,
+   0.441653847694397
+  ],
+  "out": {
+   "json_llm": "The people at the cameras are at the people detector.",
+   "up256_bilinear": "Party.",
+   "up256_nearest": "Beach.",
+   "up320_bilinear": "Beach.",
+   "up384_bilinear": "Beach.",
+   "native512": "Beach.",
+   "tpu512": "Beach.",
+   "tpu_decoder": "Beach.",
+   "e2e_t16p": "Beach.",
+   "e2e_split": "Beach."
+  }
+ },
+ {
+  "question_id": 150986003,
+  "image": "COCO_val2014_000000150986.jpg",
+  "question": "What is the person holding?",
+  "answer_type": "other",
+  "answers": [
+   "scissors",
+   "scissors",
+   "scissors",
+   "scissors",
+   "scissors",
+   "nail scissors",
+   "scissors",
+   "scissors",
+   "scissors",
+   "scissors"
+  ],
+  "width": 640,
+  "height": 480,
+  "boxes": [
+   [
+    0.2308000922203064,
+    79.57013702392578,
+    503.1661682128906,
+    471.3869934082031
+   ]
+  ],
+  "scores": [
+   0.6763821840286255
+  ],
+  "out": {
+   "json_llm": "The person holding the camera is a person.",
+   "up256_bilinear": "Sword.",
+   "up256_nearest": "Sword.",
+   "up320_bilinear": "Scissors",
+   "up384_bilinear": "Scissors",
+   "native512": "scissors",
+   "tpu512": "Scissors.",
+   "tpu_decoder": "Scissors.",
+   "e2e_t16p": "Scissors",
+   "e2e_split": "Scissors"
+  }
+ },
+ {
+  "question_id": 382770002,
+  "image": "COCO_val2014_000000382770.jpg",
+  "question": "What type of sport is the man engaging in?",
+  "answer_type": "other",
+  "answers": [
+   "water skiing",
+   "water skiing",
+   "surfing",
+   "water skiing",
+   "skiing",
+   "water skiing",
+   "water skiing",
+   "water surfing",
+   "surfing",
+   "water skiing"
+  ],
+  "width": 640,
+  "height": 427,
+  "boxes": [
+   [
+    313.7506103515625,
+    174.90321350097656,
+    352.4567565917969,
+    313.6733093261719
+   ]
+  ],
+  "scores": [
+   0.8158196806907654
+  ],
+  "out": {
+   "json_llm": "The man is engaging in a sport called \"soccer.\"",
+   "up256_bilinear": "Soccer.",
+   "up256_nearest": "Soccer.",
+   "up320_bilinear": "Surfing.",
+   "up384_bilinear": "Water skiing.",
+   "native512": "Water skiing.",
+   "tpu512": "Water skiing.",
+   "tpu_decoder": "Water skiing.",
+   "e2e_t16p": "Water skiing.",
+   "e2e_split": "Water skiing."
+  }
+ },
+ {
+  "question_id": 4359000,
+  "image": "COCO_val2014_000000004359.jpg",
+  "question": "What are the people in the background of the picture doing?",
+  "answer_type": "other",
+  "answers": [
+   "looking out window",
+   "boarding train",
+   "standing",
+   "standing",
+   "waiting",
+   "standing",
+   "boarding",
+   "waiting",
+   "waiting",
+   "boarding"
+  ],
+  "width": 640,
+  "height": 497,
+  "boxes": [
+   [
+    18.47178840637207,
+    87.50283813476562,
+    168.74285888671875,
+    490.4476623535156
+   ],
+   [
+    358.98651123046875,
+    77.64029693603516,
+    400.5538024902344,
+    204.05831909179688
+   ],
+   [
+    395.1761779785156,
+    70.2885971069336,
+    429.0700378417969,
+    216.8853302001953
+   ],
+   [
+    254.74465942382812,
+    79.8660659790039,
+    304.05645751953125,
+    223.68527221679688
+   ]
+  ],
+  "scores": [
+   0.8189530968666077,
+   0.6513809561729431,
+   0.6471606492996216,
+   0.6438637971878052
+  ],
+  "out": {
+   "json_llm": "The people in the background of the picture are the people who are not in the frame. They are the people who are",
+   "up256_bilinear": "Looking.",
+   "up256_nearest": "Looking.",
+   "up320_bilinear": "Standing.",
+   "up384_bilinear": "Standing.",
+   "native512": "Waiting.",
+   "tpu512": "Waiting.",
+   "tpu_decoder": "Walking.",
+   "e2e_t16p": "Station.",
+   "e2e_split": "TURING."
+  }
+ },
+ {
+  "question_id": 54766000,
+  "image": "COCO_val2014_000000054766.jpg",
+  "question": "What is on the head of the person on the far left?",
+  "answer_type": "other",
+  "answers": [
+   "hat",
+   "ball cap",
+   "hat",
+   "hat",
+   "hat",
+   "hat",
+   "baseball cap",
+   "no head",
+   "hat",
+   "cap"
+  ],
+  "width": 640,
+  "height": 424,
+  "boxes": [
+   [
+    513.437255859375,
+    79.54208374023438,
+    639.4105834960938,
+    420.7984619140625
+   ],
+   [
+    248.5191192626953,
+    29.735734939575195,
+    462.8241882324219,
+    420.02581787109375
+   ]
+  ],
+  "scores": [
+   0.9427205324172974,
+   0.9376571178436279
+  ],
+  "out": {
+   "json_llm": "The person on the far left is a \"person detector.\"",
+   "up256_bilinear": "Helmet.",
+   "up256_nearest": "Helmet.",
+   "up320_bilinear": "Hat.",
+   "up384_bilinear": "Hat.",
+   "native512": "Hat.",
+   "tpu512": "Hat.",
+   "tpu_decoder": "Hat.",
+   "e2e_t16p": "Hat.",
+   "e2e_split": "Hat."
+  }
+ },
+ {
+  "question_id": 343963001,
+  "image": "COCO_val2014_000000343963.jpg",
+  "question": "Is this person using the umbrella to protect from rain or sun?",
+  "answer_type": "other",
+  "answers": [
+   "sun",
+   "sun",
+   "sun",
+   "sun",
+   "sun",
+   "sun",
+   "rain",
+   "yes",
+   "sun",
+   "sun"
+  ],
+  "width": 640,
+  "height": 287,
+  "boxes": [
+   [
+    58.443603515625,
+    184.0880584716797,
+    136.04415893554688,
+    277.84930419921875
+   ]
+  ],
+  "scores": [
+   0.7245060801506042
+  ],
+  "out": {
+   "json_llm": "The person is using the umbrella to protect from rain or sun.",
+   "up256_bilinear": "Sun.",
+   "up256_nearest": "Sun.",
+   "up320_bilinear": "Sun.",
+   "up384_bilinear": "Sun.",
+   "native512": "Sun.",
+   "tpu512": "Sun.",
+   "tpu_decoder": "Sun.",
+   "e2e_t16p": "Sun.",
+   "e2e_split": "Sun."
+  }
+ },
+ {
+  "question_id": 566321002,
+  "image": "COCO_val2014_000000566321.jpg",
+  "question": "What color is the guy in the green shirt's hat?",
+  "answer_type": "other",
+  "answers": [
+   "red",
+   "red",
+   "red",
+   "red",
+   "red",
+   "red",
+   "red",
+   "red",
+   "red",
+   "red"
+  ],
+  "width": 500,
+  "height": 357,
+  "boxes": [
+   [
+    79.5638427734375,
+    173.07810974121094,
+    158.7003173828125,
+    356.0889587402344
+   ],
+   [
+    186.11766052246094,
+    15.768961906433105,
+    330.013671875,
+    355.7035827636719
+   ],
+   [
+    211.45741271972656,
+    165.55335998535156,
+    363.9087829589844,
+    356.4560852050781
+   ],
+   [
+    167.05470275878906,
+    180.23802185058594,
+    224.28358459472656,
+    357.0
+   ],
+   [
+    131.50697326660156,
+    157.28756713867188,
+    174.114013671875,
+    355.2644958496094
+   ]
+  ],
+  "scores": [
+   0.8223101496696472,
+   0.7676272988319397,
+   0.746457040309906,
+   0.6780864596366882,
+   0.46380165219306946
+  ],
+  "out": {
+   "json_llm": "The person in the green shirt's hat is wearing a green shirt.",
+   "up256_bilinear": "Green.",
+   "up256_nearest": "Red.",
+   "up320_bilinear": "White",
+   "up384_bilinear": "Red.",
+   "native512": "Red.",
+   "tpu512": "Red.",
+   "tpu_decoder": "Red.",
+   "e2e_t16p": "Red.",
+   "e2e_split": "Red."
+  }
+ },
+ {
+  "question_id": 276840003,
+  "image": "COCO_val2014_000000276840.jpg",
+  "question": "What color jacket is the person with the green hat wearing?",
+  "answer_type": "other",
+  "answers": [
+   "red",
+   "red",
+   "red",
+   "red",
+   "red",
+   "red",
+   "red",
+   "red",
+   "red",
+   "red"
+  ],
+  "width": 640,
+  "height": 480,
+  "boxes": [
+   [
+    251.70127868652344,
+    194.0954132080078,
+    377.10223388671875,
+    479.5937805175781
+   ],
+   [
+    345.80126953125,
+    172.7753143310547,
+    402.8981018066406,
+    332.34564208984375
+   ],
+   [
+    562.267578125,
+    172.19029235839844,
+    613.75732421875,
+    343.2378234863281
+   ],
+   [
+    190.29823303222656,
+    159.8691864013672,
+    227.4453582763672,
+    248.82911682128906
+   ],
+   [
+    245.34442138671875,
+    172.8760223388672,
+    273.1267395019531,
+    241.57040405273438
+   ],
+   [
+    48.83221435546875,
+    167.10768127441406,
+    76.25238037109375,
+    289.7679748535156
+   ]
+  ],
+  "scores": [
+   0.9085003733634949,
+   0.7990782260894775,
+   0.7870938777923584,
+   0.672461986541748,
+   0.5636480450630188,
+   0.40728309750556946
+  ],
+  "out": {
+   "json_llm": "The person with the green hat is wearing a blue jacket.",
+   "up256_bilinear": "Green.",
+   "up256_nearest": "Green.",
+   "up320_bilinear": "Green.",
+   "up384_bilinear": "Green.",
+   "native512": "Green.",
+   "tpu512": "Orange.",
+   "tpu_decoder": "Orange.",
+   "e2e_t16p": "Green.",
+   "e2e_split": "Green."
+  }
+ },
+ {
+  "question_id": 367732000,
+  "image": "COCO_val2014_000000367732.jpg",
+  "question": "What is on the man's wrist?",
+  "answer_type": "other",
+  "answers": [
+   "watch",
+   "watch",
+   "watch",
+   "watch",
+   "watch",
+   "watch",
+   "watch",
+   "watch",
+   "watch",
+   "watch"
+  ],
+  "width": 640,
+  "height": 427,
+  "boxes": [
+   [
+    152.546875,
+    69.86756134033203,
+    456.3818359375,
+    424.6227722167969
+   ],
+   [
+    435.0096130371094,
+    194.8395538330078,
+    640.0,
+    424.0209045410156
+   ],
+   [
+    63.59479904174805,
+    108.17774963378906,
+    254.47239685058594,
+    295.7286682128906
+   ]
+  ],
+  "scores": [
+   0.9185351133346558,
+   0.9032263159751892,
+   0.5633140206336975
+  ],
+  "out": {
+   "json_llm": "The man's wrist is a small, intricate piece of metal that is attached to his wrist.",
+   "up256_bilinear": "wrist.",
+   "up256_nearest": "wrist.",
+   "up320_bilinear": "Wrist.",
+   "up384_bilinear": "Sweat.",
+   "native512": "Watch.",
+   "tpu512": "wrist.",
+   "tpu_decoder": "Watch.",
+   "e2e_t16p": "wrist.",
+   "e2e_split": "wristwatch."
+  }
+ },
+ {
+  "question_id": 269807000,
+  "image": "COCO_val2014_000000269807.jpg",
+  "question": "What color is this man's motorcycle helmet?",
+  "answer_type": "other",
+  "answers": [
+   "white",
+   "white",
+   "white",
+   "white",
+   "white",
+   "white",
+   "white",
+   "white",
+   "white",
+   "white"
+  ],
+  "width": 640,
+  "height": 480,
+  "boxes": [
+   [
+    44.51280975341797,
+    160.0446014404297,
+    194.18145751953125,
+    466.51812744140625
+   ]
+  ],
+  "scores": [
+   0.8351648449897766
+  ],
+  "out": {
+   "json_llm": "The man's motorcycle helmet is blue.",
+   "up256_bilinear": "Black.",
+   "up256_nearest": "Black.",
+   "up320_bilinear": "Black",
+   "up384_bilinear": "Black.",
+   "native512": "White.",
+   "tpu512": "White.",
+   "tpu_decoder": "White.",
+   "e2e_t16p": "White.",
+   "e2e_split": "White."
+  }
+ },
+ {
+  "question_id": 480416020,
+  "image": "COCO_val2014_000000480416.jpg",
+  "question": "What is the woman sitting on?",
+  "answer_type": "other",
+  "answers": [
+   "bench",
+   "bench",
+   "bench",
+   "bench",
+   "bench",
+   "bench",
+   "bench",
+   "bench",
+   "bench",
+   "bench"
+  ],
+  "width": 500,
+  "height": 375,
+  "boxes": [
+   [
+    168.43121337890625,
+    216.71397399902344,
+    227.508544921875,
+    335.7163391113281
+   ],
+   [
+    114.924560546875,
+    181.77902221679688,
+    191.85128784179688,
+    345.6888732910156
+   ],
+   [
+    251.8845672607422,
+    192.3186798095703,
+    321.0417785644531,
+    336.24237060546875
+   ],
+   [
+    0.5724771022796631,
+    210.08120727539062,
+    57.25930404663086,
+    273.6502380371094
+   ]
+  ],
+  "scores": [
+   0.7868221998214722,
+   0.7475599646568298,
+   0.6299211382865906,
+   0.40864360332489014
+  ],
+  "out": {
+   "json_llm": "The woman sitting on is a person.",
+   "up256_bilinear": "Car.",
+   "up256_nearest": "Bench.",
+   "up320_bilinear": "Bench.",
+   "up384_bilinear": "Bench.",
+   "native512": "Bench.",
+   "tpu512": "Bench.",
+   "tpu_decoder": "Bench.",
+   "e2e_t16p": "Bench.",
+   "e2e_split": "Bench."
+  }
+ },
+ {
+  "question_id": 53990004,
+  "image": "COCO_val2014_000000053990.jpg",
+  "question": "What is the girl eating?",
+  "answer_type": "other",
+  "answers": [
+   "pizza",
+   "pizza",
+   "pizza",
+   "pizza",
+   "pizza",
+   "pizza",
+   "pizza",
+   "pizza",
+   "pizza",
+   "pizza"
+  ],
+  "width": 640,
+  "height": 427,
+  "boxes": [
+   [
+    113.55926513671875,
+    42.9256591796875,
+    640.0,
+    421.9959716796875
+   ]
+  ],
+  "scores": [
+   0.9362778067588806
+  ],
+  "out": {
+   "json_llm": "The girl is eating a sandwich.",
+   "up256_bilinear": "food",
+   "up256_nearest": "Dinner.",
+   "up320_bilinear": "Pizza.",
+   "up384_bilinear": "Pizza.",
+   "native512": "Pizza.",
+   "tpu512": "Pizza.",
+   "tpu_decoder": "Pizza.",
+   "e2e_t16p": "Pizza.",
+   "e2e_split": "Pizza."
+  }
+ },
+ {
+  "question_id": 23121005,
+  "image": "COCO_val2014_000000023121.jpg",
+  "question": "What part of a tennis game is the man doing?",
+  "answer_type": "other",
+  "answers": [
+   "waiting for ball",
+   "serving",
+   "hitting ball",
+   "serve",
+   "serving",
+   "playing",
+   "returning",
+   "hitting ball",
+   "hitting",
+   "returning"
+  ],
+  "width": 640,
+  "height": 480,
+  "boxes": [
+   [
+    398.3857116699219,
+    138.18246459960938,
+    487.2760009765625,
+    370.0502624511719
+   ],
+   [
+    0.1065935418009758,
+    197.750244140625,
+    29.595901489257812,
+    248.2225799560547
+   ]
+  ],
+  "scores": [
+   0.8351871371269226,
+   0.48557189106941223
+  ],
+  "out": {
+   "json_llm": "The man is doing a tennis game.",
+   "up256_bilinear": "Serve.",
+   "up256_nearest": "Serve.",
+   "up320_bilinear": "Serve.",
+   "up384_bilinear": "Serve.",
+   "native512": "Serve.",
+   "tpu512": "Serve.",
+   "tpu_decoder": "Serve.",
+   "e2e_t16p": "Serving.",
+   "e2e_split": "Serving."
+  }
+ },
+ {
+  "question_id": 507154016,
+  "image": "COCO_val2014_000000507154.jpg",
+  "question": "What type of drink is the man in the white shirt holding?",
+  "answer_type": "other",
+  "answers": [
+   "wine",
+   "wine",
+   "wine",
+   "wine",
+   "wine",
+   "red wine",
+   "wine",
+   "wine",
+   "wine",
+   "wine"
+  ],
+  "width": 640,
+  "height": 480,
+  "boxes": [
+   [
+    353.1552734375,
+    175.9770965576172,
+    639.970458984375,
+    473.2911071777344
+   ],
+   [
+    357.6983337402344,
+    151.02349853515625,
+    498.991943359375,
+    329.6576232910156
+   ],
+   [
+    3.8933563232421875,
+    150.3631134033203,
+    169.0950927734375,
+    440.6039123535156
+   ],
+   [
+    121.47203826904297,
+    132.4598388671875,
+    219.16709899902344,
+    338.5955505371094
+   ],
+   [
+    589.17431640625,
+    45.439781188964844,
+    639.6943359375,
+    186.5173797607422
+   ],
+   [
+    410.0676574707031,
+    44.14476776123047,
+    462.51031494140625,
+    154.41851806640625
+   ],
+   [
+    481.85479736328125,
+    54.22330856323242,
+    574.788330078125,
+    198.7688446044922
+   ]
+  ],
+  "scores": [
+   0.902228057384491,
+   0.8442810773849487,
+   0.7835292220115662,
+   0.6473544239997864,
+   0.6438131928443909,
+   0.6284860372543335,
+   0.40918928384780884
+  ],
+  "out": {
+   "json_llm": "The man in the white shirt is holding a drink.",
+   "up256_bilinear": "Coffee.",
+   "up256_nearest": "Coffee.",
+   "up320_bilinear": "Coffee.",
+   "up384_bilinear": "Smoothie.",
+   "native512": "Wine.",
+   "tpu512": "Coffee.",
+   "tpu_decoder": "Coffee.",
+   "e2e_t16p": "Wine.",
+   "e2e_split": "Glass."
+  }
+ },
+ {
+  "question_id": 405648011,
+  "image": "COCO_val2014_000000405648.jpg",
+  "question": "What is the man holding?",
+  "answer_type": "other",
+  "answers": [
+   "luggage",
+   "suitcase",
+   "handle",
+   "suitcase",
+   "suitcase",
+   "suitcase",
+   "suitcase handle",
+   "suitcase",
+   "suitcase",
+   "luggage"
+  ],
+  "width": 640,
+  "height": 492,
+  "boxes": [
+   [
+    150.35125732421875,
+    41.25204849243164,
+    369.55657958984375,
+    488.8827819824219
+   ]
+  ],
+  "scores": [
+   0.8617163896560669
+  ],
+  "out": {
+   "json_llm": "The man holding the camera is a person.",
+   "up256_bilinear": "Camera.",
+   "up256_nearest": "Camera.",
+   "up320_bilinear": "Bag.",
+   "up384_bilinear": "Luggage.",
+   "native512": "Suitcase.",
+   "tpu512": "Suitcase.",
+   "tpu_decoder": "Luggage.",
+   "e2e_t16p": "Suitcase.",
+   "e2e_split": "Suitcase."
+  }
+ },
+ {
+  "question_id": 434580002,
+  "image": "COCO_val2014_000000434580.jpg",
+  "question": "What is the woman laying on?",
+  "answer_type": "other",
+  "answers": [
+   "couch",
+   "sofa",
+   "couch",
+   "couch",
+   "couch",
+   "couch",
+   "couch",
+   "couch",
+   "sofa",
+   "couch"
+  ],
+  "width": 640,
+  "height": 480,
+  "boxes": [
+   [
+    44.38808059692383,
+    73.65209197998047,
+    549.0388793945312,
+    398.6969909667969
+   ]
+  ],
+  "scores": [
+   0.5951425433158875
+  ],
+  "out": {
+   "json_llm": "The woman is lying on a table, with her arms crossed and her legs crossed.",
+   "up256_bilinear": "Bed.",
+   "up256_nearest": "Bed.",
+   "up320_bilinear": "Couch.",
+   "up384_bilinear": "Cat.",
+   "native512": "Couch.",
+   "tpu512": "Couch.",
+   "tpu_decoder": "Couch.",
+   "e2e_t16p": "Couch.",
+   "e2e_split": "Couch."
+  }
+ },
+ {
+  "question_id": 293625039,
+  "image": "COCO_val2014_000000293625.jpg",
+  "question": "What color are the woman's nails?",
+  "answer_type": "other",
+  "answers": [
+   "natural",
+   "white",
+   "natural",
+   "normal",
+   "pink",
+   "nude",
+   "clear",
+   "natural",
+   "clear",
+   "white"
+  ],
+  "width": 640,
+  "height": 480,
+  "boxes": [
+   [
+    248.95323181152344,
+    162.1106719970703,
+    513.775390625,
+    476.80804443359375
+   ],
+   [
+    1.1196027994155884,
+    26.551469802856445,
+    307.2043762207031,
+    475.9003601074219
+   ]
+  ],
+  "scores": [
+   0.8711301684379578,
+   0.7004154324531555
+  ],
+  "out": {
+   "json_llm": "The woman's nails are a deep, dark brown.",
+   "up256_bilinear": "Black.",
+   "up256_nearest": "Black.",
+   "up320_bilinear": "White.",
+   "up384_bilinear": "Black.",
+   "native512": "Black.",
+   "tpu512": "Black.",
+   "tpu_decoder": "Black.",
+   "e2e_t16p": "Black.",
+   "e2e_split": "Black."
+  }
+ },
+ {
+  "question_id": 464274001,
+  "image": "COCO_val2014_000000464274.jpg",
+  "question": "What does the man have on his head?",
+  "answer_type": "other",
+  "answers": [
+   "hat",
+   "hat",
+   "hat",
+   "hat",
+   "cap",
+   "hat",
+   "cap",
+   "hat",
+   "hat",
+   "hat"
+  ],
+  "width": 480,
+  "height": 640,
+  "boxes": [
+   [
+    117.65089416503906,
+    240.97613525390625,
+    443.5791931152344,
+    639.5318603515625
+   ]
+  ],
+  "scores": [
+   0.8734612464904785
+  ],
+  "out": {
+   "json_llm": "The man has a hat.",
+   "up256_bilinear": "Cannon.",
+   "up256_nearest": "Cannonball",
+   "up320_bilinear": "Hijack.",
+   "up384_bilinear": "Hijack.",
+   "native512": "Hat.",
+   "tpu512": "Gingham.",
+   "tpu_decoder": "Gingham.",
+   "e2e_t16p": "Hat.",
+   "e2e_split": "Gimp."
+  }
+ },
+ {
+  "question_id": 193474002,
+  "image": "COCO_val2014_000000193474.jpg",
+  "question": "What is going to happen to the surfer?",
+  "answer_type": "other",
+  "answers": [
+   "crash",
+   "he's going to crash",
+   "fall",
+   "wipeout",
+   "fall",
+   "he's going to fall into water",
+   "land in ocean",
+   "fall",
+   "fall off board",
+   "fall in water"
+  ],
+  "width": 500,
+  "height": 447,
+  "boxes": [
+   [
+    216.48843383789062,
+    112.31163024902344,
+    348.96026611328125,
+    198.71177673339844
+   ]
+  ],
+  "scores": [
+   0.8901734948158264
+  ],
+  "out": {
+   "json_llm": "The surfer will be swept away by the waves.",
+   "up256_bilinear": "Surfing.",
+   "up256_nearest": "Surfing.",
+   "up320_bilinear": "Surfboard Floating in Ocean.",
+   "up384_bilinear": "Surfing.",
+   "native512": "Surfing.",
+   "tpu512": "Surfing.",
+   "tpu_decoder": "Surfing.",
+   "e2e_t16p": "Surfing.",
+   "e2e_split": "Surfed."
+  }
+ },
+ {
+  "question_id": 227884000,
+  "image": "COCO_val2014_000000227884.jpg",
+  "question": "What is the guy playing?",
+  "answer_type": "other",
+  "answers": [
+   "keyboard",
+   "keyboard",
+   "keyboard",
+   "keyboard",
+   "keyboards",
+   "keyboard",
+   "piano",
+   "keyboard",
+   "piano",
+   "piano"
+  ],
+  "width": 444,
+  "height": 640,
+  "boxes": [
+   [
+    117.68749237060547,
+    289.8747863769531,
+    302.6835632324219,
+    520.9915771484375
+   ]
+  ],
+  "scores": [
+   0.8739913105964661
+  ],
+  "out": {
+   "json_llm": "The guy playing is a person detector.",
+   "up256_bilinear": "ROLAND\n\nThe man is playing the ROLAND.",
+   "up256_nearest": "ROLAND\n\nThe man is playing the ROLAND.",
+   "up320_bilinear": "FPV.",
+   "up384_bilinear": "Piano.",
+   "native512": "Piano.",
+   "tpu512": "Piano.",
+   "tpu_decoder": "Piano.",
+   "e2e_t16p": "Piano.",
+   "e2e_split": "Piano."
+  }
+ },
+ {
+  "question_id": 284097015,
+  "image": "COCO_val2014_000000284097.jpg",
+  "question": "What is the person doing?",
+  "answer_type": "other",
+  "answers": [
+   "holding bat",
+   "batting",
+   "batting",
+   "playing baseball",
+   "holding bat",
+   "baseball",
+   "holding bat",
+   "batting",
+   "batting",
+   "holding bat"
+  ],
+  "width": 640,
+  "height": 426,
+  "boxes": [
+   [
+    331.5472412109375,
+    116.21672821044922,
+    473.11029052734375,
+    422.253662109375
+   ],
+   [
+    104.72096252441406,
+    118.91610717773438,
+    192.54981994628906,
+    393.38824462890625
+   ],
+   [
+    0.2441297322511673,
+    194.6451416015625,
+    76.90377807617188,
+    317.3938293457031
+   ],
+   [
+    0.1910400390625,
+    201.55738830566406,
+    27.500518798828125,
+    316.8243713378906
+   ]
+  ],
+  "scores": [
+   0.9078269600868225,
+   0.899591863155365,
+   0.792725145816803,
+   0.5103474259376526
+  ],
+  "out": {
+   "json_llm": "The person is scanning the frame, looking for any patterns or clues that might help them identify the box.",
+   "up256_bilinear": "Standing.",
+   "up256_nearest": "Posing.",
+   "up320_bilinear": "Performing a pose.",
+   "up384_bilinear": "Playing baseball.",
+   "native512": "Hit baseball",
+   "tpu512": "Batting.",
+   "tpu_decoder": "Catching.",
+   "e2e_t16p": "Playing.",
+   "e2e_split": "Playing baseball."
+  }
+ },
+ {
+  "question_id": 450282008,
+  "image": "COCO_val2014_000000450282.jpg",
+  "question": "What is the man shoving into his mouth?",
+  "answer_type": "other",
+  "answers": [
+   "pastry",
+   "donut",
+   "pastry",
+   "donut",
+   "cupcake",
+   "donut",
+   "doughnut",
+   "donut",
+   "donut",
+   "pastry"
+  ],
+  "width": 640,
+  "height": 428,
+  "boxes": [
+   [
+    6.3201470375061035,
+    23.230005264282227,
+    427.82672119140625,
+    425.1815185546875
+   ]
+  ],
+  "scores": [
+   0.9608339667320251
+  ],
+  "out": {
+   "json_llm": "The man is shoving into his mouth.",
+   "up256_bilinear": "Snack.",
+   "up256_nearest": "Snack.",
+   "up320_bilinear": "Dinner.",
+   "up384_bilinear": "Donut.",
+   "native512": "Donut.",
+   "tpu512": "Donut.",
+   "tpu_decoder": "Donut.",
+   "e2e_t16p": "Doughnut",
+   "e2e_split": "Don't forget to bring your own napkin."
+  }
+ },
+ {
+  "question_id": 412184004,
+  "image": "COCO_val2014_000000412184.jpg",
+  "question": "Where is the man at?",
+  "answer_type": "other",
+  "answers": [
+   "by plane",
+   "airport",
+   "airport",
+   "airport",
+   "airport",
+   "airport",
+   "plane",
+   "airport",
+   "airport",
+   "by plane"
+  ],
+  "width": 640,
+  "height": 427,
+  "boxes": [
+   [
+    221.9767608642578,
+    206.43182373046875,
+    249.34422302246094,
+    275.4283447265625
+   ]
+  ],
+  "scores": [
+   0.6191898584365845
+  ],
+  "out": {
+   "json_llm": "The man is at the bottom of the stairs.",
+   "up256_bilinear": "walking.",
+   "up256_nearest": "Street.",
+   "up320_bilinear": "parking lot.",
+   "up384_bilinear": "Airport.",
+   "native512": "Airport.",
+   "tpu512": "Airport.",
+   "tpu_decoder": "Plane.",
+   "e2e_t16p": "N1590V.",
+   "e2e_split": "Airport."
+  }
+ },
+ {
+  "question_id": 170267001,
+  "image": "COCO_val2014_000000170267.jpg",
+  "question": "What are the people doing?",
+  "answer_type": "other",
+  "answers": [
+   "smiling",
+   "posing",
+   "piled up on bed",
+   "resting",
+   "cuddling",
+   "posing",
+   "posing",
+   "lounging and posing",
+   "relaxing",
+   "smiling"
+  ],
+  "width": 640,
+  "height": 435,
+  "boxes": [
+   [
+    394.3516540527344,
+    157.27175903320312,
+    639.5040893554688,
+    405.4389953613281
+   ]
+  ],
+  "scores": [
+   0.6664992570877075
+  ],
+  "out": {
+   "json_llm": "The people are people who are trying to find a way to get to the other side of the fence.",
+   "up256_bilinear": "Hugging",
+   "up256_nearest": "Hugging",
+   "up320_bilinear": "Reading.",
+   "up384_bilinear": "Smiling",
+   "native512": "Relaxing",
+   "tpu512": "Smiling",
+   "tpu_decoder": "Smiling.",
+   "e2e_t16p": "Relaxing.",
+   "e2e_split": "Together."
+  }
+ },
+ {
+  "question_id": 519744024,
+  "image": "COCO_val2014_000000519744.jpg",
+  "question": "What is on the boy's shirt?",
+  "answer_type": "other",
+  "answers": [
+   "emerica",
+   "letters",
+   "emerica",
+   "emerica",
+   "emerica",
+   "emerica",
+   "emerica",
+   "emerica",
+   "writing",
+   "writing"
+  ],
+  "width": 426,
+  "height": 640,
+  "boxes": [
+   [
+    51.81792068481445,
+    109.91468048095703,
+    200.33261108398438,
+    588.2443237304688
+   ]
+  ],
+  "scores": [
+   0.9051988124847412
+  ],
+  "out": {
+   "json_llm": "The boy's shirt is a red shirt with a blue stripe.",
+   "up256_bilinear": "Puffy.",
+   "up256_nearest": "Pants.",
+   "up320_bilinear": "Sneakers",
+   "up384_bilinear": "Enthusiasm",
+   "native512": "America.",
+   "tpu512": "America.",
+   "tpu_decoder": "EMPIRE.",
+   "e2e_t16p": "EVERYTHING.",
+   "e2e_split": "EVERYTHING."
+  }
+ },
+ {
+  "question_id": 109316000,
+  "image": "COCO_val2014_000000109316.jpg",
+  "question": "What is the woman carrying?",
+  "answer_type": "other",
+  "answers": [
+   "umbrella",
+   "umbrella",
+   "umbrella",
+   "umbrella",
+   "umbrella",
+   "umbrella",
+   "umbrella",
+   "umbrella",
+   "umbrella",
+   "umbrella"
+  ],
+  "width": 425,
+  "height": 640,
+  "boxes": [
+   [
+    197.43264770507812,
+    299.20379638671875,
+    385.39990234375,
+    582.9954223632812
+   ]
+  ],
+  "scores": [
+   0.8823831081390381
+  ],
+  "out": {
+   "json_llm": "The woman is carrying a small, delicate, and intricately carved wooden box.",
+   "up256_bilinear": "Umbrella",
+   "up256_nearest": "Umbrella",
+   "up320_bilinear": "Umbrella",
+   "up384_bilinear": "Umbrella.",
+   "native512": "Umbrella.",
+   "tpu512": "Umbrella.",
+   "tpu_decoder": "Umbrella.",
+   "e2e_t16p": "Umbrella.",
+   "e2e_split": "Umbrella."
+  }
+ },
+ {
+  "question_id": 223198001,
+  "image": "COCO_val2014_000000223198.jpg",
+  "question": "What is the person wearing?",
+  "answer_type": "other",
+  "answers": [
+   "suit",
+   "clothes",
+   "ties",
+   "tie",
+   "tie",
+   "jeans",
+   "suspenders",
+   "tie",
+   "slacks, white shirt, tie with several other ties over his shoulders",
+   "tie suspenders shirt pants"
+  ],
+  "width": 334,
+  "height": 500,
+  "boxes": [
+   [
+    26.341890335083008,
+    9.042399406433105,
+    308.9491882324219,
+    498.7751159667969
+   ]
+  ],
+  "scores": [
+   0.9289460778236389
+  ],
+  "out": {
+   "json_llm": "The person wearing a black hoodie and a black jacket is wearing a black hoodie and a black jacket.",
+   "up256_bilinear": "Tie.",
+   "up256_nearest": "Tie.",
+   "up320_bilinear": "Tie.",
+   "up384_bilinear": "Tie.",
+   "native512": "Tie.",
+   "tpu512": "Tie.",
+   "tpu_decoder": "Tie.",
+   "e2e_t16p": "Tie.",
+   "e2e_split": "Tie."
+  }
+ },
+ {
+  "question_id": 267683000,
+  "image": "COCO_val2014_000000267683.jpg",
+  "question": "Where is the woman?",
+  "answer_type": "other",
+  "answers": [
+   "behind stove",
+   "in kitchen",
+   "fast food kitchen",
+   "kitchen",
+   "kitchen",
+   "kitchen",
+   "in kitchen",
+   "in kitchen",
+   "kitchen",
+   "kitchen"
+  ],
+  "width": 500,
+  "height": 415,
+  "boxes": [
+   [
+    347.0368347167969,
+    58.94675827026367,
+    499.4806823730469,
+    415.0
+   ]
+  ],
+  "scores": [
+   0.9070672988891602
+  ],
+  "out": {
+   "json_llm": "The woman is in the \"house\" of the \"man.\"",
+   "up256_bilinear": "WOMEN.",
+   "up256_nearest": "Wife.",
+   "up320_bilinear": "factory.",
+   "up384_bilinear": "kitchen.",
+   "native512": "Kitchen.",
+   "tpu512": "Kitchen.",
+   "tpu_decoder": "Kitchen.",
+   "e2e_t16p": "Kitchen.",
+   "e2e_split": "Kitchen."
+  }
+ },
+ {
+  "question_id": 116517007,
+  "image": "COCO_val2014_000000116517.jpg",
+  "question": "What's the man doing?",
+  "answer_type": "other",
+  "answers": [
+   "working",
+   "looking at x rays",
+   "recording",
+   "surgery",
+   "working",
+   "working",
+   "working on equipment",
+   "running soundboard",
+   "talking",
+   "working board"
+  ],
+  "width": 640,
+  "height": 428,
+  "boxes": [
+   [
+    123.7020492553711,
+    133.8590087890625,
+    376.4307556152344,
+    425.11065673828125
+   ],
+   [
+    112.4353256225586,
+    96.14860534667969,
+    189.13348388671875,
+    253.62408447265625
+   ],
+   [
+    181.6733856201172,
+    89.38687896728516,
+    255.721923828125,
+    187.82223510742188
+   ],
+   [
+    181.373779296875,
+    89.27903747558594,
+    239.69094848632812,
+    174.87948608398438
+   ],
+   [
+    251.43032836914062,
+    132.44137573242188,
+    354.2105712890625,
+    268.8638610839844
+   ]
+  ],
+  "scores": [
+   0.9121429920196533,
+   0.7462220788002014,
+   0.459771990776062,
+   0.45970457792282104,
+   0.4204922318458557
+  ],
+  "out": {
+   "json_llm": "The man is looking at a photograph of a woman.",
+   "up256_bilinear": "Waving.",
+   "up256_nearest": "Waving.",
+   "up320_bilinear": "playing.",
+   "up384_bilinear": "Listening.",
+   "native512": "Working.",
+   "tpu512": "Listening.",
+   "tpu_decoder": "Listening.",
+   "e2e_t16p": "Working.",
+   "e2e_split": "Talking."
+  }
+ },
+ {
+  "question_id": 549845009,
+  "image": "COCO_val2014_000000549845.jpg",
+  "question": "What is this person grabbing?",
+  "answer_type": "other",
+  "answers": [
+   "phone",
+   "phone",
+   "cell phone",
+   "cell phone",
+   "phone",
+   "phone",
+   "phone",
+   "phone",
+   "flip phone",
+   "cell phone"
+  ],
+  "width": 640,
+  "height": 426,
+  "boxes": [
+   [
+    0.3261893093585968,
+    81.4531021118164,
+    568.3978271484375,
+    422.3963317871094
+   ]
+  ],
+  "scores": [
+   0.8992556929588318
+  ],
+  "out": {
+   "json_llm": "This person is grabbing a person detector.",
+   "up256_bilinear": "Snack.",
+   "up256_nearest": "Snack.",
+   "up320_bilinear": "Cellphone.",
+   "up384_bilinear": "Food.",
+   "native512": "Phone.",
+   "tpu512": "Phone.",
+   "tpu_decoder": "Cellphone.",
+   "e2e_t16p": "Phone.",
+   "e2e_split": "Phone."
+  }
+ },
+ {
+  "question_id": 3103003,
+  "image": "COCO_val2014_000000003103.jpg",
+  "question": "Where did the man hurt himself?",
+  "answer_type": "other",
+  "answers": [
+   "leg",
+   "left leg",
+   "leg",
+   "shin",
+   "leg",
+   "right leg",
+   "on his leg",
+   "leg",
+   "leg",
+   "ankle"
+  ],
+  "width": 400,
+  "height": 338,
+  "boxes": [
+   [
+    49.655914306640625,
+    14.890965461730957,
+    387.2848205566406,
+    267.991455078125
+   ],
+   [
+    71.37342071533203,
+    58.41486740112305,
+    121.75914001464844,
+    96.60688018798828
+   ]
+  ],
+  "scores": [
+   0.8859098553657532,
+   0.4622111916542053
+  ],
+  "out": {
+   "json_llm": "The man hurt himself by hitting his head against the wall.",
+   "up256_bilinear": "Sun.",
+   "up256_nearest": "Injured.",
+   "up320_bilinear": "Skateboard.",
+   "up384_bilinear": "Skateboard.",
+   "native512": "Skateboard.",
+   "tpu512": "Skateboard.",
+   "tpu_decoder": "Skateboard.",
+   "e2e_t16p": "Skateboard.",
+   "e2e_split": "Skateboard."
+  }
+ },
+ {
+  "question_id": 149446007,
+  "image": "COCO_val2014_000000149446.jpg",
+  "question": "What is the man carrying out of the water?",
+  "answer_type": "other",
+  "answers": [
+   "dog",
+   "kid",
+   "child",
+   "dog",
+   "baby",
+   "child",
+   "child",
+   "child",
+   "child",
+   "child"
+  ],
+  "width": 640,
+  "height": 425,
+  "boxes": [
+   [
+    53.3911247253418,
+    151.39564514160156,
+    145.3148193359375,
+    387.7402038574219
+   ],
+   [
+    181.0094451904297,
+    216.1158905029297,
+    244.80905151367188,
+    328.9537658691406
+   ],
+   [
+    295.237548828125,
+    173.6864471435547,
+    311.7181396484375,
+    225.83775329589844
+   ],
+   [
+    113.00676727294922,
+    170.75352478027344,
+    151.17059326171875,
+    319.9834289550781
+   ]
+  ],
+  "scores": [
+   0.8477401733398438,
+   0.8435514569282532,
+   0.43154871463775635,
+   0.42459404468536377
+  ],
+  "out": {
+   "json_llm": "The man is carrying a \"water bottle.\"",
+   "up256_bilinear": "Bucket.",
+   "up256_nearest": "Bucket.",
+   "up320_bilinear": "Drowning.",
+   "up384_bilinear": "Water.",
+   "native512": "Boat.",
+   "tpu512": "Boat.",
+   "tpu_decoder": "Boat.",
+   "e2e_t16p": "Boat.",
+   "e2e_split": "Surf."
+  }
+ },
+ {
+  "question_id": 79754002,
+  "image": "COCO_val2014_000000079754.jpg",
+  "question": "What is the woman doing with the food?",
+  "answer_type": "other",
+  "answers": [
+   "prepare",
+   "cooking",
+   "putting on plate",
+   "arranging it on plate",
+   "preparing",
+   "preparing",
+   "storing it",
+   "preparing",
+   "stacking it",
+   "putting it on plate"
+  ],
+  "width": 640,
+  "height": 598,
+  "boxes": [
+   [
+    305.5465393066406,
+    44.212989807128906,
+    584.9513549804688,
+    591.413818359375
+   ]
+  ],
+  "scores": [
+   0.9294347763061523
+  ],
+  "out": {
+   "json_llm": "The woman is eating with the food.",
+   "up256_bilinear": "Cooking.",
+   "up256_nearest": "Cooking.",
+   "up320_bilinear": "Cooking.",
+   "up384_bilinear": "Draining.",
+   "native512": "Cooking.",
+   "tpu512": "Eating.",
+   "tpu_decoder": "Eating.",
+   "e2e_t16p": "Eating.",
+   "e2e_split": "Eating."
+  }
+ },
+ {
+  "question_id": 469119001,
+  "image": "COCO_val2014_000000469119.jpg",
+  "question": "Where is the boy going?",
+  "answer_type": "other",
+  "answers": [
+   "school",
+   "to school",
+   "onto bus",
+   "school",
+   "school",
+   "school",
+   "school",
+   "school",
+   "in bus",
+   "bus"
+  ],
+  "width": 500,
+  "height": 485,
+  "boxes": [
+   [
+    108.19139099121094,
+    155.2273406982422,
+    189.04212951660156,
+    328.93621826171875
+   ],
+   [
+    125.38824462890625,
+    59.98998260498047,
+    194.64959716796875,
+    153.38584899902344
+   ],
+   [
+    125.0684814453125,
+    59.543060302734375,
+    194.29042053222656,
+    196.9805145263672
+   ]
+  ],
+  "scores": [
+   0.8921856880187988,
+   0.5926182270050049,
+   0.4093727171421051
+  ],
+  "out": {
+   "json_llm": "The boy is going to the store.",
+   "up256_bilinear": "School.",
+   "up256_nearest": "School.",
+   "up320_bilinear": "Ride.",
+   "up384_bilinear": "Bus.",
+   "native512": "Ride.",
+   "tpu512": "Ride.",
+   "tpu_decoder": "Ride.",
+   "e2e_t16p": "To school.",
+   "e2e_split": "Bus."
+  }
+ },
+ {
+  "question_id": 504389001,
+  "image": "COCO_val2014_000000504389.jpg",
+  "question": "What are the kids doing?",
+  "answer_type": "other",
+  "answers": [
+   "badminton",
+   "badminton",
+   "playing tennis or badminton",
+   "badminton",
+   "tennis",
+   "playing badminton",
+   "playing tennis",
+   "badminton",
+   "playing racquetball",
+   "playing tennis"
+  ],
+  "width": 500,
+  "height": 320,
+  "boxes": [
+   [
+    414.4800720214844,
+    67.7520523071289,
+    466.9268493652344,
+    234.09532165527344
+   ],
+   [
+    43.21408462524414,
+    94.02010345458984,
+    134.00167846679688,
+    202.45033264160156
+   ]
+  ],
+  "scores": [
+   0.8154822587966919,
+   0.686450183391571
+  ],
+  "out": {
+   "json_llm": "The kids are playing with the camera, trying to figure out the numbers.",
+   "up256_bilinear": "playing.",
+   "up256_nearest": "playing.",
+   "up320_bilinear": "running",
+   "up384_bilinear": "Playing.",
+   "native512": "Playing.",
+   "tpu512": "Playing.",
+   "tpu_decoder": "Playing.",
+   "e2e_t16p": "Playing.",
+   "e2e_split": "Playing."
+  }
+ },
+ {
+  "question_id": 306453008,
+  "image": "COCO_val2014_000000306453.jpg",
+  "question": "What is the object these people are holding?",
+  "answer_type": "other",
+  "answers": [
+   "wii controller",
+   "wii remotes",
+   "wii",
+   "wii controller",
+   "controllers",
+   "wii-mote",
+   "wii remote",
+   "wii controlling",
+   "wii controllers",
+   "wii remote"
+  ],
+  "width": 640,
+  "height": 480,
+  "boxes": [
+   [
+    356.36114501953125,
+    76.55583190917969,
+    640.0,
+    476.19232177734375
+   ],
+   [
+    0.0571332685649395,
+    88.26852416992188,
+    125.8846435546875,
+    475.7080078125
+   ],
+   [
+    271.1102600097656,
+    56.68901824951172,
+    513.1477661132812,
+    475.18792724609375
+   ],
+   [
+    67.5884780883789,
+    161.20262145996094,
+    265.88330078125,
+    474.6145324707031
+   ],
+   [
+    182.28233337402344,
+    106.27976989746094,
+    320.2934265136719,
+    471.03582763671875
+   ],
+   [
+    587.8307495117188,
+    20.18532943725586,
+    639.8733520507812,
+    242.9919891357422
+   ]
+  ],
+  "scores": [
+   0.8940817713737488,
+   0.8739506006240845,
+   0.8692060112953186,
+   0.8328884243965149,
+   0.7800294160842896,
+   0.7000217437744141
+  ],
+  "out": {
+   "json_llm": "The people are holding a \"person detector.\"",
+   "up256_bilinear": "Pens.",
+   "up256_nearest": "Pens.",
+   "up320_bilinear": "Wii remotes.",
+   "up384_bilinear": "Wii remotes.",
+   "native512": "Wii remotes.",
+   "tpu512": "Wii remotes.",
+   "tpu_decoder": "Wii remotes.",
+   "e2e_t16p": "Wii remotes.",
+   "e2e_split": "Wii remotes."
+  }
+ },
+ {
+  "question_id": 209018000,
+  "image": "COCO_val2014_000000209018.jpg",
+  "question": "Why is the man's tongue out?",
+  "answer_type": "other",
+  "answers": [
+   "trying to be funny",
+   "he's being silly",
+   "because he's being silly",
+   "to be silly",
+   "angry",
+   "don't know",
+   "mugging for camera",
+   "getting his picture taken",
+   "unknown",
+   "he is goofing around"
+  ],
+  "width": 640,
+  "height": 639,
+  "boxes": [
+   [
+    124.8122787475586,
+    111.28556823730469,
+    534.8048706054688,
+    639.0
+   ],
+   [
+    0.640084445476532,
+    328.97637939453125,
+    135.70599365234375,
+    639.0
+   ]
+  ],
+  "scores": [
+   0.9183734059333801,
+   0.8231391906738281
+  ],
+  "out": {
+   "json_llm": "The man's tongue out.",
+   "up256_bilinear": "Tongue.",
+   "up256_nearest": "Tongue.",
+   "up320_bilinear": "Tongue.",
+   "up384_bilinear": "Tongue.",
+   "native512": "Tongue.",
+   "tpu512": "Tongue.",
+   "tpu_decoder": "Tongue.",
+   "e2e_t16p": "Tongue.",
+   "e2e_split": "Tongue."
+  }
+ },
+ {
+  "question_id": 239456000,
+  "image": "COCO_val2014_000000239456.jpg",
+  "question": "What is the guy swinging?",
+  "answer_type": "other",
+  "answers": [
+   "racket",
+   "racket",
+   "tennis racket",
+   "racquet",
+   "tennis racket",
+   "tennis racket",
+   "racquet",
+   "tennis racket",
+   "racket",
+   "tennis racket"
+  ],
+  "width": 640,
+  "height": 400,
+  "boxes": [
+   [
+    46.77638626098633,
+    13.45376205444336,
+    328.450927734375,
+    400.0
+   ]
+  ],
+  "scores": [
+   0.9104123115539551
+  ],
+  "out": {
+   "json_llm": "The guy swinging is a person detector.",
+   "up256_bilinear": "Volt.",
+   "up256_nearest": "Volt.",
+   "up320_bilinear": "Racket.",
+   "up384_bilinear": "Tennis.",
+   "native512": "Tennis.",
+   "tpu512": "Tennis.",
+   "tpu_decoder": "Tennis.",
+   "e2e_t16p": "Tennis.",
+   "e2e_split": "Racket."
+  }
+ },
+ {
+  "question_id": 460683000,
+  "image": "COCO_val2014_000000460683.jpg",
+  "question": "How can you tell these men are probably Jewish?",
+  "answer_type": "other",
+  "answers": [
+   "huddled",
+   "tie",
+   "skullcap on man with yellow shirt",
+   "his tie",
+   "yarmulke",
+   "yamaka",
+   "wearing kippah",
+   "yamaka",
+   "tie",
+   "writing on tie"
+  ],
+  "width": 478,
+  "height": 640,
+  "boxes": [
+   [
+    0.6473758816719055,
+    1.4896937608718872,
+    385.0197448730469,
+    638.479248046875
+   ],
+   [
+    352.1595458984375,
+    310.2277526855469,
+    454.9341125488281,
+    419.5880126953125
+   ]
+  ],
+  "scores": [
+   0.8844366073608398,
+   0.4077475368976593
+  ],
+  "out": {
+   "json_llm": "To determine if these men are likely Jewish, we can analyze their facial features, clothing, and overall appearance. Here are",
+   "up256_bilinear": "Jewish.",
+   "up256_nearest": "Jewish.",
+   "up320_bilinear": "Jewish",
+   "up384_bilinear": "Jewish.",
+   "native512": "Jewish.",
+   "tpu512": "Jewish.",
+   "tpu_decoder": "Jewish.",
+   "e2e_t16p": "Jewish.",
+   "e2e_split": "Jewish."
+  }
+ },
+ {
+  "question_id": 466986002,
+  "image": "COCO_val2014_000000466986.jpg",
+  "question": "What is the man doing?",
+  "answer_type": "other",
+  "answers": [
+   "cooking",
+   "cooking",
+   "cooking",
+   "cooking",
+   "cooking",
+   "cooking",
+   "giving thumbs up",
+   "cooking",
+   "cooking",
+   "cooking"
+  ],
+  "width": 640,
+  "height": 478,
+  "boxes": [
+   [
+    229.5129852294922,
+    154.6306915283203,
+    462.9980163574219,
+    434.6030578613281
+   ],
+   [
+    0.37689208984375,
+    308.66259765625,
+    103.713623046875,
+    473.4703674316406
+   ]
+  ],
+  "scores": [
+   0.8980485796928406,
+   0.8130377531051636
+  ],
+  "out": {
+   "json_llm": "The man is walking through the city, trying to find a parking spot.",
+   "up256_bilinear": "smiling",
+   "up256_nearest": "smiling",
+   "up320_bilinear": "Smiling",
+   "up384_bilinear": "talking",
+   "native512": "Smiling",
+   "tpu512": "Eating.",
+   "tpu_decoder": "Smiling.",
+   "e2e_t16p": "Smiling.",
+   "e2e_split": "Smiling"
+  }
+ },
+ {
+  "question_id": 163562001,
+  "image": "COCO_val2014_000000163562.jpg",
+  "question": "What is the man wearing on his arms?",
+  "answer_type": "other",
+  "answers": [
+   "watch",
+   "wrist watch",
+   "watch",
+   "watch",
+   "watch",
+   "watch",
+   "watch",
+   "watch",
+   "watch",
+   "watch"
+  ],
+  "width": 500,
+  "height": 333,
+  "boxes": [
+   [
+    135.28170776367188,
+    0.0,
+    457.3559265136719,
+    327.2084045410156
+   ]
+  ],
+  "scores": [
+   0.9402261972427368
+  ],
+  "out": {
+   "json_llm": "The man is wearing a black hoodie and a black jacket.",
+   "up256_bilinear": "Rotary.",
+   "up256_nearest": "Rotary.",
+   "up320_bilinear": "Arms.",
+   "up384_bilinear": "Red.",
+   "native512": "Hands.",
+   "tpu512": "Hands.",
+   "tpu_decoder": "Hands.",
+   "e2e_t16p": "Arms.",
+   "e2e_split": "Glasses."
+  }
+ },
+ {
+  "question_id": 266409002,
+  "image": "COCO_val2014_000000266409.jpg",
+  "question": "What color is the person's coat?",
+  "answer_type": "other",
+  "answers": [
+   "blue",
+   "blue",
+   "blue",
+   "blue and black",
+   "blue",
+   "blue",
+   "blue",
+   "blue",
+   "blue",
+   "blue"
+  ],
+  "width": 640,
+  "height": 480,
+  "boxes": [
+   [
+    326.2803955078125,
+    144.84703063964844,
+    454.73724365234375,
+    447.0818786621094
+   ]
+  ],
+  "scores": [
+   0.9062466621398926
+  ],
+  "out": {
+   "json_llm": "The person's coat is blue.",
+   "up256_bilinear": "Blue.",
+   "up256_nearest": "Blue.",
+   "up320_bilinear": "Blue.",
+   "up384_bilinear": "Blue.",
+   "native512": "Blue.",
+   "tpu512": "Blue.",
+   "tpu_decoder": "Blue.",
+   "e2e_t16p": "Blue.",
+   "e2e_split": "Blue."
+  }
+ },
+ {
+  "question_id": 422700001,
+  "image": "COCO_val2014_000000422700.jpg",
+  "question": "What is the girl holding in her left hand?",
+  "answer_type": "other",
+  "answers": [
+   "baby's hand",
+   "bottle",
+   "bottle",
+   "teething ring",
+   "cannot see her left hand",
+   "nothing",
+   "nothing",
+   "baby",
+   "not visible",
+   "rattle"
+  ],
+  "width": 640,
+  "height": 480,
+  "boxes": [
+   [
+    186.5007781982422,
+    103.86858367919922,
+    502.04486083984375,
+    438.7126159667969
+   ],
+   [
+    4.7515869140625,
+    115.95257568359375,
+    250.34437561035156,
+    471.87188720703125
+   ],
+   [
+    315.0691833496094,
+    121.21961975097656,
+    509.64923095703125,
+    393.28009033203125
+   ],
+   [
+    574.5883178710938,
+    250.67135620117188,
+    639.8504028320312,
+    474.78729248046875
+   ]
+  ],
+  "scores": [
+   0.6607049107551575,
+   0.4954683482646942,
+   0.49326369166374207,
+   0.4297123849391937
+  ],
+  "out": {
+   "json_llm": "The girl holding in her left hand is a woman.",
+   "up256_bilinear": "Hand.",
+   "up256_nearest": "Hand.",
+   "up320_bilinear": "Hair.",
+   "up384_bilinear": "Baby.",
+   "native512": "Child.",
+   "tpu512": "Scissors.",
+   "tpu_decoder": "Scissors.",
+   "e2e_t16p": "Scissors.",
+   "e2e_split": "Tie."
+  }
+ },
+ {
+  "question_id": 559837005,
+  "image": "COCO_val2014_000000559837.jpg",
+  "question": "What is the use of the silver cylindrical object to the left of the child?",
+  "answer_type": "other",
+  "answers": [
+   "trash can",
+   "trash",
+   "art",
+   "trash can",
+   "trash can",
+   "light",
+   "it is trash can",
+   "trash can",
+   "art",
+   "trash can"
+  ],
+  "width": 640,
+  "height": 480,
+  "boxes": [
+   [
+    480.3772888183594,
+    300.60546875,
+    531.28271484375,
+    344.198974609375
+   ],
+   [
+    486.90570068359375,
+    254.42977905273438,
+    512.051025390625,
+    301.2831115722656
+   ],
+   [
+    479.4975280761719,
+    253.71688842773438,
+    512.3604125976562,
+    336.15155029296875
+   ]
+  ],
+  "scores": [
+   0.628688395023346,
+   0.5030320882797241,
+   0.4240204989910126
+  ],
+  "out": {
+   "json_llm": "The silver cylindrical object to the left of the child is used to measure the child's height.",
+   "up256_bilinear": "Object.",
+   "up256_nearest": "Object.",
+   "up320_bilinear": "Object.",
+   "up384_bilinear": "Light.",
+   "native512": "Object.",
+   "tpu512": "Object.",
+   "tpu_decoder": "Camera.",
+   "e2e_t16p": "Camera.",
+   "e2e_split": "Camera."
+  }
+ },
+ {
+  "question_id": 449879000,
+  "image": "COCO_val2014_000000449879.jpg",
+  "question": "Is that a man or a woman sitting on the motorcycle?",
+  "answer_type": "other",
+  "answers": [
+   "man",
+   "man",
+   "man",
+   "woman",
+   "man",
+   "man",
+   "woman",
+   "man",
+   "woman",
+   "man"
+  ],
+  "width": 375,
+  "height": 500,
+  "boxes": [
+   [
+    106.70396423339844,
+    18.764461517333984,
+    349.4110107421875,
+    498.1234436035156
+   ]
+  ],
+  "scores": [
+   0.9039201736450195
+  ],
+  "out": {
+   "json_llm": "The person on the motorcycle is a man.",
+   "up256_bilinear": "Man.",
+   "up256_nearest": "Man.",
+   "up320_bilinear": "Man.",
+   "up384_bilinear": "Man.",
+   "native512": "Woman.",
+   "tpu512": "Woman.",
+   "tpu_decoder": "Woman.",
+   "e2e_t16p": "Man.",
+   "e2e_split": "Man."
+  }
+ },
+ {
+  "question_id": 217522004,
+  "image": "COCO_val2014_000000217522.jpg",
+  "question": "What are the man and woman doing?",
+  "answer_type": "other",
+  "answers": [
+   "shopping",
+   "talking",
+   "eating",
+   "buying",
+   "ordering",
+   "eating",
+   "getting hot dogs",
+   "buying food",
+   "no man",
+   "ordering hot dogs"
+  ],
+  "width": 617,
+  "height": 640,
+  "boxes": [
+   [
+    338.09710693359375,
+    104.55464172363281,
+    588.650146484375,
+    638.1959838867188
+   ]
+  ],
+  "scores": [
+   0.8594557642936707
+  ],
+  "out": {
+   "json_llm": "The man and woman are sitting in a chair, and the woman is reading a book.",
+   "up256_bilinear": "Talking",
+   "up256_nearest": "Talking",
+   "up320_bilinear": "Reading.",
+   "up384_bilinear": "Drinking.",
+   "native512": "Cooking",
+   "tpu512": "Cooking.",
+   "tpu_decoder": "Cooking.",
+   "e2e_t16p": "Standing behind a table with a menu on it.",
+   "e2e_split": "Cooking."
+  }
+ },
+ {
+  "question_id": 485480004,
+  "image": "COCO_val2014_000000485480.jpg",
+  "question": "Where is the man playing?",
+  "answer_type": "other",
+  "answers": [
+   "on baseball field",
+   "baseball field",
+   "batters' box",
+   "baseball",
+   "baseball field",
+   "baseball",
+   "baseball field",
+   "canada",
+   "baseball field",
+   "baseball field"
+  ],
+  "width": 640,
+  "height": 281,
+  "boxes": [
+   [
+    270.3208312988281,
+    49.7667350769043,
+    432.2276611328125,
+    213.80531311035156
+   ],
+   [
+    0.1111384853720665,
+    90.32141876220703,
+    88.6380386352539,
+    253.03111267089844
+   ],
+   [
+    69.06932830810547,
+    115.7391128540039,
+    227.58706665039062,
+    258.9098205566406
+   ]
+  ],
+  "scores": [
+   0.9218406677246094,
+   0.903145432472229,
+   0.879983127117157
+  ],
+  "out": {
+   "json_llm": "The man is playing a game of \"The Three Switches.\"",
+   "up256_bilinear": "basketball",
+   "up256_nearest": "basketball",
+   "up320_bilinear": "Baseball.",
+   "up384_bilinear": "Baseball.",
+   "native512": "Baseball.",
+   "tpu512": "Baseball.",
+   "tpu_decoder": "Baseball.",
+   "e2e_t16p": "Baseball.",
+   "e2e_split": "Baseball."
+  }
+ },
+ {
+  "question_id": 536891001,
+  "image": "COCO_val2014_000000536891.jpg",
+  "question": "What is the boy sitting on?",
+  "answer_type": "other",
+  "answers": [
+   "chair",
+   "chair",
+   "chair",
+   "chair",
+   "chair",
+   "chair",
+   "chair",
+   "chair",
+   "chair",
+   "pillow"
+  ],
+  "width": 640,
+  "height": 499,
+  "boxes": [
+   [
+    242.6160125732422,
+    180.65020751953125,
+    372.00323486328125,
+    355.09112548828125
+   ]
+  ],
+  "scores": [
+   0.6293609142303467
+  ],
+  "out": {
+   "json_llm": "The boy is sitting on a small, rectangular box with a small, rectangular box inside.",
+   "up256_bilinear": "chair",
+   "up256_nearest": "Chair",
+   "up320_bilinear": "Chair",
+   "up384_bilinear": "Chair",
+   "native512": "Chair.",
+   "tpu512": "Chair.",
+   "tpu_decoder": "Chair.",
+   "e2e_t16p": "Table.",
+   "e2e_split": "Chair."
+  }
+ },
+ {
+  "question_id": 142108000,
+  "image": "COCO_val2014_000000142108.jpg",
+  "question": "What are the people standing doing to the people seated?",
+  "answer_type": "other",
+  "answers": [
+   "standing",
+   "peeling banana",
+   "making",
+   "feeding",
+   "banana",
+   "feeding",
+   "feeding",
+   "feeding them",
+   "feeding",
+   "they are serving them bananas"
+  ],
+  "width": 640,
+  "height": 423,
+  "boxes": [
+   [
+    335.3520812988281,
+    4.235700607299805,
+    628.023681640625,
+    385.22259521484375
+   ],
+   [
+    61.69356918334961,
+    146.26031494140625,
+    204.56057739257812,
+    321.53759765625
+   ],
+   [
+    281.41650390625,
+    19.00003433227539,
+    443.0957946777344,
+    223.2360076904297
+   ],
+   [
+    231.06494140625,
+    18.07864761352539,
+    443.4740295410156,
+    346.1601257324219
+   ],
+   [
+    61.40389633178711,
+    146.00912475585938,
+    275.6904296875,
+    321.693359375
+   ]
+  ],
+  "scores": [
+   0.7769497036933899,
+   0.7105705738067627,
+   0.45060622692108154,
+   0.4401530623435974,
+   0.4069035053253174
+  ],
+  "out": {
+   "json_llm": "The people standing are standing.",
+   "up256_bilinear": "seated",
+   "up256_nearest": "Dinner.",
+   "up320_bilinear": "Standing.",
+   "up384_bilinear": "Standing.",
+   "native512": "Standing.",
+   "tpu512": "Standing.",
+   "tpu_decoder": "Eating.",
+   "e2e_t16p": "Standing.",
+   "e2e_split": "Standing."
+  }
+ },
+ {
+  "question_id": 240950000,
+  "image": "COCO_val2014_000000240950.jpg",
+  "question": "Are the people eating indoors or outdoors?",
+  "answer_type": "other",
+  "answers": [
+   "outdoors",
+   "outdoors",
+   "indoors",
+   "outdoors",
+   "outdoors",
+   "outdoors",
+   "outdoors",
+   "outdoors",
+   "outdoors",
+   "outdoors"
+  ],
+  "width": 640,
+  "height": 427,
+  "boxes": [
+   [
+    384.0411376953125,
+    102.0032730102539,
+    509.83416748046875,
+    279.52276611328125
+   ],
+   [
+    319.3507385253906,
+    83.91313934326172,
+    396.27520751953125,
+    163.22659301757812
+   ],
+   [
+    271.3160400390625,
+    227.0576171875,
+    390.1979064941406,
+    424.5185241699219
+   ],
+   [
+    31.07386589050293,
+    140.18202209472656,
+    159.99215698242188,
+    324.1462707519531
+   ],
+   [
+    238.45407104492188,
+    114.95552825927734,
+    343.2793273925781,
+    210.31802368164062
+   ],
+   [
+    188.4838409423828,
+    83.78472900390625,
+    259.5918884277344,
+    188.2691192626953
+   ],
+   [
+    181.91395568847656,
+    84.64994049072266,
+    259.89447021484375,
+    228.52305603027344
+   ]
+  ],
+  "scores": [
+   0.7989006042480469,
+   0.783473014831543,
+   0.7606584429740906,
+   0.7237222790718079,
+   0.543432891368866,
+   0.5040031671524048,
+   0.4025413990020752
+  ],
+  "out": {
+   "json_llm": "The people eating indoors.",
+   "up256_bilinear": "Outdoors.",
+   "up256_nearest": "Outdoors.",
+   "up320_bilinear": "Outdoors.",
+   "up384_bilinear": "Outdoors.",
+   "native512": "Outdoors.",
+   "tpu512": "Outdoors.",
+   "tpu_decoder": "Outdoors.",
+   "e2e_t16p": "Outdoors.",
+   "e2e_split": "Outdoors."
+  }
+ },
+ {
+  "question_id": 259555001,
+  "image": "COCO_val2014_000000259555.jpg",
+  "question": "What type of footwear is the woman wearing?",
+  "answer_type": "other",
+  "answers": [
+   "boots",
+   "boots",
+   "boots",
+   "boots",
+   "boots",
+   "boots",
+   "boots",
+   "boots",
+   "boots",
+   "boots"
+  ],
+  "width": 640,
+  "height": 384,
+  "boxes": [
+   [
+    218.06663513183594,
+    9.602971076965332,
+    510.9326171875,
+    343.0681457519531
+   ]
+  ],
+  "scores": [
+   0.8908542394638062
+  ],
+  "out": {
+   "json_llm": "The woman is wearing a pair of sneakers.",
+   "up256_bilinear": "Sneakers.",
+   "up256_nearest": "Sneakers.",
+   "up320_bilinear": "Sneakers.",
+   "up384_bilinear": "Sneakers.",
+   "native512": "Boots.",
+   "tpu512": "Boots.",
+   "tpu_decoder": "Boots.",
+   "e2e_t16p": "Boots.",
+   "e2e_split": "Boots."
+  }
+ },
+ {
+  "question_id": 486576007,
+  "image": "COCO_val2014_000000486576.jpg",
+  "question": "What sport are the children virtually playing?",
+  "answer_type": "other",
+  "answers": [
+   "wii game",
+   "video games",
+   "don't know",
+   "not possible",
+   "tennis",
+   "bowling",
+   "wii sports",
+   "wii",
+   "i cannot tell",
+   "wii"
+  ],
+  "width": 640,
+  "height": 427,
+  "boxes": [
+   [
+    120.1656494140625,
+    18.24471664428711,
+    314.8170166015625,
+    420.8615417480469
+   ]
+  ],
+  "scores": [
+   0.9288355112075806
+  ],
+  "out": {
+   "json_llm": "The children are virtually playing soccer.",
+   "up256_bilinear": "Basketball.",
+   "up256_nearest": "Basketball.",
+   "up320_bilinear": "Basketball.",
+   "up384_bilinear": "Tennis.",
+   "native512": "Wii.",
+   "tpu512": "Wii.",
+   "tpu_decoder": "Wii.",
+   "e2e_t16p": "Wii.",
+   "e2e_split": "Wii."
+  }
+ },
+ {
+  "question_id": 554727003,
+  "image": "COCO_val2014_000000554727.jpg",
+  "question": "What is the man in the photo doing?",
+  "answer_type": "other",
+  "answers": [
+   "skateboarding",
+   "skating",
+   "skateboarding",
+   "skateboarding",
+   "skateboarding",
+   "skateboard",
+   "skateboarding",
+   "skateboarding",
+   "skateboarding",
+   "skateboarding"
+  ],
+  "width": 428,
+  "height": 640,
+  "boxes": [
+   [
+    0.0,
+    0.278996080160141,
+    294.9787902832031,
+    339.9728088378906
+   ]
+  ],
+  "scores": [
+   0.8430834412574768
+  ],
+  "out": {
+   "json_llm": "The man in the photo is a person who is wearing a black jacket and a white shirt.",
+   "up256_bilinear": "Standing.",
+   "up256_nearest": "Standing.",
+   "up320_bilinear": "Jumping.",
+   "up384_bilinear": "Skateboarding",
+   "native512": "Skateboarding.",
+   "tpu512": "Skateboarding.",
+   "tpu_decoder": "Skateboarding.",
+   "e2e_t16p": "Skateboarding.",
+   "e2e_split": "Skateboarding."
+  }
+ },
+ {
+  "question_id": 250594000,
+  "image": "COCO_val2014_000000250594.jpg",
+  "question": "What color coat is the guy wearing?",
+  "answer_type": "other",
+  "answers": [
+   "red with black and white",
+   "red",
+   "red",
+   "red",
+   "red and black",
+   "red",
+   "red",
+   "red",
+   "red",
+   "red"
+  ],
+  "width": 332,
+  "height": 500,
+  "boxes": [
+   [
+    108.04804992675781,
+    133.18785095214844,
+    254.0858612060547,
+    365.71490478515625
+   ]
+  ],
+  "scores": [
+   0.9080563187599182
+  ],
+  "out": {
+   "json_llm": "The guy is wearing a blue coat.",
+   "up256_bilinear": "Red.",
+   "up256_nearest": "Red.",
+   "up320_bilinear": "Red.",
+   "up384_bilinear": "Red.",
+   "native512": "Red.",
+   "tpu512": "Red.",
+   "tpu_decoder": "Red.",
+   "e2e_t16p": "Red.",
+   "e2e_split": "Red."
+  }
+ },
+ {
+  "question_id": 162415002,
+  "image": "COCO_val2014_000000162415.jpg",
+  "question": "What brand of baseball glove is the girl wearing?",
+  "answer_type": "other",
+  "answers": [
+   "mizuno",
+   "mizzou",
+   "mizuno",
+   "masada",
+   "amazon",
+   "cannot read logo",
+   "mizuna",
+   "mazda",
+   "spalding",
+   "mizzana"
+  ],
+  "width": 536,
+  "height": 640,
+  "boxes": [
+   [
+    34.542381286621094,
+    98.24345397949219,
+    479.1759338378906,
+    639.3414306640625
+   ]
+  ],
+  "scores": [
+   0.8227708339691162
+  ],
+  "out": {
+   "json_llm": "The girl is wearing a baseball glove.",
+   "up256_bilinear": "Wilson.",
+   "up256_nearest": "Wilson.",
+   "up320_bilinear": "Wilson.",
+   "up384_bilinear": "Nike",
+   "native512": "All-Star.",
+   "tpu512": "Ball.",
+   "tpu_decoder": "Ball.",
+   "e2e_t16p": "Foam ball.",
+   "e2e_split": "Foo bar."
+  }
+ },
+ {
+  "question_id": 3488004,
+  "image": "COCO_val2014_000000003488.jpg",
+  "question": "What is the man looking at?",
+  "answer_type": "other",
+  "answers": [
+   "goal",
+   "ground",
+   "ball",
+   "soccer ball",
+   "ball",
+   "soccer ball",
+   "soccer ball",
+   "ball",
+   "soccer ball",
+   "ball"
+  ],
+  "width": 500,
+  "height": 333,
+  "boxes": [
+   [
+    196.65248107910156,
+    80.33728790283203,
+    342.88525390625,
+    289.2581787109375
+   ]
+  ],
+  "scores": [
+   0.9232912659645081
+  ],
+  "out": {
+   "json_llm": "The man is looking at a photograph of a woman.",
+   "up256_bilinear": "Goal.",
+   "up256_nearest": "soccer.",
+   "up320_bilinear": "Soccer.",
+   "up384_bilinear": "Soccer.",
+   "native512": "Footprint.",
+   "tpu512": "Ball.",
+   "tpu_decoder": "Ball.",
+   "e2e_t16p": "Soccer.",
+   "e2e_split": "Ball."
+  }
+ },
+ {
+  "question_id": 415727002,
+  "image": "COCO_val2014_000000415727.jpg",
+  "question": "What kind of gear is the boy wearing on his chest?",
+  "answer_type": "other",
+  "answers": [
+   "chest protector",
+   "catchers",
+   "chest pads",
+   "breastplate",
+   "catcher",
+   "catchers",
+   "batting",
+   "chest protector",
+   "catchers chest protector",
+   "baseball gear"
+  ],
+  "width": 640,
+  "height": 480,
+  "boxes": [
+   [
+    154.35311889648438,
+    88.02486419677734,
+    451.164306640625,
+    473.3619689941406
+   ],
+   [
+    93.0291748046875,
+    34.65505599975586,
+    235.14666748046875,
+    347.6134338378906
+   ],
+   [
+    2.47782039642334,
+    2.0215280055999756,
+    134.5169677734375,
+    164.9613800048828
+   ]
+  ],
+  "scores": [
+   0.905426561832428,
+   0.6075201630592346,
+   0.44767358899116516
+  ],
+  "out": {
+   "json_llm": "The boy is wearing a \"smartwatch\" or a \"watch\" with a \"smartwatch\" app.",
+   "up256_bilinear": "Gear",
+   "up256_nearest": "Gear",
+   "up320_bilinear": "Gear",
+   "up384_bilinear": "Gear.",
+   "native512": "Backpack.",
+   "tpu512": "Backpack.",
+   "tpu_decoder": "Backpack.",
+   "e2e_t16p": "Backpack.",
+   "e2e_split": "Backpack."
+  }
+ },
+ {
+  "question_id": 116389001,
+  "image": "COCO_val2014_000000116389.jpg",
+  "question": "What job is the man doing out there?",
+  "answer_type": "other",
+  "answers": [
+   "don't know",
+   "cross country skiing",
+   "hiking",
+   "surveying",
+   "lumberjack",
+   "surveying",
+   "no job",
+   "don't know",
+   "hiking",
+   "??"
+  ],
+  "width": 528,
+  "height": 512,
+  "boxes": [
+   [
+    287.7478332519531,
+    172.57113647460938,
+    357.020263671875,
+    337.517578125
+   ]
+  ],
+  "scores": [
+   0.832140326499939
+  ],
+  "out": {
+   "json_llm": "The man is a \"sports reporter\" or \"sports reporter\" in a news organization.",
+   "up256_bilinear": "Mechanic.",
+   "up256_nearest": "Mechanic.",
+   "up320_bilinear": "Worker.",
+   "up384_bilinear": "Snowboarder.",
+   "native512": "Camping.",
+   "tpu512": "Camping.",
+   "tpu_decoder": "Camping.",
+   "e2e_t16p": "Skiing.",
+   "e2e_split": "Skiing."
+  }
+ },
+ {
+  "question_id": 219629002,
+  "image": "COCO_val2014_000000219629.jpg",
+  "question": "What is the boy holding?",
+  "answer_type": "other",
+  "answers": [
+   "donut",
+   "donut",
+   "donut",
+   "donut",
+   "doughnut",
+   "cake",
+   "donut",
+   "donut",
+   "donut",
+   "cake"
+  ],
+  "width": 457,
+  "height": 640,
+  "boxes": [
+   [
+    1.0026686191558838,
+    21.119298934936523,
+    456.1095275878906,
+    638.4872436523438
+   ]
+  ],
+  "scores": [
+   0.961000919342041
+  ],
+  "out": {
+   "json_llm": "The boy is holding a \"book.\"",
+   "up256_bilinear": "Donut.",
+   "up256_nearest": "Donut.",
+   "up320_bilinear": "Chocolate.",
+   "up384_bilinear": "Donut.",
+   "native512": "Donut.",
+   "tpu512": "Donut.",
+   "tpu_decoder": "Donut.",
+   "e2e_t16p": "Chocolate.",
+   "e2e_split": "Dessert."
+  }
+ },
+ {
+  "question_id": 224358000,
+  "image": "COCO_val2014_000000224358.jpg",
+  "question": "What color are the stripes on the tennis player's shoe?",
+  "answer_type": "other",
+  "answers": [
+   "red",
+   "red",
+   "red",
+   "red",
+   "red",
+   "red",
+   "red",
+   "red",
+   "pink",
+   "red"
+  ],
+  "width": 640,
+  "height": 627,
+  "boxes": [
+   [
+    273.0030212402344,
+    197.58572387695312,
+    572.4122314453125,
+    494.03851318359375
+   ],
+   [
+    62.70880889892578,
+    196.96571350097656,
+    127.50887298583984,
+    246.25588989257812
+   ],
+   [
+    19.047317504882812,
+    130.19073486328125,
+    66.03465270996094,
+    190.5979461669922
+   ],
+   [
+    364.6348571777344,
+    139.7582550048828,
+    419.4723205566406,
+    195.8746337890625
+   ],
+   [
+    82.60922241210938,
+    125.72710418701172,
+    129.07650756835938,
+    191.75868225097656
+   ],
+   [
+    467.42205810546875,
+    137.34310913085938,
+    512.910888671875,
+    192.169921875
+   ]
+  ],
+  "scores": [
+   0.9316607117652893,
+   0.5690373182296753,
+   0.4671088457107544,
+   0.4221193492412567,
+   0.421558678150177,
+   0.4101818799972534
+  ],
+  "out": {
+   "json_llm": "The tennis player's shoe is a blue striped shoe.",
+   "up256_bilinear": "Blue.",
+   "up256_nearest": "Blue.",
+   "up320_bilinear": "Blue.",
+   "up384_bilinear": "Blue.",
+   "native512": "White.",
+   "tpu512": "White.",
+   "tpu_decoder": "White.",
+   "e2e_t16p": "White.",
+   "e2e_split": "White."
+  }
+ },
+ {
+  "question_id": 106411001,
+  "image": "COCO_val2014_000000106411.jpg",
+  "question": "What pattern is the man's shirt?",
+  "answer_type": "other",
+  "answers": [
+   "striped",
+   "striped",
+   "striped",
+   "stripes",
+   "striped",
+   "stripes",
+   "stripes",
+   "striped",
+   "stripes",
+   "striped"
+  ],
+  "width": 640,
+  "height": 480,
+  "boxes": [
+   [
+    135.35142517089844,
+    155.23158264160156,
+    300.04241943359375,
+    423.8886413574219
+   ]
+  ],
+  "scores": [
+   0.8107756972312927
+  ],
+  "out": {
+   "json_llm": "The man's shirt is a rectangle with a length of 10.5 inches and a width of 0.",
+   "up256_bilinear": "Striped.",
+   "up256_nearest": "Striped.",
+   "up320_bilinear": "Sleeveless.",
+   "up384_bilinear": "Striped.",
+   "native512": "Striped.",
+   "tpu512": "Striped.",
+   "tpu_decoder": "Polo.",
+   "e2e_t16p": "Stripe.",
+   "e2e_split": "Stripped."
+  }
+ },
+ {
+  "question_id": 425555002,
+  "image": "COCO_val2014_000000425555.jpg",
+  "question": "Where is the man sitting?",
+  "answer_type": "other",
+  "answers": [
+   "wheelchair",
+   "wheelchair",
+   "wheelchair",
+   "wheelchair",
+   "in wheelchair",
+   "wheelchair",
+   "wheelchair",
+   "wheelchair",
+   "wheelchair",
+   "wheelchair"
+  ],
+  "width": 640,
+  "height": 426,
+  "boxes": [
+   [
+    8.91377067565918,
+    119.90028381347656,
+    134.2484130859375,
+    334.3834533691406
+   ]
+  ],
+  "scores": [
+   0.9002293348312378
+  ],
+  "out": {
+   "json_llm": "The man is sitting in the corner of the room.",
+   "up256_bilinear": "Fireman.",
+   "up256_nearest": "Fire hydrants.",
+   "up320_bilinear": "Fire hydrants.",
+   "up384_bilinear": "Wheelchair.",
+   "native512": "Wheelchair.",
+   "tpu512": "Wheelchair.",
+   "tpu_decoder": "Wheelchair.",
+   "e2e_t16p": "Wheelchair.",
+   "e2e_split": "Wheelchair."
+  }
+ },
+ {
+  "question_id": 485509005,
+  "image": "COCO_val2014_000000485509.jpg",
+  "question": "What color is the person's pants?",
+  "answer_type": "other",
+  "answers": [
+   "black",
+   "black",
+   "black",
+   "black",
+   "black",
+   "black",
+   "black",
+   "black",
+   "black",
+   "black"
+  ],
+  "width": 640,
+  "height": 480,
+  "boxes": [
+   [
+    277.2606506347656,
+    254.87139892578125,
+    307.02227783203125,
+    323.0968017578125
+   ],
+   [
+    335.77685546875,
+    271.84124755859375,
+    346.2196960449219,
+    291.6463928222656
+   ]
+  ],
+  "scores": [
+   0.7607338428497314,
+   0.4535524249076843
+  ],
+  "out": {
+   "json_llm": "The person's pants are blue.",
+   "up256_bilinear": "Black.",
+   "up256_nearest": "Black.",
+   "up320_bilinear": "Black.",
+   "up384_bilinear": "Black.",
+   "native512": "Black.",
+   "tpu512": "Black.",
+   "tpu_decoder": "Black.",
+   "e2e_t16p": "Black.",
+   "e2e_split": "Black."
+  }
+ },
+ {
+  "question_id": 164135001,
+  "image": "COCO_val2014_000000164135.jpg",
+  "question": "What is the boy riding?",
+  "answer_type": "other",
+  "answers": [
+   "skateboard",
+   "skateboard",
+   "skateboard",
+   "skateboard",
+   "skateboard",
+   "skateboard",
+   "skateboard",
+   "skateboard",
+   "skateboard",
+   "skateboard"
+  ],
+  "width": 640,
+  "height": 425,
+  "boxes": [
+   [
+    273.3664855957031,
+    154.21017456054688,
+    372.2145690917969,
+    314.9857482910156
+   ],
+   [
+    463.0653381347656,
+    313.5094909667969,
+    592.7525024414062,
+    423.34014892578125
+   ]
+  ],
+  "scores": [
+   0.8458569049835205,
+   0.5844159126281738
+  ],
+  "out": {
+   "json_llm": "The boy is riding a bicycle.",
+   "up256_bilinear": "bicycle",
+   "up256_nearest": "bicycle",
+   "up320_bilinear": "bicycle.",
+   "up384_bilinear": "motorcycle.",
+   "native512": "skateboard.",
+   "tpu512": "RIDE.",
+   "tpu_decoder": "Rope.",
+   "e2e_t16p": "RIDE.",
+   "e2e_split": "RIDE."
+  }
+ },
+ {
+  "question_id": 445055002,
+  "image": "COCO_val2014_000000445055.jpg",
+  "question": "What are these people wearing?",
+  "answer_type": "other",
+  "answers": [
+   "wetsuits",
+   "wetsuits",
+   "wetsuits",
+   "wetsuits",
+   "wetsuits",
+   "wetsuits",
+   "surf suits",
+   "wetsuits",
+   "wetsuits",
+   "wet-suits"
+  ],
+  "width": 640,
+  "height": 640,
+  "boxes": [
+   [
+    361.7619934082031,
+    257.4327392578125,
+    564.3969116210938,
+    436.0351257324219
+   ],
+   [
+    142.34068298339844,
+    275.6539001464844,
+    314.4168701171875,
+    459.6163330078125
+   ]
+  ],
+  "scores": [
+   0.9249487519264221,
+   0.9139761924743652
+  ],
+  "out": {
+   "json_llm": "These people are wearing a pair of sunglasses.",
+   "up256_bilinear": "Surfboard.",
+   "up256_nearest": "Surfboard.",
+   "up320_bilinear": "Surfboard.",
+   "up384_bilinear": "Surfboard.",
+   "native512": "Surfboard.",
+   "tpu512": "Surfboard.",
+   "tpu_decoder": "Surfers.",
+   "e2e_t16p": "Surfwear.",
+   "e2e_split": "Surf suits."
+  }
+ },
+ {
+  "question_id": 88433000,
+  "image": "COCO_val2014_000000088433.jpg",
+  "question": "What is the main color of the man's outfit?",
+  "answer_type": "other",
+  "answers": [
+   "red",
+   "red",
+   "red",
+   "red",
+   "red",
+   "red",
+   "red",
+   "red",
+   "red",
+   "red"
+  ],
+  "width": 640,
+  "height": 478,
+  "boxes": [
+   [
+    228.6553955078125,
+    161.60360717773438,
+    366.2737121582031,
+    469.8829650878906
+   ]
+  ],
+  "scores": [
+   0.9091140627861023
+  ],
+  "out": {
+   "json_llm": "The main color of the man's outfit is blue.",
+   "up256_bilinear": "Red.",
+   "up256_nearest": "Red.",
+   "up320_bilinear": "Red.",
+   "up384_bilinear": "Red.",
+   "native512": "Red.",
+   "tpu512": "Red.",
+   "tpu_decoder": "Red.",
+   "e2e_t16p": "Red.",
+   "e2e_split": "Red."
+  }
+ },
+ {
+  "question_id": 383462000,
+  "image": "COCO_val2014_000000383462.jpg",
+  "question": "What type of collars do the men's shirts have?",
+  "answer_type": "other",
+  "answers": [
+   "crew",
+   "no collars",
+   "none",
+   "none",
+   "no collar",
+   "crew",
+   "crewneck",
+   "none",
+   "no collar",
+   "none"
+  ],
+  "width": 640,
+  "height": 515,
+  "boxes": [
+   [
+    31.581159591674805,
+    57.95234298706055,
+    430.9355773925781,
+    489.38507080078125
+   ]
+  ],
+  "scores": [
+   0.9466524124145508
+  ],
+  "out": {
+   "json_llm": "The men's shirts have a collar.",
+   "up256_bilinear": "Necklace.",
+   "up256_nearest": "Collars.",
+   "up320_bilinear": "Buttoned",
+   "up384_bilinear": "Necklace.",
+   "native512": "T-shirts.",
+   "tpu512": "Shirt.",
+   "tpu_decoder": "Shirt.",
+   "e2e_t16p": "T-shirts.",
+   "e2e_split": "Casual."
+  }
+ },
+ {
+  "question_id": 303219024,
+  "image": "COCO_val2014_000000303219.jpg",
+  "question": "What color is the woman's' shirt?",
+  "answer_type": "other",
+  "answers": [
+   "gray",
+   "black and white",
+   "blue, and black and white",
+   "black and white",
+   "white",
+   "which one",
+   "blue or patterned",
+   "black and white",
+   "black and white",
+   "blue"
+  ],
+  "width": 640,
+  "height": 480,
+  "boxes": [
+   [
+    357.0653381347656,
+    102.5576400756836,
+    496.8511962890625,
+    478.4695129394531
+   ],
+   [
+    102.51014709472656,
+    54.45269012451172,
+    272.00506591796875,
+    476.86376953125
+   ]
+  ],
+  "scores": [
+   0.9115325212478638,
+   0.8556670546531677
+  ],
+  "out": {
+   "json_llm": "The woman's' shirt is blue.",
+   "up256_bilinear": "Blue.",
+   "up256_nearest": "Blue.",
+   "up320_bilinear": "White.",
+   "up384_bilinear": "Blue.",
+   "native512": "Blue.",
+   "tpu512": "Blue.",
+   "tpu_decoder": "Blue.",
+   "e2e_t16p": "Blue.",
+   "e2e_split": "Blue."
+  }
+ }
+]
