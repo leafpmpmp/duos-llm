@@ -42,6 +42,23 @@ generation speed in tok/s, for 64 prompt tokens and 32 generated tokens.
 The full results are in `bench-arm64.txt`, `bench-135m-riscv.txt` and
 `bench-360m-riscv.txt`.
 
+## Vision: SmolVLM
+
+`tpu/smolvlm` runs [SmolVLM-256M](https://huggingface.co/HuggingFaceTB/SmolVLM-256M-Instruct)
+on the same TPU, beside a YOLO11n person detector from
+[duos-detect](https://github.com/leafpmpmp/duos-detect). One resident program holds the
+vision encoder and the text model, and a page on the board takes questions from any
+browser on the local network.
+
+- On 150 held-out VQA v2 questions about people, the board scores 48.5. SmolVLM-256M in
+  float scores 50.9.
+- A question gets its answer in a median of 0.36 to 0.59 s, about the newest frame the
+  board has encoded. That frame is at least 4.5 s old.
+- The detector keeps 12.5 to 14.5 of its 15 fps.
+
+See [tpu/smolvlm/README.md](tpu/smolvlm/README.md) for the results, the build and the
+limits.
+
 ## Requirements
 
 Hardware: Milk-V Duo S (SG2000). The TPU path needs the ARM core. The CPU path
@@ -214,6 +231,7 @@ because the SmolLM2 tensor sizes do not suit the K-quant kernels.
 |---|---|
 | `tpu/runtime/` | The TPU program `llm`, and `mkcfg.sh` for model configs |
 | `tpu/smollm/` | Model definition, ONNX export, TPU compilation and checks |
+| `tpu/smolvlm/` | SmolVLM-256M beside the detector: encoder, decoder, the resident program and the question page |
 | `tpu/q4.sh` | Builds and packs the `q4` config |
 | `tpu/tpubench.c`, `tpu/cmacopy.c` | TPU and CMA copy benchmarks |
 | `tpu/gemv/` | Early test: matrix product speed on the TPU |
@@ -227,7 +245,7 @@ with 1 token per call. The `q4` config uses `export_t.py`.
 
 ## Limits
 
-- The TPU path supports only SmolLM2-135M.
+- `llm` supports only SmolLM2-135M. `tpu/smolvlm` runs SmolVLM-256M.
 - `llm` has no interactive mode. Each run answers one prompt.
 - Long greedy replies can repeat. Use `-t 0.7`.
 - S=1024 models score worse than S=512 models on 512 tokens (19.53 against
@@ -242,8 +260,8 @@ duos-llm is free software under the MIT License. See [LICENSE](LICENSE).
 Third-party parts are not in this repository, except the llama.cpp patch:
 
 - The patch changes [llama.cpp](https://github.com/ggml-org/llama.cpp) (MIT).
-- The SmolLM2 weights are under the Apache License 2.0. The compiled TPU models
-  come from these weights. Include the licence if you share them.
+- The SmolLM2 and SmolVLM weights are under the Apache License 2.0. The compiled
+  TPU models come from these weights. Include the licence if you share them.
 - `tools/fetch-data.sh` downloads WikiText-2, which is under CC BY-SA.
 - The TPU runtime sources are copyright Cvitek and Bitmain and carry no licence
   grant. Build the runtime for your own boards. Do not redistribute it.
