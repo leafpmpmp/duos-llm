@@ -10,6 +10,9 @@ tpu-mlir 1.30.2, in November 2026.
 
 ## Results
 
+Every experiment, with the per-question answers and the board logs, is in
+[results/README.md](results/README.md).
+
 ### Accuracy
 
 150 held-out VQA v2 "other" questions about people, on COCO val2014 images. The score is
@@ -176,5 +179,5 @@ repository, because duos-detect is AGPL-3.0 and this repository is MIT.
 - The questions assume a person, so a frame without one gets invented answers.
 - About 9 MiB of the pool stay free. More services on the board can make the load fail.
 - The scripts keep the paths of the machine they ran on (`D:/duosight-eval`, and
-  `~/duosight-tpu` in WSL), and the scoring scripts read question files that are not in
-  this branch.
+  `~/duosight-tpu` in WSL). The scoring scripts read the question files under their
+  original names; `results/data` holds the same questions and answers under new names.
