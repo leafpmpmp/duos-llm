@@ -37,6 +37,8 @@
 // that would only produce EOS. With 30 ("."): 148 of the 150 scored answers end with it,
 // and none has it inside.
 // DUOSIGHT_BPE: make_bpe.py tables for say (bpe.h).
+// DUOSIGHT_T1=1: the layer files hold a second program with one token per call
+// (model_tool --combine): decode runs it. Both programs share the weights and the cache.
 #include <errno.h>
 #include <fcntl.h>
 #include <math.h>
@@ -94,7 +96,7 @@ struct layer {
 		const char *src;
 		size_t n;
 	} ovl[9]; // output bytes over resident inputs: restored from the shadows
-	int novl, mvalid; // mvalid: cache slots unmasked in mask
+	int T, novl, mvalid; // T: tokens per call; mvalid: cache slots unmasked in mask
 	float kpend[NKV * TMAX * HD], vpend[NKV * TMAX * HD]; // k_new, v_new of the last pass
 };
 
@@ -106,6 +108,8 @@ struct model {
 
 static int S, T, HT, VOCAB; // cache slots, tokens per call, head rows, vocabulary size
 static struct layer lay[LAYERS], head;
+static struct layer lay1[LAYERS]; // one token per call, for decode; T1 = 0 without them
+static int T1;
 static struct tens logits_t;
 static _Float16 *embed;
 static float image[ROWS][D]; // ids >= VOCAB are rows of this table
@@ -520,7 +524,11 @@ static void get(const struct tens *t, const void *p, size_t off, float *x, size_
 }
 
 // Resident inputs are marked as device memory, so Forward neither copies nor
-// flushes them: the runtime writes CPU cache lines back itself.
+// flushes them: the runtime writes CPU cache lines back itself. The C906
+// allows this in user mode (XTheadCmo).
+#ifdef __riscv
+#define CACHE_LINE 64
+#else
 static uintptr_t cache_line(void)
 {
 	static uintptr_t line;
@@ -532,14 +540,20 @@ static uintptr_t cache_line(void)
 	}
 	return line;
 }
+#define CACHE_LINE cache_line()
+#endif
 
 // Write the cache lines of [p, p + n) back to DRAM (forward() waits for it).
 static void flush(const void *p, size_t n)
 {
-	uintptr_t a = (uintptr_t)p & ~(cache_line() - 1), e = (uintptr_t)p + n;
+	uintptr_t a = (uintptr_t)p & ~(CACHE_LINE - 1), e = (uintptr_t)p + n;
 
-	for (; a < e; a += cache_line())
+	for (; a < e; a += CACHE_LINE)
+#ifdef __riscv
+		__asm__ volatile("th.dcache.cva %0" : : "r"(a) : "memory");
+#else
 		__asm__ volatile("dc cvac, %0" : : "r"(a) : "memory");
+#endif
 }
 
 // Copy elements [off, off + n) of resident input t from its shadow to the model buffer.
@@ -565,27 +579,38 @@ static void load(struct layer *l, const char *path)
 
 // Make k_cache, v_cache and mask resident: empty cache, all cache slots
 // masked, causal mask over the T new tokens. Mask rows: (kv, token, group);
-// columns: cache slots, then the new tokens.
-static void resident(struct layer *l)
+// columns: cache slots, then the new tokens. With cache set, l reads the
+// k_cache and v_cache buffers of that layer instead of its own.
+static void resident(struct layer *l, const struct layer *cache)
 {
-	static float *m;
-	size_t mrow = S + T;
+	size_t mrow = S + l->T;
+	float *m = malloc(l->mask.n * sizeof(float));
 	struct tens *res[3] = { &l->k, &l->v, &l->mask };
 	void **sh[3] = { &l->kbuf, &l->vbuf, &l->mbuf };
 
-	if (!m) {
-		m = malloc(l->mask.n * sizeof(float));
-		for (size_t r = 0; r < (size_t)NKV * T * G; r++)
-			for (size_t c = 0; c < mrow; c++)
-				m[r * mrow + c] = c >= (size_t)S && c - S <= r / G % T ? 0 : NEG;
-	}
-	for (int j = 0; j < 3; j++) {
-		*sh[j] = calloc(1, res[j]->bytes);
+	for (size_t r = 0; r < (size_t)NKV * l->T * G; r++)
+		for (size_t c = 0; c < mrow; c++)
+			m[r * mrow + c] = c >= (size_t)S && c - S <= r / G % l->T ? 0 : NEG;
+	for (int j = 0; j < 3; j++)
 		res[j]->t->mem_type = CVI_MEM_DEVICE;
+	if (cache) {
+		if (l->k.fmt != cache->k.fmt || l->k.qs != cache->k.qs || l->v.fmt != cache->v.fmt ||
+		    l->v.qs != cache->v.qs || CVI_NN_SetTensorPhysicalAddr(l->k.t, cache->k.t->paddr) != CVI_RC_SUCCESS ||
+		    CVI_NN_SetTensorPhysicalAddr(l->v.t, cache->v.t->paddr) != CVI_RC_SUCCESS)
+			die("cannot share the cache of the decode layers", NULL);
+		l->k.p = cache->k.p;
+		l->v.p = cache->v.p;
+		l->kbuf = cache->kbuf;
+		l->vbuf = cache->vbuf;
+	} else {
+		l->kbuf = calloc(1, l->k.bytes);
+		l->vbuf = calloc(1, l->v.bytes);
+		sync_res(&l->k, l->kbuf, 0, l->k.n);
+		sync_res(&l->v, l->vbuf, 0, l->v.n);
 	}
-	sync_res(&l->k, l->kbuf, 0, l->k.n);
-	sync_res(&l->v, l->vbuf, 0, l->v.n);
+	l->mbuf = calloc(1, l->mask.bytes);
 	put_res(&l->mask, l->mbuf, 0, m, l->mask.n);
+	free(m);
 	l->mvalid = 0;
 	for (int32_t i = 0; i < l->nout; i++) {
 		char *o = CVI_NN_TensorPtr(&l->out[i]), *oe = o + CVI_NN_TensorSize(&l->out[i]);
@@ -619,39 +644,62 @@ static void dec_init_head(const char *dir)
 	VOCAB = (int)(logits_t.n / HT);
 }
 
+// The tensors of a decode layer, and its tokens per call.
+static void layer_tensors(struct layer *l, const char *path)
+{
+	l->h = find(l->in, l->nin, "h", 1);
+	l->cq = find(l->in, l->nin, "cos_q", 1);
+	l->sq = find(l->in, l->nin, "sin_q", 1);
+	l->ck = find(l->in, l->nin, "cos_k", 1);
+	l->sk = find(l->in, l->nin, "sin_k", 1);
+	l->k = find(l->in, l->nin, "k_cache", 1);
+	l->v = find(l->in, l->nin, "v_cache", 1);
+	l->mask = find(l->in, l->nin, "mask", 1);
+	l->dh = find(l->out, l->nout, "dh", 0);
+	l->kn = find(l->out, l->nout, "k_new", 0);
+	l->vn = find(l->out, l->nout, "v_new", 0);
+	l->T = (int)(l->h.n / D);
+	size_t s = l->k.n / (NKV * HD);
+	if (l->T < 1 || l->T > TMAX || (HT != 1 && HT != l->T) || l->mask.n != (size_t)NKV * l->T * G * (s + l->T) ||
+	    l->kn.n != (size_t)NKV * l->T * HD)
+		die("layer shapes do not match in", path);
+}
+
 static void dec_init_layers(const char *dir)
 {
 	char path[1024];
 	struct stat st;
 	int fd;
 
+	T1 = getenv("DUOSIGHT_T1") ? 1 : 0;
 	for (int i = 0; i < LAYERS; i++) {
 		struct layer *l = &lay[i];
 
 		snprintf(path, sizeof(path), "%s/l%02d.cvimodel", dir, i);
 		load(l, path);
-		l->h = find(l->in, l->nin, "h", 1);
-		l->cq = find(l->in, l->nin, "cos_q", 1);
-		l->sq = find(l->in, l->nin, "sin_q", 1);
-		l->ck = find(l->in, l->nin, "cos_k", 1);
-		l->sk = find(l->in, l->nin, "sin_k", 1);
-		l->k = find(l->in, l->nin, "k_cache", 1);
-		l->v = find(l->in, l->nin, "v_cache", 1);
-		l->mask = find(l->in, l->nin, "mask", 1);
-		l->dh = find(l->out, l->nout, "dh", 0);
-		l->kn = find(l->out, l->nout, "k_new", 0);
-		l->vn = find(l->out, l->nout, "v_new", 0);
-		int s = (int)(l->k.n / (NKV * HD)), t = (int)(l->h.n / D);
-		if (i && (s != S || t != T))
+		layer_tensors(l, path);
+		int s = (int)(l->k.n / (NKV * HD));
+		if (i && (s != S || l->T != T))
 			die("cache size or tokens per call differ in", path);
 		S = s;
-		T = t;
-		if (T < 1 || T > TMAX || (HT != 1 && HT != T) || l->mask.n != (size_t)NKV * T * G * (S + T) ||
-		    l->kn.n != (size_t)NKV * T * HD)
-			die("layer shapes do not match in", path);
+		T = l->T;
+		if (T1) {
+			struct layer *l1 = &lay1[i];
+
+			if (CVI_NN_CloneModel(l->m, &l1->m) != CVI_RC_SUCCESS ||
+			    CVI_NN_SetConfig(l1->m, OPTION_PROGRAM_INDEX, 1) != CVI_RC_SUCCESS ||
+			    CVI_NN_GetInputOutputTensors(l1->m, &l1->in, &l1->nin, &l1->out, &l1->nout) != CVI_RC_SUCCESS)
+				die("no one-token program in", path);
+			layer_tensors(l1, path);
+			if (l1->k.n != l->k.n || l1->T != T1)
+				die("the one-token program does not match in", path);
+		}
 	}
-	for (int i = 0; i < LAYERS; i++) // CPU memory after all CMA buffers
-		resident(&lay[i]);
+	for (int i = 0; i < LAYERS; i++) { // CPU memory after all CMA buffers
+		resident(&lay[i], NULL);
+		if (T1)
+			resident(&lay1[i], &lay[i]);
+	}
 
 	snprintf(path, sizeof(path), "%s/embed.f16", dir);
 	fd = open(path, O_RDONLY);
@@ -664,7 +712,11 @@ static void dec_init_layers(const char *dir)
 
 static void forward(struct layer *l)
 {
-	__asm__ volatile("dsb sy" : : : "memory"); // flush() done before the TPU reads
+#ifdef __riscv
+	__asm__ volatile("th.sync.s" : : : "memory"); // flush() done before the TPU reads
+#else
+	__asm__ volatile("dsb sy" : : : "memory");
+#endif
 	if (CVI_NN_Forward(l->m, l->in, l->nin, l->out, l->nout) != CVI_RC_SUCCESS)
 		die("forward failed", NULL);
 }
@@ -711,17 +763,18 @@ static void set_valid(struct layer *l, int n)
 		for (int i = 0; i < 2 * S; i++)
 			val[i] = i < S ? 0 : NEG;
 	}
-	for (size_t r = 0; a < b && r < (size_t)NKV * T * G; r++)
-		put_res(&l->mask, l->mbuf, r * (S + T) + a, val + (n > l->mvalid ? 0 : S), b - a);
+	for (size_t r = 0; a < b && r < (size_t)NKV * l->T * G; r++)
+		put_res(&l->mask, l->mbuf, r * (S + l->T) + a, val + (n > l->mvalid ? 0 : S), b - a);
 	l->mvalid = n;
 }
 
-// Run n <= T tokens at positions pos..pos+n-1 over cache slots 0..pos-1. Rows
-// n..T-1 are padding. The head runs only when logits are wanted, and then on the
-// last token: logits gets VOCAB floats. The new K/V rows wait in kpend/vpend
-// until commit().
-static void pass(const int *tok, int n, int pos, float *logits)
+// Run n <= T tokens through the layers L (T: their tokens per call) at positions
+// pos..pos+n-1 over cache slots 0..pos-1. Rows n..T-1 are padding. The head runs
+// only when logits are wanted, and then on the last token: logits gets VOCAB
+// floats. The new K/V rows wait in kpend/vpend until commit().
+static void pass(struct layer *L, const int *tok, int n, int pos, float *logits)
 {
+	const int T = L[0].T; // the tokens per call of L, not of the prefill
 	static float h[TMAX * D], dh[TMAX * D], cs[TMAX][HD], sn[TMAX][HD];
 	static float cq[NKV * TMAX * G * HD], sq[NKV * TMAX * G * HD], ck[NKV * TMAX * HD], sk[NKV * TMAX * HD];
 	struct conv ccq[4] = { 0 }, csq[4] = { 0 }, cck[4] = { 0 }, csk[4] = { 0 };
@@ -750,7 +803,7 @@ static void pass(const int *tok, int n, int pos, float *logits)
 		}
 
 	for (int i = 0; i < LAYERS; i++) {
-		struct layer *l = &lay[i];
+		struct layer *l = &L[i];
 
 		put(&l->h, l->h.p, 0, h, (size_t)T * D);
 		put_cached(ccq, 4, &l->cq, cq);
@@ -779,7 +832,7 @@ static void pass(const int *tok, int n, int pos, float *logits)
 			forward(&head);
 			get(&logits_t, logits_t.p, 0, logits, VOCAB);
 		} else {
-			put(&head.h, head.h.p, 0, h, (size_t)T * D);
+			put(&head.h, head.h.p, 0, h, (size_t)HT * D);
 			forward(&head);
 			get(&logits_t, logits_t.p, (size_t)(n - 1) * VOCAB, logits, VOCAB);
 		}
@@ -787,13 +840,13 @@ static void pass(const int *tok, int n, int pos, float *logits)
 }
 
 // Keep the K/V of the first m tokens of the last pass in slots slot...
-static void commit(int slot, int m)
+static void commit(struct layer *L, int slot, int m)
 {
 	for (int i = 0; i < LAYERS; i++) {
-		struct layer *l = &lay[i];
+		struct layer *l = &L[i];
 
 		for (int kv = 0; kv < NKV; kv++) {
-			size_t dst = ((size_t)kv * S + slot) * HD, src = (size_t)kv * T * HD;
+			size_t dst = ((size_t)kv * S + slot) * HD, src = (size_t)kv * l->T * HD;
 
 			put_res(&l->k, l->kbuf, dst, l->kpend + src, (size_t)m * HD);
 			put_res(&l->v, l->vbuf, dst, l->vpend + src, (size_t)m * HD);
@@ -861,8 +914,8 @@ static void prefill(const int32_t *tok, int from, int n, float *x)
 
 		for (int t = 0; t < m; t++)
 			buf[t] = tok[i + t];
-		pass(buf, m, i, i + m == n ? x : NULL);
-		commit(i, m);
+		pass(lay, buf, m, i, i + m == n ? x : NULL);
+		commit(lay, i, m);
 	}
 }
 
@@ -1055,8 +1108,8 @@ static void answer(int n)
 		if (end)
 			break;
 		in[0] = tk;
-		pass(in, 1, pos, logits);
-		commit(pos, 1);
+		pass(T1 ? lay1 : lay, in, 1, pos, logits);
+		commit(T1 ? lay1 : lay, pos, 1);
 		pos++;
 		tk = argmax(logits);
 	}
@@ -1273,9 +1326,9 @@ int main(int argc, char **argv)
 		load_words(getenv("DUOSIGHT_VOCAB"));
 	if (getenv("DUOSIGHT_BPE") && bpe_load(getenv("DUOSIGHT_BPE")))
 		die("bad BPE file", getenv("DUOSIGHT_BPE"));
-	fprintf(stderr, "loaded in %.1f s: encoder, %d layers + head (S=%d, T=%d, head rows %d, vocab %d); "
+	fprintf(stderr, "loaded in %.1f s: encoder, %d layers + head (S=%d, T=%d, decode T=%d, head rows %d, vocab %d); "
 		"CMA %ld -> %ld MiB free, %ld MiB used\n",
-		now() - t0, LAYERS, S, T, HT, VOCAB, cma0 / 1024, cma_free_kb() / 1024, cma_used_mib());
+		now() - t0, LAYERS, S, T, T1 ? T1 : T, HT, VOCAB, cma0 / 1024, cma_free_kb() / 1024, cma_used_mib());
 
 	logits = malloc(VOCAB * sizeof(float));
 	for (char *s = getenv("DUOSIGHT_STOP"); s && *s && nstop < 16; s = strchr(s, ',') ? strchr(s, ',') + 1 : NULL)

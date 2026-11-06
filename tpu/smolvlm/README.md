@@ -112,16 +112,50 @@ PC side, in the TPU-MLIR environment:
    the board.
 4. Tables: `resident/make_vocab.py VOCAB.json vocab.bin` and
    `resident/make_bpe.py VOCAB.json bpe.bin`.
+5. Optional, decode with one token per call (see below).
 
 Board side:
 
-5. `gcc -O2 -Iinc -o duosight duosight.c -lcviruntime -lm`
-6. `python3 live.py --gain 0` serves the page on port 8080. `watch_fast.py` runs the
+6. `gcc -O2 -Iinc -o duosight duosight.c -lcviruntime -lm`. On the RISC-V core add
+   `-march=rv64gc_xtheadcmo_xtheadsync`.
+7. `python3 live.py --gain 0` serves the page on port 8080. `watch_fast.py` runs the
    trigger path instead.
 
 `duosight` reads commands on stdin: `bg raw|rgb` (a frame in steps), `say TEXT` (a
 question in words), `ask N ID...` (a prompt as ids), `raw`, `rgb` and `rows` (a frame at
 once). Its header lists the replies and the environment variables.
+
+## Decode with one token per call
+
+Decode runs the 16-token program for one token. A program for one token is faster, and
+it can share the weights of the 16-token program:
+
+1. Compile the 16-token build of step 3 first: its `cali_table` and `lNN.mlir` are needed.
+2. `VLM_S=128 VLM_T=1 VLM_MIX2=all VLM_HEAD_T=1 VLM_TEXT_PREFIX=1
+   decoder/export_vlm.py ROOT TEXT_DIR T1_DIR`: test inputs for one token.
+3. `resident/export_pad.py TEXT_DIR T1_DIR T16_DIR OUT_DIR`. The down projection runs on
+   16 copies of the row, so TPU-MLIR compresses its weight in the same tiles.
+4. Compile `OUT_DIR` with `compile.sh lNN 128 mix2` from `duos-llm/tpu/smollm`.
+5. `resident/combine_t1.sh T16_DIR OUT_DIR DEC_DIR` (tpu-mlir container). Each layer file
+   then holds two programs over one weight section.
+6. Copy `DEC_DIR` to the board with `head.cvimodel`, `embed.f16` and
+   `prefix-imstart.kv`, and run `duosight` with `DUOSIGHT_T1=1`.
+
+On the RISC-V core, 150 held-out questions, detector off:
+
+| Decoder | Score | Decode per token | CMA used |
+|---|---:|---:|---:|
+| Board build of step 3 | 48.5 | 102 ms | 320 MiB |
+| Same scripts, rebuilt | 51.9 | 91 ms | 321 MiB |
+| Rebuilt, one token per call | 52.3 | 56 ms | 322 MiB |
+
+- The rebuild gives 103 of the 150 answers of the board build: the compressed Q and K
+  weights differ. The three scores are within each other's 95% intervals.
+- One token per call gives 139 of the 150 answers of the rebuild.
+- A question about a ready frame (`bg`) takes 190 ms of prefill and 101 ms of decode,
+  against 199 and 173 ms.
+- `--merge_weight` also shares the weights, but without compression: each call is
+  0.4 ms slower.
 
 ## The detector
 
